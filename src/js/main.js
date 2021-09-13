@@ -1,13 +1,14 @@
 import '../../node_modules/focus-visible/dist/focus-visible';
 // import '../../node_modules/just-validate/dist/js/just-validate';
 // import Swiper from 'swiper/bundle';
-// let $ = require("jquery");
+let $ = require("jquery");
 // require("jquery-ui/ui/widgets/accordion");
+require("jquery-ui/ui/widgets/tabs");
 import '../scss/main.scss';
 import '../index.html';
 
 
-// window.addEventListener('DOMContentLoaded', function() {
+window.addEventListener('DOMContentLoaded', function() {
 //   let productSwiper = new Swiper('.swiper-container', {
 //     direction: 'horizontal',
 //     // loop: true,
@@ -42,14 +43,24 @@ import '../index.html';
 //     },
 //   })
   
-//   $( function() {
-//     $( "#accordion" ).accordion({
-//       collapsible: true,
-//       heightStyle: "content",
-//       header: "h3",
-//       active: false,
-//     });
-//   });
+  // $( function() {
+  //   $( "#accordion" ).accordion({
+  //     collapsible: true,
+  //     heightStyle: "content",
+  //     header: "h3",
+  //     active: false,
+  //   });
+  // });
+
+
+  $( function() {
+    $( "#cabinet-tabs" ).tabs({
+      show: { effect: "fade", duration: 500 }
+      // hide: { effect: "fade", duration: 500 }
+    });
+  });
+
+
 
 //   let validateForms = function(selector, rules, successModal, yaGoal) {
 //     new window.JustValidate(selector, {
@@ -159,4 +170,4 @@ import '../index.html';
 //     })
 //   })
 
-// })
+})

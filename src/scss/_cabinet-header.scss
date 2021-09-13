@@ -1,0 +1,103 @@
+.cabinet-main {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    &__header {
+        display: flex;
+        align-items: center;
+        // justify-content: space-between;
+        padding: 38px 20px;
+        background-color: $header-background-color;
+        box-shadow: 30px 0px 40px 0px rgba(222, 227, 236, 1);
+    }
+}
+.owner-data {
+    display: flex;
+    align-items: center;
+    margin-right: auto;
+    &__img-wrapper {
+        width: 80px;
+        height: 80px;
+        overflow: hidden;
+        border-radius: 100%;
+        margin-right: 20px;
+     }
+    &__text-wrapper {
+        font-weight: 600;
+        font-size: 18px;
+        line-height: 22px;
+        color: $title-color;
+    }
+    &__name {
+        margin-bottom: 6px;
+    }
+}
+.cabinet-shop-navigation {
+    display: flex;
+    align-items: center;
+    margin-right: 89px;
+    &__tel {
+        display: inline-block;
+        font-size: 21px;
+        line-height: 25.6px;
+        color: $black-color;
+        margin-right: 59px;
+    }
+    &__list {
+        display: flex;
+        align-items: center;
+    }
+    &__item {
+        position: relative;
+        &:not(:last-child) {
+        margin-right: 33px;
+        }
+    }
+    &__link {
+        display: flex;
+        align-items: center;
+    }
+    &__number-notification {
+        position: absolute;
+        width: 17px;
+        height: 17px;
+        // display: flex;
+        // align-items: center;
+        // justify-content: center;
+        text-align: center;
+        font-weight: 700;
+        font-size: 10px;
+        line-height: 12px;
+        color: $white-color;
+        border-radius: 100%;
+        border: 3px solid $white-color;
+        background-color: $notification-background-color;
+        &_mail {
+            top: 16px;
+            left: -7px;
+        }
+        &_like {
+            top: 20px;
+            left: -2px;
+        }
+        &_cart {
+            top: -2px;
+            left: 30px;
+        }
+    }
+}
+.status-indicator {
+    display: inline-block;
+    width: 11px;
+    height: 11px;
+    margin-left: 5px;
+    border-radius: 100%;
+    background-color: #27FF23;
+}
+.burger-button {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    border: none;
+    background-color: transparent;
+}

@@ -1,0 +1,94 @@
+.cabinet-sidebar {
+    display: flex;
+    flex-direction: column;
+    flex: 0 0 280px;
+    width: 280px;
+    justify-content: space-between;
+    // align-items: space-between;
+    // flex-grow: 1;
+    // height: 100vh;
+    min-height: 100vh;
+    // min-height: 100%;
+    padding: 34px 0px 40px 26px;
+    background-image: -webkit-linear-gradient($side-bar-gradient);
+    background-image: -moz-linear-gradient($side-bar-gradient);
+    background-image: -o-linear-gradient( $side-bar-gradient);
+    background-image: $side-bar-gradient;
+    &__logo-link {
+        display: inline-block;
+        margin-bottom: 119px;
+    }
+    &__nav {
+        margin-bottom: auto;
+    }
+    &__item {
+        font-size: 22px;
+        line-height: 26.8px;
+        padding: 26px 0px 22px 25px;
+        border-radius: 15px 0 0 15px;
+        // &:not(:last-child) {
+        //     margin-bottom: 48px;
+        // }
+        &[aria-selected="true"] {
+            
+            background-color: $white-color;
+            & * {
+                color: $active-color;
+             & svg * {
+                fill: $active-color;
+                stroke: $active-color;
+            }
+        }
+    }
+}
+    &__link {
+        display: flex;
+        align-items: center;
+        color: $black-color;
+    }
+    &__icon {
+        margin-right: 16px;
+    }
+    &__socials-list {
+        display: flex;
+        align-items: center;
+        // align-self: flex-end;
+        // margin-top: auto;
+    }
+    &__socials-item {
+        width: 40px;
+        height: 40px;
+        &:not(:last-child) {
+            margin-right: 41px;
+        }
+        &:nth-child(1) > .cabinet-sidebar__socials-link {
+            background-image: url('../img/Telegram.svg');
+        }
+        &:nth-child(2) > .cabinet-sidebar__socials-link {
+            background-image: url('../img/Whatsup.svg');
+        }
+        &:nth-child(3) > .cabinet-sidebar__socials-link {
+            background-image: url('../img/Instagram.svg');
+        }
+    }
+    &__socials-link {
+        display: block;
+        width: 100%;
+        height: 100%;
+        background-repeat: no-repeat;
+        background-size: 100%;
+        background-position: 100%;
+    }
+}
+.logo {
+    width: 215px;
+    height: 40px;
+    @include _376 {
+        width: 65px;
+        height: 36px;
+       }
+    @include _300 {
+        width: 65px;
+        height: 36px;
+       }
+}

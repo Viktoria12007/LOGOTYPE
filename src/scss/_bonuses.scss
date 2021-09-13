@@ -1,0 +1,18 @@
+.my-bonuses {
+    position: relative;
+    padding: 64px 70px 101px 82px;
+    // display: flex;
+    // flex-direction: column;
+    // justify-content: center;
+    // align-items: center;
+    &__title {
+        text-align: center;
+        margin-bottom: 33px;
+    }
+    &__item {
+        padding: 57px 71px 87px;
+        &:not(:last-child) {
+            margin-bottom: 84px;
+        }
+    }
+}

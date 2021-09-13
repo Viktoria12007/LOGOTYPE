@@ -7,6 +7,7 @@
 }
 body {
   min-width: 291px;
+  // min-height: 100vh;
   font-family: 'Montserrat', sans-serif;
   font-weight: 400;
   font-style: normal;
@@ -29,6 +30,10 @@ img {
 ul {
   list-style: none;
 }
+fieldset {
+  padding: 0;
+  border: none;
+}
 .text {
   font-weight: 500;
   font-size: 20px;
@@ -36,40 +41,46 @@ ul {
   // color: $bluesh-gray-color; 
 }
 .title {
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 24px;
+  font-weight: 500;
+  font-size: 42px;
+  line-height: 51px;
   color: $title-color;
 }
 .button {
   font-family: inherit;
-  font-weight: 500;
-  line-height: 32px;
+  font-weight: 700;
+  line-height: 29px;
   font-size: 24px;
   color: $white-color;
   text-align: center;
   border: none;
-  border-radius: 0;
+  border-radius: 150px;
   // outline: none;
   cursor: pointer;
   background-color: $active-color;
+  box-shadow: 10px 10px 20px 0px rgba(177, 164, 212, .35);
   transition: background-color .4s ease-in-out;
-  &:hover {
-    background-color: #2e4055;
-  }
-  &:active {
-    background-color: #3b536d;
-  }
+  // &:hover {
+  //   background-color: #2e4055;
+  // }
+  // &:active {
+  //   background-color: #3b536d;
+  // }
 }
 .input {
   font-family: inherit;
   border: none;
-  border-radius: 1px;
-  background-color: rgba(225, 230, 237, 0.2);
+  border-radius: 55px;
+  background-color: $main-content-background-color;
+  box-shadow: -10px -10px 10px 0px rgba(255, 255, 255, .15), 10px 0px 20px 0px rgba(177, 164, 212, .15) inset;
+
 }
 .container {
   max-width: 1920px;
   margin: 0 auto;
+  &_cabinet {
+    display: flex;
+  }
 }
 .content-column {
   display: flex;
