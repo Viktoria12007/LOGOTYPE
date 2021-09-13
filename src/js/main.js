@@ -1,5 +1,6 @@
 import '../../node_modules/focus-visible/dist/focus-visible';
-// import '../../node_modules/just-validate/dist/js/just-validate';
+import '../../node_modules/just-validate/dist/js/just-validate';
+import Inputmask from "inputmask";
 // import Swiper from 'swiper/bundle';
 let $ = require("jquery");
 require("jquery-ui/ui/widgets/accordion");
@@ -52,7 +53,26 @@ window.addEventListener('DOMContentLoaded', function() {
   //     active: false,
   //   });
   // });
+  const eventInput = new Event('input', {
+    bubbles: true,
+    cancelable: true,
+});
 
+const modalEventsForm = document.querySelector('.modal-window__events-form');
+const dateInput = document.querySelector('.events-label__input[name="date"]');
+modalEventsForm.addEventListener('submit', (e) => {
+   dateInput.dispatchEvent(eventInput);
+  //  modalEventsForm.reset();
+})
+
+// $('.modal-window__events-form').on('submit',function(){
+//   $(this).find('input')
+//        .not(':button, :submit, :reset, :hidden')
+//        .val('')
+//        .removeAttr('checked')
+//        .removeAttr('selected');
+//    return false;
+// })
 
   $( function() {
     $( "#cabinet-tabs" ).tabs({
@@ -94,14 +114,114 @@ window.addEventListener('DOMContentLoaded', function() {
   };
   $.datepicker.setDefaults($.datepicker.regional['ru']);
 
-
+  
 
   const datePickerPrev = document.querySelector('.ui-datepicker-prev');
   // const datepickerPrev = document.querySelector('.ui-datepicker-prev .ui-icon');
   // console.log(datepickerPrev);
   // datapickerPrev.innerHTML = '';
   console.log(datePickerPrev);
+
+  let selectorTel = document.querySelectorAll('input[type="tel"]');
+  selectorTel = Array.from(selectorTel);
+  let im = new Inputmask('+7 (999) 999-99-99');
+  im.mask(selectorTel);
+
+
+  let validateForms = function(selector, rules, successModal, yaGoal) {
+    new window.JustValidate(selector, {
+      rules: rules,
+      messages: {
+        name: {
+          required: 'Введите имя',
+          // minLength: 'Имя должно содержать минимум 2 символа',
+          // maxLength: 'Имя должно содержать не более 30 символов'
+        },
+        date: {
+            required: 'Пожалуйста, введите дату',
+          },
+        event: {
+          required: 'Укажите событие',
+        },
+        for: {
+          required: 'Назовите получателя',
+        },
+        // company: {
+        //   required: 'Как называется ваша компания?',
+          // minLength: 'Название компании должно содержать минимум 2 символа',
+          // maxLength: 'Название компании должно содержать не более 40 символов'
+        // },
+        // message: {
+        //   required: 'Пожалуйста, введите сообщение',
+        //   minLength: 'Ваше сообщение должно содержать минимум 5 символов',
+        //   maxLength: 'Ваше сообщение должно содержать не более 300 символов'
+        // },
+        tel: {
+          required: 'Укажите ваш телефон',
+          function: 'Пожалуйста, введите правильный номер'
+        },
+        email: {
+          required: 'Укажите ваш e-mail',
+          email: 'Пожалуйста, введите правильный e-mail',
+          // minLength: 'Ваш e-mail должен содержать минимум 6 символов',
+          // maxLength: 'Ваш e-mail должен содержать не более 50 символов'
+        }
+      },
+      // submitHandler: function(form) {
+      //   let formData = new FormData(form);
+  
+      //   let xhr = new XMLHttpRequest();
+  
+      //   xhr.onreadystatechange = function() {
+      //     if (xhr.readyState === 4) {
+      //       if (xhr.status === 200) {
+      //         console.log('Отправлено');
+      //       }
+      //     }
+      //   }
+  
+      //   xhr.open('POST', 'mail.php', true);
+      //   xhr.send(formData);
+  
+      //   form.reset();
+  
+      //   fileInput.closest('label').querySelector('span').textContent = 'Прикрепить файл';
+      // }
+    });
+  }
+  
+  validateForms('.profile-form', { name: {required: true}, email: {required: true, email: true}, tel: {required: true, function: () => {
+    // selector.map((el) => {
+    //   const phone = el.inputmask.unmaskedvalue();
+    //   console.log(el);
+    //   console.log(phone.length);
+    //   console.log(Number (phone));
+    //   return Number (phone) && phone.length === 10
+    // })
+    for (let value of selectorTel) {
+      // console.log(selector);
+      const phone = value.inputmask.unmaskedvalue();
+      // console.log(value);
+      // console.log(phone.length);
+      // console.log(Number (phone));
+      return Number (phone) && phone.length === 10
+    }
+    // const phone = selector.inputmask.unmaskedvalue()
+    //   console.log(selector);
+    //   console.log(phone);
+    //   console.log(phone.length);
+    //   console.log(Number (phone));
+  
+    //   return Number (phone) && phone.length === 10
+  
+  }} }, '.thanks-popup', 'send goal');
+
+  validateForms('.modal-window__events-form', { event: {required: true}, for: {required: true}, date: {required: true} }, '.thanks-popup', 'send goal');
  
+
+
+
+
   const modalWindows = document.querySelectorAll('.modal-window');
   const bonusesHistoryButton = document.querySelector('.my-bonuses__button_history');
   const eventAddButton = document.querySelector('.my-events__add-button');
@@ -137,6 +257,44 @@ window.addEventListener('DOMContentLoaded', function() {
     })
     overlay.classList.add('closed');
  })
+
+const cabinetBurgerButton = document.querySelector('.burger-button');
+const cabinetSidebar = document.querySelector('.cabinet-sidebar');
+  
+ cabinetBurgerButton.addEventListener('click', function() {
+  //  if (!cabinetSidebar.classList.contains('is-show') && !cabinetSidebar.classList.contains('is-'))
+     
+     if (cabinetSidebar.classList.contains('is-hide')) {
+       cabinetSidebar.classList.remove('is-hide');
+       cabinetSidebar.classList.toggle('is-show');
+     }
+     else {
+      cabinetSidebar.classList.toggle('is-hide');
+      cabinetSidebar.classList.remove('is-show');
+     }
+    //  cabinetSidebar.classList.toggle('is-show');
+  // document.querySelector('.cabinet-main').classList.toggle('is-scale');
+  })
+  cabinetSidebar.addEventListener('animationend', () => {
+    if (cabinetSidebar.classList.contains('visually-hidden')) {
+      // cabinetSidebar.classList.remove('is-decrease');
+      cabinetSidebar.classList.remove('visually-hidden');
+      // cabinetSidebar.classList.toggle('is-increase');
+    }
+    else {
+    //  cabinetSidebar.classList.toggle('is-decrease');
+     cabinetSidebar.classList.toggle('visually-hidden');
+    //  cabinetSidebar.classList.remove('is-increase');
+    }
+    // cabinetSidebar.classList.toggle('is-increase');
+    // cabinetSidebar.classList.toggle('is-decrease');
+  })
+ 
+  // document.querySelector('#close').addEventListener('click', function() {
+  // document.querySelector('#menu').classList.remove('is-active')
+  // })
+
+
 
 //   let validateForms = function(selector, rules, successModal, yaGoal) {
 //     new window.JustValidate(selector, {

@@ -153,7 +153,7 @@ fieldset {
 	width: 1px !important;
 	overflow: hidden !important;
 }
-.tabs{
+.tabs {
   animation: show-tab .4s linear;
 }
 @keyframes show-tab {
@@ -165,7 +165,53 @@ fieldset {
   }
 }
 
+.is-hide {
+  // flex: 0 0 280px;
+  // width: 280px;
+  
+  animation: is-hide .4s linear
+}
+@keyframes is-hide {
+  0% {
+    flex: 0 0 280px;
+    width: 280px;
+    // transform: translateX(0px);
+  }
+  100% {
+    flex: 0 0 0px;
+    width: 0px;
+    transform: translateX(-350px);
+  }
+}
+.is-show {
+  // flex: 0 0 280px;
+  // width: 280px;
+  animation: is-show .4s linear;
+}
+@keyframes is-show {
+  0% {
+    // flex: 0 0 0px;
+    width: 0px;
+    // transform: translateX(-350px);
+  }
+  100% {
+    // flex: 0 0 280px;
+    width: 280px;
+    transform: translateX(0px);
+  }
+}
 
+// .is-scale {
+//   transform: scaleX(1.2);
+// }
+
+.js-validate-error-label {
+  position: absolute;
+  left: 20px;
+  bottom: -20px;
+  font-size: 16px;
+  line-height: 19.5px;
+}
 
 .content-column {
   display: flex;

@@ -41,6 +41,7 @@
     }
 }
 .profile-label {
+    position: relative;
     display: flex;
     flex-direction: column;
     cursor: pointer;
@@ -90,6 +91,7 @@
         padding: 18px 32px;
         font-size: 20px;
         line-height: 24.4px;
+        border: 1px solid transparent;
        &::placeholder {
            font-size: 20px;
            line-height: 24.4px;

@@ -187,7 +187,7 @@
                <fieldset class="profile-form__group profile-form__central-column">
                <label class="profile-label">
                  <span class="profile-label__row">Имя</span>
-                 <input type="text" class="profile-label__input input" name="name" placeholder="Имя">
+                 <input data-validate-field="name" type="text" class="profile-label__input input" name="name" placeholder="Имя" required>
                  </label>
                <label class="profile-label">
                  <span class="profile-label__row">Фамилия</span>
@@ -199,13 +199,13 @@
                   </label>
                 <label class="profile-label">
                   <span class="profile-label__row">E-mail</span>
-                  <input type="email" class="profile-label__input input" name="email" placeholder="E-mail">
+                  <input data-validate-field="email" type="email" class="profile-label__input input" name="email" placeholder="E-mail" required>
                   </label>
                   </fieldset>
                   <fieldset class="profile-form__group profile-form__right-column">
                 <label class="profile-label">
                   <span class="profile-label__row">Номер телефона</span>
-                  <input type="tel" class="profile-label__input input" name="tel" placeholder="+7 (8352) 21-71-61">
+                  <input data-validate-field="tel" type="tel" class="profile-label__input input" name="tel" placeholder="+7 (8352) 21-71-61" required>
                 </label>
                 <label class="profile-label">
                   <span class="profile-label__row">Ввести пароль</span>
@@ -303,15 +303,15 @@
         <fieldset class="events-form__group-left">
           <label class="events-label">
             <span class="events-label__row">Тип события</span>
-            <input type="text" class="events-label__input input" name="name-event" placeholder="Например: День Рождения">
+            <input data-validate-field="event" type="text" class="events-label__input input" name="name-event" placeholder="Например: День Рождения" required>
             </label>
           <label class="events-label">
             <span class="events-label__row">Кому</span>
-           <input type="text" class="events-label__input input" name="for" placeholder="Имя">
+           <input data-validate-field="for" type="text" class="events-label__input input" name="for" placeholder="Имя" required>
            </label>
            <label class="events-label">
              <span class="events-label__row">Дата события</span>
-             <input id="date-events" type="text" class="events-label__input input" name="patronymic" placeholder="День / месяц / год">
+             <input data-validate-field="date" id="date-events" type="text" class="events-label__input input" name="date" placeholder="День / месяц / год" required>
              </label>
              <label class="events-label events-label__choose">
               <input class="visually-hidden" type="radio" checked name="send" value="Send on the day of the event">

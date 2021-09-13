@@ -87,6 +87,7 @@
     display: flex;
     flex-direction: column;
     cursor: pointer;
+    position: relative;
     // align-items: center;
     &:nth-child(1) {
         margin-bottom: 25px;
@@ -159,6 +160,7 @@
       font-size: 20px;
       font-weight: 400;
       line-height: 24px;
+      border: 1px solid transparent;
     &::placeholder {
       font-size: 20px;
     //   font-weight: 400;
