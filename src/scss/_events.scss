@@ -1,0 +1,208 @@
+.my-events {
+    padding: 64px 82px 70px 70px;
+    &__title {
+        font-size: 42px;
+        font-weight: 500;
+        line-height: 51px;
+        letter-spacing: 0em;
+        text-align: center;
+        margin-bottom: 33px;
+    }
+    &__box {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 41px 47px 54px 47px;
+    }
+    &__text {
+        max-width: 887px;
+        text-align: center;
+        margin-bottom: 40px;
+    }
+    &__add-button {
+        padding: 24px 100px;
+    }
+}
+.modal-guts__events {
+    padding: 62px 40px 55px 40px;
+    overflow: visible;
+}
+.modal-window__events {
+    width: 1320px;
+    max-width: 100%;
+    height: 603px;
+    max-height: 100%;
+    
+    &-title {
+        text-align: center;
+        font-weight: 400;
+        font-size: 30px;
+        line-height: 36.5px;
+        color: $title-color;
+        margin-bottom: 31px;
+    }
+    &-form {
+        display: flex;
+        // flex-direction: column;
+        align-items: flex-end;
+        justify-content: space-between;
+        // flex-wrap: wrap;
+    }
+    }
+.modal-close__events {
+        position: absolute;
+        z-index: 100;
+        top: 37px;
+        right: 40px;
+        cursor: pointer;
+        border: none;
+        background-color: transparent;
+    }
+.events-form__group-right {
+    position: relative;
+    padding-right: 242px;
+}
+.events-form {
+    // &__events-label {
+    //     &:last-child {
+    //         margin-bottom: 0 !important;
+    //     }
+    // }
+   &__flowers {
+    position: absolute;
+    top: -15%;
+    left: 47%;
+    width: 590px;
+    height: 497px;
+    background-image: url(../img/flowers.png);
+    background-repeat: no-repeat;
+    background-size: auto auto;
+    // background-position: 95% 50%;
+}
+  &__button {
+    padding: 28px 108px;
+  }
+}
+.events-label {
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+    // align-items: center;
+    &:nth-child(1) {
+        margin-bottom: 25px;
+    }
+    &:nth-child(2) {
+        margin-bottom: 21px;
+    }
+    &:nth-child(3) {
+        margin-bottom: 30px;
+    }
+    &:last-child {
+        margin-bottom: 0;
+    }
+  &__choose {
+      flex-direction: row;
+      align-items: center;
+      position: relative;
+      margin-bottom: 36px;
+    //   cursor: pointer;
+    &-row {
+        display: inline-block;
+        padding-left: 78px;
+        text-align: center;
+        // color: $bluesh-gray-color;
+        transition: all .4s ease-in-out;
+        &::before {
+           content: "";
+           position: absolute;
+           left: 0;
+           top: 50%;
+           transform: translateY(-50%);
+           width: 50px;
+           height: 49px;
+           border: 1px solid;
+           border-image-source: linear-gradient(119deg, #FFFFFF 32.05%, rgba(212, 215, 219, 0.16) 67.71%);
+           border-radius: 100%;
+        //    opacity: 0;
+           box-shadow: -10px -10px 10px 0px rgba(255, 255, 255, .15), 10px 10px 20px 0px rgba(177, 164, 212, .35);
+           transition: all .4s ease-in-out;
+       }
+        &::after {
+            content: '';
+            position: absolute;
+            left: 19px;
+            top: 6px;
+            min-width: 14.6px;
+            height: 20px;
+            border: solid $active-color;
+            border-width: 0 1px 1px 0;
+            transform: rotate(45deg);
+            opacity: 0;
+            transition: opacity .4s ease-in-out, border-color .4s ease-in-out;
+        }
+    }
+    & input:checked+.events-label__choose-row::after {
+        opacity: 1;
+    }
+}
+  &__row {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 20px;
+    color: $form-grey-color;
+    margin-left: 20px;
+    margin-bottom: 8px;
+  }
+  &__input {
+      max-width: 445px;
+      padding: 18px 34px;
+      font-size: 20px;
+      font-weight: 400;
+      line-height: 24px;
+    &::placeholder {
+      font-size: 20px;
+    //   font-weight: 400;
+      line-height: 24px;
+      color: $form-grey-color;
+    }
+  }
+}
+.ui-datepicker {
+    // padding: 20px;
+    border-radius: 25px;
+    background-color: $main-content-background-color;
+    box-shadow: -10px -10px 10px 0px rgba(255, 255, 255, .15), 10px 10px 20px 0px rgba(177, 164, 212, .35);
+}
+.ui-datepicker-header {
+    padding: 20px 20px 10px 20px;
+}
+.ui-datepicker-calendar {
+    width: 100%;
+    // margin: 0;
+    padding: 20px 10px 20px 20px;
+}
+.ui-datepicker-prev {
+    display: inline-block;
+    // display: flex;
+    width: 40px;
+    height: 40px;
+    // align-items: center;
+    text-align: center;
+    border-radius: 100%;
+    background-color: $main-content-background-color;
+    box-shadow: -10px -10px 10px 0px rgba(175, 146, 146, 0.15), 10px 10px 20px 0px rgba(177, 164, 212, .35);
+    margin-right: 200px;
+    margin-bottom: 10px;
+}
+.ui-datepicker-next {
+    display: inline-block;
+    // display: flex;
+    width: 40px;
+    height: 40px;
+    // align-items: center;
+    text-align: center;
+    border-radius: 100%;
+    background-color: $main-content-background-color;
+   box-shadow: -10px -10px 10px 0px rgba(175, 146, 146, 0.15), 10px 10px 20px 0px rgba(177, 164, 212, .35);
+   margin-bottom: 10px; 
+}

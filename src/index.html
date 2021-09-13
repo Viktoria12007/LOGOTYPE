@@ -159,9 +159,9 @@
              </button>
          </header>
          <div class="cabinet-main__content">
-           <div class="profile main-block" id="profile">
+           <div class="profile main-block tabs" id="profile">
              <h2 class="title profile__title">Профиль</h2>
-             <form class="profile-form">
+             <form class="profile-form" action="https://jsonplaceholder.typicode.com/posts" autocomplete="on" method="POST">
                <fieldset class="profile-form__group profile-form__left-column">
                  <label class="profile-label profile-label_file">
                 <div class="profile-label__img-wrapper">
@@ -187,61 +187,148 @@
                <fieldset class="profile-form__group profile-form__central-column">
                <label class="profile-label">
                  <span class="profile-label__row">Имя</span>
-                 <input type="text" class="profile-label__input input" placeholder="Имя">
+                 <input type="text" class="profile-label__input input" name="name" placeholder="Имя">
                  </label>
                <label class="profile-label">
                  <span class="profile-label__row">Фамилия</span>
-                <input type="text" class="profile-label__input input" placeholder="Фамилия">
+                <input type="text" class="profile-label__input input" name="surname" placeholder="Фамилия">
                 </label>
                 <label class="profile-label">
                   <span class="profile-label__row">Отчество (при наличии)</span>
-                  <input type="text" class="profile-label__input input" placeholder="Отчество (при наличии)">
+                  <input type="text" class="profile-label__input input" name="patronymic" placeholder="Отчество (при наличии)">
                   </label>
                 <label class="profile-label">
                   <span class="profile-label__row">E-mail</span>
-                  <input type="text" class="profile-label__input input" placeholder="E-mail">
+                  <input type="email" class="profile-label__input input" name="email" placeholder="E-mail">
                   </label>
                   </fieldset>
                   <fieldset class="profile-form__group profile-form__right-column">
                 <label class="profile-label">
                   <span class="profile-label__row">Номер телефона</span>
-                  <input type="text" class="profile-label__input input" placeholder="+7 (8352) 21-71-61">
+                  <input type="tel" class="profile-label__input input" name="tel" placeholder="+7 (8352) 21-71-61">
                 </label>
                 <label class="profile-label">
                   <span class="profile-label__row">Ввести пароль</span>
-                  <input type="text" class="profile-label__input input" placeholder="Ввести пароль">
+                  <input type="password" class="profile-label__input input" name="password" placeholder="Ввести пароль">
                 </label>
                 <label class="profile-label">
                   <span class="profile-label__row">Подтверждение пароля</span>
-                  <input type="text" class="profile-label__input input" placeholder="Ввести пароль еще раз">
+                  <input type="password" class="profile-label__input input" name="password-copy" placeholder="Ввести пароль еще раз">
                 </label>
                 <label class="profile-label">
                   <span class="profile-label__row">Город</span>
-                  <input type="text" class="profile-label__input input" placeholder="Выберите ваш город">
+                  <input type="text" class="profile-label__input input" name="city" placeholder="Выберите ваш город">
                 </label>
               </fieldset>
-              <button class="button profile-form__button">Сохранить изменения</button>
+              <button class="button profile-form__button" type="submit">Сохранить изменения</button>
              </form>
            </div>
-           <div class="my-bonuses main-block" id="my-bonuses">
+           <div class="my-bonuses main-block tabs" id="my-bonuses">
             <h2 class="title my-bonuses__title">Мои бонусы</h2>
             <ul class="my-bonuses__list">
               <li class="my-bonuses__item main-block">
-                <h3 class="my-bonuses__subtitle">У вас <span>500 бонусов</span></h3>
+                <h3 class="my-bonuses__subtitle">У вас <span class="my-bonuses__amount">500 бонусов</span></h3>
                 <p class="my-bonuses__text">1 бонус = 1 рубль. Бонусы и скидки можно применить на любой товар. Нельзя оплачивать бонусами более 50% стоимости заказа</p>
-                <button class="button my-bonuses__button">История начислений</button>
+                <button class="button my-bonuses__button my-bonuses__button_history">История начислений</button>
               </li>
               <li class="my-bonuses__item main-block">
-                <h3 class="my-bonuses__subtitle">Пригласи друга и получи <span>300 бонусов</span></h3>
+                <h3 class="my-bonuses__subtitle">Пригласи друга и получи <span class="my-bonuses__amount">300 бонусов</span></h3>
                 <p class="my-bonuses__text">Отправь промокод другу, он получит 10% скидку на первую покупку, а вы - 300 бонусов на счет, после того, как друг совершит первую покупку</p>
-                <button class="button my-bonuses__button">Поделиться скидкой</button>
+                <a class="button my-bonuses__button" href="#">Поделиться скидкой</a>
               </li>
             </ul>
+          </div>
+          <div class="my-events main-block tabs" id="my-events">
+            <div class="my-events__wrapper">
+            <h2 class="title my-events__title">У вас пока не добавлены события</h2>
+            <div class="my-events__box main-block">
+              <p class="my-events__text">Добавьте важные даты и будьте уверены что мы отправим вам SMS уведомление или E-mail в день вашего события с промокодом 
+                на скидку до 20% и другие бонусы </p>
+                <button class="button my-events__add-button">Добавить событие</button>
+            </div>
+            </div>
           </div>
          </div>
        </div>
       </div>
     </section>
   </main>
+  <div class="overlay closed"></div>
+  <div class="modal-window modal-window__bonuses main-block closed">
+    <button class="modal-close modal-close__bonuses">
+      <svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <g clip-path="url(#clip0)">
+      <path d="M13.8806 12.501L24.7135 1.66812C25.0949 1.28673 25.0949 0.66837 24.7135 0.287023C24.3321 -0.0943236 23.7137 -0.0943724 23.3324 0.287023L12.4995 11.1199L1.66666 0.287023C1.28526 -0.0943724 0.666905 -0.0943724 0.285558 0.287023C-0.0957884 0.668419 -0.0958372 1.28678 0.285558 1.66812L11.1184 12.501L0.285558 23.3339C-0.0958372 23.7153 -0.0958372 24.3336 0.285558 24.715C0.476232 24.9056 0.726183 25.0009 0.976133 25.0009C1.22608 25.0009 1.47599 24.9056 1.66671 24.715L12.4995 13.8821L23.3323 24.715C23.523 24.9056 23.773 25.0009 24.0229 25.0009C24.2729 25.0009 24.5228 24.9056 24.7135 24.715C25.0949 24.3336 25.0949 23.7152 24.7135 23.3339L13.8806 12.501Z" fill="#E6E6E6"/>
+      </g>
+      <defs>
+      <clipPath>
+      <rect width="25" height="25" fill="white"/>
+      </clipPath>
+      </defs>
+      </svg>
+    </button>
+    <div class="modal-guts modal-guts__bonuses">
+      <h3 class="modal-window__bonuses-title">История начислений</h3>
+      <ul class="modal-window__bonuses-list">
+        <li class="modal-window__bonuses-item">
+          <div class="modal-window__bonuses-left modal-window__bonuses-subtitle_left">У вас</div>
+          <div class="modal-window__bonuses-right modal-window__bonuses-subtitle_right">500 бонусов</div>
+        </li>
+        <li class="modal-window__bonuses-item">
+          <div class="modal-window__bonuses-left">27.08.2021</div>
+          <div class="modal-window__bonuses-right">300 бонусов</div>
+        </li>
+        <li class="modal-window__bonuses-item">
+          <div class="modal-window__bonuses-left">28.08.2021</div>
+          <div class="modal-window__bonuses-right">200 бонусов</div>
+        </li>
+      </ul>
+    </div>
+  </div>
+  <div class="modal-window modal-window__events main-block closed">
+    <button class="modal-close modal-close__events">
+      <svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <g clip-path="url(#clip0)">
+      <path d="M13.8806 12.501L24.7135 1.66812C25.0949 1.28673 25.0949 0.66837 24.7135 0.287023C24.3321 -0.0943236 23.7137 -0.0943724 23.3324 0.287023L12.4995 11.1199L1.66666 0.287023C1.28526 -0.0943724 0.666905 -0.0943724 0.285558 0.287023C-0.0957884 0.668419 -0.0958372 1.28678 0.285558 1.66812L11.1184 12.501L0.285558 23.3339C-0.0958372 23.7153 -0.0958372 24.3336 0.285558 24.715C0.476232 24.9056 0.726183 25.0009 0.976133 25.0009C1.22608 25.0009 1.47599 24.9056 1.66671 24.715L12.4995 13.8821L23.3323 24.715C23.523 24.9056 23.773 25.0009 24.0229 25.0009C24.2729 25.0009 24.5228 24.9056 24.7135 24.715C25.0949 24.3336 25.0949 23.7152 24.7135 23.3339L13.8806 12.501Z" fill="#E6E6E6"/>
+      </g>
+      <defs>
+      <clipPath>
+      <rect width="25" height="25" fill="white"/>
+      </clipPath>
+      </defs>
+      </svg>
+    </button>
+    <div class="modal-guts modal-guts__events">
+      <form class="modal-window__events-form" action="https://jsonplaceholder.typicode.com/posts" autocomplete="on" method="POST">
+        <fieldset class="events-form__group-left">
+          <label class="events-label">
+            <span class="events-label__row">Тип события</span>
+            <input type="text" class="events-label__input input" name="name-event" placeholder="Например: День Рождения">
+            </label>
+          <label class="events-label">
+            <span class="events-label__row">Кому</span>
+           <input type="text" class="events-label__input input" name="for" placeholder="Имя">
+           </label>
+           <label class="events-label">
+             <span class="events-label__row">Дата события</span>
+             <input id="date-events" type="text" class="events-label__input input" name="patronymic" placeholder="День / месяц / год">
+             </label>
+             <label class="events-label events-label__choose">
+              <input class="visually-hidden" type="radio" checked name="send" value="Send on the day of the event">
+              <span class="events-label__choose-row">Отправить в день события</span>
+            </label>
+            <label class="events-label events-label__choose">
+              <input class="visually-hidden" type="radio" name="send" value="Send in 3 days">
+              <span class="events-label__choose-row">Отправить за 3 дня</span>
+            </label>
+        </fieldset>
+        <fieldset class="events-form__group-right">
+          
+          <button class="button events-form__button">Сохранить</button>
+        </fieldset>
+        <div class="events-form__flowers"></div>
+      </form>
+    </div>
+  </div>
 </body>
 </html>
