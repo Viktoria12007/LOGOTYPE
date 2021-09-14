@@ -1,0 +1,127 @@
+.my-orders {
+    padding: 64px 82px 70px 70px;
+&__title {
+    text-align: center;
+    margin-bottom: 33px;
+}
+&__text {
+    max-width: 670px;
+    text-align: center;
+    margin-bottom: 40px;
+}
+&__box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 41px 30px 54px 30px;
+}
+&__add-order {
+    padding: 24px 115px;
+}
+&__item {
+    &:not(:last-child) {
+    margin-bottom: 52px;
+    }
+}
+
+}
+.order-head {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    cursor: pointer;
+    padding: 48px 39.6px 51px 58px;
+    &[aria-selected="true"] * .order-head__action-icon > svg {
+      transform: rotate(180deg);
+    }
+    &__info {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    &__img-wrapper {
+        display: inline-block;
+        position: relative;
+        width: 93px;
+        height: 93px;
+        overflow: hidden;
+        // margin-bottom: 67px;
+        border-radius: 50%;
+        // border: 2px solid $active-color;
+        // box-shadow: 0 0 0 2px $active-color,
+        margin-right: 34px;
+     }
+     &__img {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        width: 0;
+        height: 0;
+        min-width: 100%;
+        min-height: 100%;
+        vertical-align: middle;
+        object-fit: cover;
+        border-radius: 100%;
+     }
+     &__number {
+        font-size: 30px;
+        font-weight: 700;
+        line-height: 37px;
+        color: $title-color;
+        margin-bottom: 7.8px;
+     }
+     &__price {
+        font-size: 30px;
+        font-weight: 700;
+        line-height: 37px;
+        letter-spacing: 0.05em;
+        color: $title-color;
+        text-align: right;
+        margin-bottom: 7.8px;
+     }
+     &__amount-title {
+        font-size: 24px;
+        font-weight: 400;
+        line-height: 38px;
+     }
+     &__amount {
+        font-size: 24px;
+        font-weight: 400;
+        line-height: 38px;
+        letter-spacing: 0.05em;
+        text-align: right;
+     }
+     &__key {
+         margin-right: 140px;
+     }
+     &__action {
+         display: flex;
+         align-items: center;
+     }
+     &__action-more {
+        font-size: 24px;
+        font-weight: 600;
+        line-height: 38px;
+        color: $active-color;
+        margin-right: 27px;
+     }
+     &__action-icon {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 68px;
+        height: 68px;
+        background-color: $file-icon-background-color;
+        border-radius: 150px;
+        border: 1px solid;
+        border-image-source: linear-gradient(119deg, #FFFFFF 32.05%, rgba(212, 215, 219, 0.16) 67.71%);
+        box-shadow: -10px -10px 10px 0px rgba(255, 255, 255, .15), 10px 10px 20px 0px rgba(177, 164, 212, .35);
+     }
+
+}
+.ui-accordion-header-icon {
+    display: none;
+}

@@ -45,14 +45,15 @@ window.addEventListener('DOMContentLoaded', function() {
 //     },
 //   })
   
-  // $( function() {
-  //   $( "#accordion" ).accordion({
-  //     collapsible: true,
-  //     heightStyle: "content",
-  //     header: "h3",
-  //     active: false,
-  //   });
-  // });
+  $( function() {
+    $( "#orders-accordion" ).accordion({
+      collapsible: true,
+      heightStyle: "content",
+      header: "h3",
+      active: false,
+    });
+  });
+
   const eventInput = new Event('input', {
     bubbles: true,
     cancelable: true,
@@ -224,8 +225,8 @@ modalEventsForm.addEventListener('submit', (e) => {
 
   const modalWindows = document.querySelectorAll('.modal-window');
   const bonusesHistoryButton = document.querySelector('.my-bonuses__button_history');
-  const eventAddButton = document.querySelector('.my-events__add-button');
-  // const closeButtonModalBonuses = document.querySelector('.modal-close__bonuses');
+  const eventAddButtons = document.querySelectorAll('.my-events__add-button');
+  const eventEditButtons = document.querySelectorAll('.my-events__card-action_edit');
   const closeButtonsModal = document.querySelectorAll('.modal-close');
   const modalWindowBonuses = document.querySelector('.modal-window__bonuses');
   const modalWindowAddEvent = document.querySelector('.modal-window__events');
@@ -236,10 +237,18 @@ modalEventsForm.addEventListener('submit', (e) => {
     overlay.classList.remove('closed');
  })
 
- eventAddButton.addEventListener('click', () => {
-  modalWindowAddEvent.classList.remove('closed');
-  overlay.classList.remove('closed');
-})
+ eventAddButtons.forEach((item) => {
+  item.addEventListener('click', () => {
+    modalWindowAddEvent.classList.remove('closed');
+    overlay.classList.remove('closed');
+ })
+}) 
+eventEditButtons.forEach((item) => {
+  item.addEventListener('click', () => {
+    modalWindowAddEvent.classList.remove('closed');
+    overlay.classList.remove('closed');
+ })
+}) 
 
   closeButtonsModal.forEach((item) => {
     item.addEventListener('click', () => {

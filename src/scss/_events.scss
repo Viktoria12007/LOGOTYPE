@@ -13,14 +13,90 @@
         flex-direction: column;
         align-items: center;
         padding: 41px 47px 54px 47px;
+        &_card {
+            display: block;
+            position: relative;
+            padding: 41px 47px 54px 47px;
+        }
     }
     &__text {
         max-width: 887px;
         text-align: center;
         margin-bottom: 40px;
+        &_card {
+            align-self: center;
+            // max-width: 1160px;
+            text-align: center;
+            margin-bottom: 64px;
+        }
     }
     &__add-button {
         padding: 24px 100px;
+        &_card {
+            position: absolute;
+            bottom: -30px;
+            left: 35%;
+            // padding: 24px 100px;
+        }
+    }
+    &__card {
+        // align-items: stretch!important;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        // font-family: Montserrat;
+        // font-size: 16px;
+        // font-style: normal;
+        // font-weight: 400;
+        // line-height: 20px;
+        // letter-spacing: 0em;
+        // text-align: left;
+        padding: 22px 62px;
+        margin-bottom: 43px;
+        border-radius: 40px;
+        background-color: #fdfcff;
+        box-shadow: -10px -10px 10px 0px rgba(255, 255, 255, .15), 10px 0px 20px 0px rgba(177, 164, 212, .15) inset;
+        &-wrapper {
+            position: relative;
+            &:not(:last-child) {
+               margin-right: 100px;
+            }
+        }
+        &-description {
+            display: flex;
+            align-items: center;
+            // justify-content: space-between;
+            // width: 672px;
+
+        }
+        &-key {
+            position: absolute;
+            top: -55px;
+            font-size: 16px;
+            line-height: 20px;
+            color: $form-grey-color;
+            white-space: nowrap;
+        } 
+        &-value {
+            line-height: 29px;
+            // white-space: nowrap;
+        }  
+        &-button {
+            border: none;
+            background-color: transparent;
+            cursor: pointer;
+        }
+        &-action {
+            display: flex;
+            align-items: center;
+            &_edit {
+              margin-right: 20px;
+            }
+            // &_delete {
+
+            // }
+        }      
     }
 }
 .modal-guts__events {
