@@ -1,5 +1,5 @@
 .my-orders {
-    padding: 64px 82px 70px 70px;
+    padding: 64px 76px 70px 76px;
 &__title {
     text-align: center;
     margin-bottom: 33px;
@@ -121,6 +121,45 @@
         box-shadow: -10px -10px 10px 0px rgba(255, 255, 255, .15), 10px 10px 20px 0px rgba(177, 164, 212, .35);
      }
 
+}
+.order-body {
+    padding: 70px 0px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    // &__wrapper {
+    //   display: flex;
+    //   justify-content: space-between;
+    //   align-items: flex-start;
+    // }
+    &__list {
+        padding: 47.6px 40px;
+        box-shadow: -10px -10px 10px 0px rgba(255, 255, 255, .15), 0px 10px 20px 0px rgba(177, 164, 212, .15);
+    }
+    &__item {
+        &:not(:last-child) {
+            margin-bottom: 48.8px;
+        }
+    }
+    &__key {
+        margin-right: 11px;
+    }
+    &__bill {
+        display: flex;
+        &-key {
+            &_total {
+                font-weight: 600;
+            }
+        }
+        &-value_price {
+            font-size: 30px;
+            font-weight: 700;
+            line-height: 37px;
+            letter-spacing: 0.05em;
+            text-align: right;
+            color: $title-color;
+        }
+    }
 }
 .ui-accordion-header-icon {
     display: none;
