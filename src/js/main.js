@@ -314,39 +314,6 @@ const mainWrap = document.querySelector('.container_cabinet');
   cabinetBurgerButton.addEventListener('click', () => {
     mainWrap.classList.toggle('collapsed');
   })
-  
-//  cabinetBurgerButton.addEventListener('click', function() {
-//   //  if (!cabinetSidebar.classList.contains('is-show') && !cabinetSidebar.classList.contains('is-'))
-     
-//      if (cabinetSidebar.classList.contains('is-hide')) {
-//        cabinetSidebar.classList.remove('is-hide');
-//        cabinetSidebar.classList.toggle('is-show');
-//      }
-//      else {
-//       cabinetSidebar.classList.toggle('is-hide');
-//       cabinetSidebar.classList.remove('is-show');
-//      }
-//     //  cabinetSidebar.classList.toggle('is-show');
-//   // document.querySelector('.cabinet-main').classList.toggle('is-scale');
-//   })
-//   cabinetSidebar.addEventListener('animationend', () => {
-//     if (cabinetSidebar.classList.contains('visually-hidden')) {
-//       // cabinetSidebar.classList.remove('is-decrease');
-//       cabinetSidebar.classList.remove('visually-hidden');
-//       // cabinetSidebar.classList.toggle('is-increase');
-//     }
-//     else {
-//     //  cabinetSidebar.classList.toggle('is-decrease');
-//      cabinetSidebar.classList.toggle('visually-hidden');
-//     //  cabinetSidebar.classList.remove('is-increase');
-//     }
-//     // cabinetSidebar.classList.toggle('is-increase');
-//     // cabinetSidebar.classList.toggle('is-decrease');
-//   })
- 
-  // document.querySelector('#close').addEventListener('click', function() {
-  // document.querySelector('#menu').classList.remove('is-active')
-  // })
 
 
 

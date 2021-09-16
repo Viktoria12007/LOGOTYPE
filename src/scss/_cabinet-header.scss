@@ -2,19 +2,16 @@
     // flex: 1;
     display: flex;
     flex-direction: column;
-    min-height: 960px;
-    // transition: transform .4s linear;
     position:absolute;
     left:280px;
     right:0;
-    
-  -webkit-transition: left 1s; /* Safari */
-  transition: left 1s;
+    -webkit-transition: left 1s; /* Safari */
+    transition: left 1s;
     &__header {
         display: flex;
         align-items: center;
         // justify-content: space-between;
-        padding: 38px 20px;
+        padding: 20px 38px 20px 38px;
         background-color: $header-background-color;
         box-shadow: 30px 0px 40px 0px rgba(222, 227, 236, 1);
     }
@@ -35,6 +32,7 @@
         font-size: 18px;
         line-height: 22px;
         color: $title-color;
+        margin-top: 7px;
     }
     &__name {
         margin-bottom: 6px;
@@ -49,7 +47,7 @@
         font-size: 21px;
         line-height: 25.6px;
         color: $black-color;
-        margin-right: 59px;
+        margin-right: 92px;
     }
     &__list {
         display: flex;
@@ -58,7 +56,7 @@
     &__item {
         position: relative;
         &:not(:last-child) {
-        margin-right: 33px;
+        margin-right: 34px;
         }
     }
     &__link {
@@ -67,29 +65,29 @@
     }
     &__number-notification {
         position: absolute;
-        width: 17px;
-        height: 17px;
-        // display: flex;
-        // align-items: center;
-        // justify-content: center;
+        width: 22px;
+        height: 22px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
         text-align: center;
-        font-weight: 700;
+        // font-weight: 700;
         font-size: 10px;
-        line-height: 12px;
+        line-height: 10px;
         color: $white-color;
         border-radius: 100%;
         border: 3px solid $white-color;
         background-color: $notification-background-color;
         &_mail {
-            top: 16px;
-            left: -7px;
+            top: 12px;
+            left: -11px;
         }
         &_like {
-            top: 20px;
-            left: -2px;
+            top: 15px;
+            left: -4px;
         }
         &_cart {
-            top: -2px;
+            top: -5px;
             left: 30px;
         }
     }

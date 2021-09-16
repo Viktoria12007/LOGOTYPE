@@ -9,6 +9,7 @@
 .profile-form {
     display: flex;
     justify-content: space-between;
+    align-items: center;
     flex-wrap: wrap;
     &__group {
         &:not(:nth-child(3)) {
@@ -30,12 +31,16 @@
         display: flex;
         flex-direction: column;
         flex-wrap: wrap;
+        & * .profile-label__row {
+            margin-left: 30px;
+        }
     }
     &__button {
         position: absolute;
         white-space: nowrap;
-        top: 94.5%;
-        right: 5.5%;
+        // top: 94.5%;
+        right: 5.8%;
+        bottom: -6%;
         // left: 64.5%;
         padding: 24px 76px;
         &-sucsessfull {
@@ -52,7 +57,7 @@
     flex-direction: column;
     cursor: pointer;
     &:not(:last-child) {
-       margin-bottom: 24px;
+       margin-bottom: 21px;
     }
     &__img-wrapper {
         display: inline-block;
@@ -63,7 +68,8 @@
         margin-bottom: 67px;
         border-radius: 50%;
         // border: 2px solid $active-color;
-        box-shadow: 0 0 0 2px $active-color,
+        box-shadow: 0 0 0 2px $active-color;
+        margin-top: 5px;
      }
      &__img {
         position: absolute;
@@ -88,9 +94,14 @@
     &__row {
         font-size: 16px;
         line-height: 19.5px;
-        margin-left: 25px;
+        margin-left: 33px;
         margin-bottom: 9px;
         color: $form-grey-color;
+        &_file {
+        font-size: 20px;
+        // font-weight: 400;
+        line-height: 24px;
+        }
     }
     &__input {
         width: 445px;
@@ -117,7 +128,7 @@
         align-items: center;
         justify-content: center;
         position: absolute;
-        top: 66%;
+        top: 70%;
         border-radius: 100%;
         background-color: $file-icon-background-color;
         box-shadow: -10px -10px 10px 0px #ffffff26, 10px 10px 20px 0px #b1a4d459;

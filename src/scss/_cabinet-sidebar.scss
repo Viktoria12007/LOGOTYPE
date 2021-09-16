@@ -1,43 +1,39 @@
 .cabinet-sidebar {
+    position: fixed;
+    left:0;
+    width: 280px;
+    top:0;
+    bottom:0;
     display: flex;
     flex-direction: column;
-    // align-content: stretch;
-    // flex: 0 0 280px;
-    // width: 280px;
     justify-content: space-between;
-    // align-items: space-between;
-    // flex-grow: 1;
-    // height: 100vh;
-    // flex: 1 1 auto;
     min-height: 100vh;
-    // align-content: stretch;
-    // min-height: 100%;
-    padding: 34px 0px 40px 26px;
+    padding: 45px 0px 40px 26px;
     background-image: -webkit-linear-gradient($side-bar-gradient);
     background-image: -moz-linear-gradient($side-bar-gradient);
     background-image: -o-linear-gradient( $side-bar-gradient);
     background-image: $side-bar-gradient;
-    // transition: transform .4s linear;
-    position: fixed;
-    left:0;
-  width: 280px;
-  top:0;
-  bottom:0;
-    
-  -webkit-transition: left 1s; /* Safari */
-  transition: left 1s;
+    -webkit-transition: left 1s; /* Safari */
+    transition: left 1s;
+      @include _1500 {
+        width: 200px;
+       }
+    //   @include _300 {
+    //     width: 65px;
+    //     height: 36px;
+    //    }
+
     &__logo-link {
         display: inline-block;
-        margin-bottom: 119px;
+        margin-bottom: 130px;
     }
     &__nav {
-        // margin-bottom: 100vh;
         margin-bottom: auto;
     }
     &__item {
         font-size: 22px;
         line-height: 26.8px;
-        padding: 26px 0px 22px 25px;
+        padding: 26px 0px 23px 23px;
         border-radius: 15px 0 0 15px;
         // &:not(:last-child) {
         //     margin-bottom: 48px;
@@ -64,15 +60,17 @@
     }
     &__socials-list {
         display: flex;
+        // align-self: center;
         align-items: center;
+        margin-left: 17px;
         // align-self: flex-end;
         // margin-top: auto;
     }
     &__socials-item {
         width: 40px;
-        height: 40px;
+        height: 34px;
         &:not(:last-child) {
-            margin-right: 41px;
+            margin-right: 35px;
         }
         &:nth-child(1) > .cabinet-sidebar__socials-link {
             background-image: url('../img/Telegram.svg');
@@ -89,13 +87,14 @@
         width: 100%;
         height: 100%;
         background-repeat: no-repeat;
-        background-size: 100%;
+        // background-size: 100%;
         background-position: 100%;
     }
 }
 .logo {
-    width: 215px;
-    height: 40px;
+    width: 195px;
+    height: 30px;
+    margin-left: 14px;
     // @include _376 {
     //     width: 65px;
     //     height: 36px;

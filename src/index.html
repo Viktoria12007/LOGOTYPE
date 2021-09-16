@@ -153,7 +153,7 @@
              <button aria-label="Бургер меню" id="burger" class="burger-button">
               <svg  width="40" height="36" viewBox="0 0 40 36" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <rect width="40" height="2" fill="#000000"/>
-                <rect y="15" width="40" height="2" fill="#000000"/>
+                <rect y="16" width="40" height="2" fill="#000000"/>
                 <rect y="30" width="40" height="2" fill="#000000"/>
                 </svg>
              </button>
@@ -220,8 +220,8 @@
                   <input type="text" class="profile-label__input input" name="city" placeholder="Выберите ваш город">
                 </label>
               </fieldset>
-              <button class="button profile-form__button" type="submit" style="display: none;">Сохранить изменения</button>
-              <button class="button profile-form__button profile-form__button-sucsessfull" type="submit">
+              <button class="button profile-form__button" type="submit">Сохранить изменения</button>
+              <button class="button profile-form__button profile-form__button-sucsessfull" type="submit" style="display: none;">
                 <svg class="profile-form__button-sucsessfull_icon" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <g clip-path="url(#clip0)">
                   <path d="M17.9393 2.59559L17.9393 2.59561L6.31222 14.2228L2.06064 9.97121C2.06063 9.9712 2.06063 9.9712 2.06062 9.97119C1.4748 9.38533 0.525123 9.38548 -0.0606689 9.97116L-0.0606867 9.97117C-0.646529 10.557 -0.646504 11.5067 -0.0607042 12.0925L-0.0607016 12.0925L5.25151 17.4046C5.25153 17.4046 5.25155 17.4046 5.25156 17.4047C5.83735 17.9906 6.78753 17.99 7.37289 17.4047L20.0606 4.71695C20.6465 4.13114 20.6464 3.1814 20.0606 2.59562C19.4748 2.00977 18.5251 2.00982 17.9393 2.59559Z" fill="white" stroke="white"/>
@@ -251,16 +251,17 @@
                   <img class="order-head__img" src="./img/order-buket.png" alt="Ваш букет">
                 </div>
                 <div class="order-head__key">
-                  <div class="order-head__number">Заказ №1</div>
+                  <div class="order-head__number">Название букета</div>
                   <div class="order-head__amount-title">Количество: </div>
                 </div>
                 <div class="order-head__value">
-                  <div class="order-head__price">8250 ₽</div>
-                  <div class="order-head__amount">2 шт</div>
+                  <div class="order-head__price">2000 ₽</div>
+                  <div class="order-head__amount">1 шт</div>
                 </div>
                  </div>
                  <div class="order-head__action">
-                  <div class="order-head__action-more">Подробнее</div> 
+                  <div class="order-head__action-more order-head__action-more_more">Подробнее</div>
+                  <div class="order-head__action-more order-head__action-more_roll">Свернуть</div> 
                    <div class="order-head__action-icon">
                      <svg width="18" height="10" viewBox="0 0 18 10" fill="none" xmlns="http://www.w3.org/2000/svg">
                      <path d="M9.49395 9.79511L17.7964 1.45279C18.0683 1.17946 18.0679 0.736943 17.795 0.464074C17.5223 0.191417 17.0804 0.192122 16.8083 0.465484L8.99997 8.31125L1.19165 0.465202C0.919544 0.191875 0.477949 0.191171 0.205137 0.463793C0.0683804 0.600579 0 0.779779 0 0.958979C0 1.13772 0.0679226 1.31622 0.20373 1.45276L8.50602 9.79511C8.63673 9.92676 8.81462 10.0006 8.99997 10.0006C9.18531 10.0006 9.36299 9.92655 9.49395 9.79511Z" fill="black"/>
@@ -283,8 +284,8 @@
                 </div>
                         </div>
                 <div class="order-body__value">
-                  <div class="order-head__price">8250 ₽</div>
-                  <div class="order-head__amount">2 шт</div>
+                  <div class="order-head__price">2000 ₽</div>
+                  <div class="order-head__amount">1 шт</div>
                 </div>
                  </div>
                 </li>
@@ -295,13 +296,13 @@
                   <img class="order-head__img" src="./img/order-buket.png" alt="Ваш букет">
                 </div>
                 <div class="order-body__key">
-                  <div class="order-head__number">Название букета название букета</div>
+                  <div class="order-head__number">Название букета</div>
                   <div class="order-head__amount-title">Количество: </div>
                 </div>
                 </div>
                 <div class="order-body__value">
-                  <div class="order-head__price">8250 ₽</div>
-                  <div class="order-head__amount">2 шт</div>
+                  <div class="order-head__price">7000 ₽</div>
+                  <div class="order-head__amount">1 шт</div>
                 </div>
                  </div>
                 </li>
@@ -322,7 +323,7 @@
                 <div class="order-body__block-wrapper order-body__delivery main-block">
                    <div class="order-body__delivery-title">Прогноз доставки</div>
                    <div class="order-body__delivery-date">25.08.2021</div>
-                   <div class="order-body__delivery-time">19:45 - 20:30</div>
+                   <div class="order-body__delivery-time">19:45<div class="order-body__delivery-time_breake">-</div>20:30</div>
                    <div class="order-body__delivery-from-to">
                      <div class="order-body__delivery-from">от</div>
                      <div class="order-body__delivery-to">до</div>
@@ -359,7 +360,7 @@
                   <img class="order-head__img" src="./img/order-buket.png" alt="Ваш букет">
                 </div>
                 <div class="order-head__key">
-                  <div class="order-head__number">Заказ №2</div>
+                  <div class="order-head__number">Название букета</div>
                   <div class="order-head__amount-title">Количество: </div>
                 </div>
                 <div class="order-head__value">
@@ -398,12 +399,12 @@
           <div class="my-events main-block tabs" id="my-events">
             <div class="my-events__wrapper">
             <h2 class="title my-events__title">У вас пока не добавлены события</h2>
-            <div class="my-events__box main-block" >
+            <div class="my-events__box main-block" style="display: none">
               <p class="my-events__text">Добавьте важные даты и будьте уверены что мы отправим вам SMS уведомление или E-mail в день вашего события с промокодом 
                 на скидку до 20% и другие бонусы </p>
                 <button class="button my-events__add-button">Добавить событие</button>
             </div>
-            <div class="my-events__box_card main-block" style="display: none" >
+            <div class="my-events__box_card main-block">
               <p class="my-events__text_card">Добавьте важные даты и будьте уверены что мы отправим вам SMS уведомление или E-mail в день вашего события с промокодом 
                 на скидку до 20% и другие бонусы </p>
                 <div class="my-events__card">
@@ -439,6 +440,36 @@
                     </button>
                     </div>
                 </div>
+                <!-- <div class="my-events__card">
+                  <div class="my-events__card-description">
+                    <div class="my-events__card-wrapper">
+                    <div class="my-events__card-key">Укажите повод</div>
+                    <div class="my-events__card-value">День Рождения</div>
+                  </div>
+                  <div class="my-events__card-wrapper">
+                    <div class="my-events__card-key">Кому</div>
+                    <div class="my-events__card-value">Дочка Ева</div>
+                  </div>
+                  <div class="my-events__card-wrapper">
+                    <div class="my-events__card-key">Дата события</div>
+                    <div class="my-events__card-value">22.11.1998</div>
+                  </div>
+                </div>
+                <div class="my-events__card-action">
+                    <button class="my-events__card-button my-events__card-action_edit">
+                      <svg width="31" height="31" viewBox="0 0 31 31" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M26.6854 2.12828C25.1229 0.568569 22.5927 0.568569 21.0303 2.12828L19.6147 3.55163L4.54575 18.6125L4.51373 18.6448C4.50597 18.6526 4.50597 18.6608 4.49771 18.6608C4.4817 18.6848 4.45768 18.7086 4.44192 18.7326C4.44192 18.7406 4.43366 18.7406 4.43366 18.7486C4.41765 18.7727 4.4099 18.7887 4.39363 18.8127C4.38588 18.8207 4.38588 18.8285 4.37787 18.8367C4.36986 18.8607 4.36186 18.8767 4.3536 18.9008C4.3536 18.9085 4.34585 18.9085 4.34585 18.9168L1.00251 28.9706C0.904432 29.2568 0.97899 29.5738 1.19441 29.7862C1.34577 29.9356 1.54993 30.0191 1.76235 30.0184C1.84916 30.0169 1.93523 30.0034 2.01829 29.9783L12.0643 26.627C12.0721 26.627 12.0721 26.627 12.0803 26.6192C12.1056 26.6117 12.1299 26.601 12.1521 26.587C12.1584 26.5862 12.1639 26.5835 12.1684 26.5792C12.1922 26.5632 12.2242 26.5469 12.2482 26.5309C12.272 26.5152 12.2963 26.4911 12.3203 26.4751C12.3283 26.4669 12.336 26.4669 12.336 26.4591C12.3443 26.4511 12.3603 26.4434 12.3683 26.4271L28.8528 9.94258C30.4125 8.38012 30.4125 5.84991 28.8528 4.2877L26.6854 2.12828ZM11.8084 24.7473L6.24156 19.1807L20.1746 5.24769L25.7414 10.8143L11.8084 24.7473ZM5.45746 20.6604L10.3207 25.5234L3.01807 27.9548L5.45746 20.6604ZM27.7252 8.82271L26.8773 9.67862L21.3102 4.11156L22.1664 3.2559C23.1029 2.32018 24.6208 2.32018 25.5575 3.2559L27.7329 5.43133C28.6624 6.37206 28.6589 7.88649 27.7252 8.82271Z" fill="#5B5F60"/>
+                      </svg>
+                    </button>
+                    <button class="my-events__card-button my-events__card-action_delete">
+                      <svg width="33" height="33" viewBox="0 0 33 33" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M16.5 33C7.40154 33 0 25.5985 0 16.5C0 7.40154 7.40154 0 16.5 0C25.5985 0 33 7.40154 33 16.5C33 25.5985 25.5985 33 16.5 33ZM16.5 2.0625C8.53878 2.0625 2.0625 8.53878 2.0625 16.5C2.0625 24.4612 8.53878 30.9375 16.5 30.9375C24.4612 30.9375 30.9375 24.4612 30.9375 16.5C30.9375 8.53878 24.4612 2.0625 16.5 2.0625Z" fill="#5B5F60"/>
+                        <path d="M11.3962 22.6351C11.1321 22.6351 10.868 22.5349 10.6674 22.3327C10.2645 21.9299 10.2645 21.2768 10.6674 20.874L20.8766 10.6644C21.2797 10.2616 21.9328 10.2616 22.3356 10.6644C22.7385 11.0673 22.7385 11.7204 22.3356 12.1234L12.1261 22.3327C11.9227 22.5349 11.6588 22.6351 11.3962 22.6351Z" fill="#5B5F60"/>
+                        <path d="M21.6035 22.6352C21.3396 22.6352 21.0755 22.535 20.8749 22.3329L10.6656 12.1248C10.2625 11.722 10.2625 11.0689 10.6656 10.6661C11.0684 10.263 11.7215 10.263 12.1243 10.6661L22.3336 20.8754C22.7367 21.2782 22.7367 21.9313 22.3336 22.3341C22.1317 22.535 21.8676 22.6352 21.6035 22.6352Z" fill="#5B5F60"/>
+                        </svg>
+                    </button>
+                    </div>
+                </div> -->
                 <button class="button my-events__add-button my-events__add-button_card">Добавить событие</button>
             </div>
             </div>
@@ -476,8 +507,8 @@
       <h3 class="modal-window__bonuses-title">История начислений</h3>
       <ul class="modal-window__bonuses-list">
         <li class="modal-window__bonuses-item">
-          <div class="modal-window__bonuses-left modal-window__bonuses-subtitle_left">У вас</div>
-          <div class="modal-window__bonuses-right modal-window__bonuses-subtitle_right">500 бонусов</div>
+          <div class="modal-window__bonuses-subtitle_left">У вас</div>
+          <div class="modal-window__bonuses-subtitle_right">500 бонусов</div>
         </li>
         <li class="modal-window__bonuses-item">
           <div class="modal-window__bonuses-left">27.08.2021</div>
