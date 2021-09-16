@@ -1,13 +1,16 @@
 .cabinet-sidebar {
     display: flex;
     flex-direction: column;
-    flex: 0 0 280px;
-    width: 280px;
+    // align-content: stretch;
+    // flex: 0 0 280px;
+    // width: 280px;
     justify-content: space-between;
     // align-items: space-between;
     // flex-grow: 1;
     // height: 100vh;
+    // flex: 1 1 auto;
     min-height: 100vh;
+    // align-content: stretch;
     // min-height: 100%;
     padding: 34px 0px 40px 26px;
     background-image: -webkit-linear-gradient($side-bar-gradient);
@@ -15,11 +18,20 @@
     background-image: -o-linear-gradient( $side-bar-gradient);
     background-image: $side-bar-gradient;
     // transition: transform .4s linear;
+    position: fixed;
+    left:0;
+  width: 280px;
+  top:0;
+  bottom:0;
+    
+  -webkit-transition: left 1s; /* Safari */
+  transition: left 1s;
     &__logo-link {
         display: inline-block;
         margin-bottom: 119px;
     }
     &__nav {
+        // margin-bottom: 100vh;
         margin-bottom: auto;
     }
     &__item {

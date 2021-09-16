@@ -1,8 +1,15 @@
 .cabinet-main {
-    flex: 1;
+    // flex: 1;
     display: flex;
     flex-direction: column;
+    min-height: 960px;
     // transition: transform .4s linear;
+    position:absolute;
+    left:280px;
+    right:0;
+    
+  -webkit-transition: left 1s; /* Safari */
+  transition: left 1s;
     &__header {
         display: flex;
         align-items: center;

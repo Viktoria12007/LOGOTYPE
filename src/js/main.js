@@ -1,5 +1,7 @@
 import '../../node_modules/focus-visible/dist/focus-visible';
 import '../../node_modules/just-validate/dist/js/just-validate';
+// import '../assets/js/jquery-2.0.3.min.js';
+// import '../assets/js/jquery.uploadPreview.min.js';
 import Inputmask from "inputmask";
 // import Swiper from 'swiper/bundle';
 let $ = require("jquery");
@@ -44,6 +46,44 @@ window.addEventListener('DOMContentLoaded', function() {
 //       prevEl: '.product-button-prev',
 //     },
 //   })
+   
+// $(document).ready(function() {
+//   $.uploadPreview({
+//     input_field: "#image-upload",   // Default: .image-upload
+//     preview_box: "#image-preview",  // Default: .image-preview
+//     label_field: "#image-label",    // Default: .image-label
+//     label_default: "Choose File",   // Default: Choose File
+//     label_selected: "Change File",  // Default: Change File
+//     no_label: false,                // Default: false
+//     success_callback: null          // Default: null
+//   });
+// });
+
+
+function handleFileSelect(evt) {
+  const file = evt.target.files; // FileList object
+  const f = file[0];
+  // Only process image files.
+  // if (!f.type.match('image.*')) {
+  //     alert("Image only please....");
+  // }
+  const reader = new FileReader();
+  // Closure to capture the file information.
+  reader.onload = (function(theFile) {
+      return function(e) {
+          // Render thumbnail.
+          let output = document.getElementById('output');
+          // var span = document.createElement('span');
+          // span.innerHTML = ['<img class="profile-label__img" alt="Ваш аватар" title="', escape(theFile.name), '" src="', e.target.result, '" />'].join('');
+          output.innerHTML = ['<img class="profile-label__img" alt="Ваш аватар" title="', escape(theFile.name), '" src="', e.target.result, '" />'].join('');
+          // document.getElementById('output').insertBefore(span, null);
+      };
+  })(f);
+  // Read in the image file as a data URL.
+  reader.readAsDataURL(f);
+}
+document.getElementById('file').addEventListener('change', handleFileSelect, false);
+
   
   $( function() {
     $( "#orders-accordion" ).accordion({
@@ -269,35 +309,40 @@ eventEditButtons.forEach((item) => {
 
 const cabinetBurgerButton = document.querySelector('.burger-button');
 const cabinetSidebar = document.querySelector('.cabinet-sidebar');
+const mainWrap = document.querySelector('.container_cabinet');
+
+  cabinetBurgerButton.addEventListener('click', () => {
+    mainWrap.classList.toggle('collapsed');
+  })
   
- cabinetBurgerButton.addEventListener('click', function() {
-  //  if (!cabinetSidebar.classList.contains('is-show') && !cabinetSidebar.classList.contains('is-'))
+//  cabinetBurgerButton.addEventListener('click', function() {
+//   //  if (!cabinetSidebar.classList.contains('is-show') && !cabinetSidebar.classList.contains('is-'))
      
-     if (cabinetSidebar.classList.contains('is-hide')) {
-       cabinetSidebar.classList.remove('is-hide');
-       cabinetSidebar.classList.toggle('is-show');
-     }
-     else {
-      cabinetSidebar.classList.toggle('is-hide');
-      cabinetSidebar.classList.remove('is-show');
-     }
-    //  cabinetSidebar.classList.toggle('is-show');
-  // document.querySelector('.cabinet-main').classList.toggle('is-scale');
-  })
-  cabinetSidebar.addEventListener('animationend', () => {
-    if (cabinetSidebar.classList.contains('visually-hidden')) {
-      // cabinetSidebar.classList.remove('is-decrease');
-      cabinetSidebar.classList.remove('visually-hidden');
-      // cabinetSidebar.classList.toggle('is-increase');
-    }
-    else {
-    //  cabinetSidebar.classList.toggle('is-decrease');
-     cabinetSidebar.classList.toggle('visually-hidden');
-    //  cabinetSidebar.classList.remove('is-increase');
-    }
-    // cabinetSidebar.classList.toggle('is-increase');
-    // cabinetSidebar.classList.toggle('is-decrease');
-  })
+//      if (cabinetSidebar.classList.contains('is-hide')) {
+//        cabinetSidebar.classList.remove('is-hide');
+//        cabinetSidebar.classList.toggle('is-show');
+//      }
+//      else {
+//       cabinetSidebar.classList.toggle('is-hide');
+//       cabinetSidebar.classList.remove('is-show');
+//      }
+//     //  cabinetSidebar.classList.toggle('is-show');
+//   // document.querySelector('.cabinet-main').classList.toggle('is-scale');
+//   })
+//   cabinetSidebar.addEventListener('animationend', () => {
+//     if (cabinetSidebar.classList.contains('visually-hidden')) {
+//       // cabinetSidebar.classList.remove('is-decrease');
+//       cabinetSidebar.classList.remove('visually-hidden');
+//       // cabinetSidebar.classList.toggle('is-increase');
+//     }
+//     else {
+//     //  cabinetSidebar.classList.toggle('is-decrease');
+//      cabinetSidebar.classList.toggle('visually-hidden');
+//     //  cabinetSidebar.classList.remove('is-increase');
+//     }
+//     // cabinetSidebar.classList.toggle('is-increase');
+//     // cabinetSidebar.classList.toggle('is-decrease');
+//   })
  
   // document.querySelector('#close').addEventListener('click', function() {
   // document.querySelector('#menu').classList.remove('is-active')

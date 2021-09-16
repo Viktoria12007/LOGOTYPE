@@ -164,10 +164,10 @@
              <form class="profile-form" action="https://jsonplaceholder.typicode.com/posts" autocomplete="on" method="POST">
                <fieldset class="profile-form__group profile-form__left-column">
                  <label class="profile-label profile-label_file">
-                <div class="profile-label__img-wrapper">
+                <div class="profile-label__img-wrapper" id="output">
                   <img class="profile-label__img" src="./img/avatar.png" alt="Ваш аватар">
                 </div>
-                <input class="profile-label__input_file" type="file" name="file[]">
+                <input class="profile-label__input_file" type="file" name="file[]" id="file">
                 <div class="profile-label__file-icon">
                   <svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <g clip-path="url(#clip0)">
@@ -220,7 +220,19 @@
                   <input type="text" class="profile-label__input input" name="city" placeholder="Выберите ваш город">
                 </label>
               </fieldset>
-              <button class="button profile-form__button" type="submit">Сохранить изменения</button>
+              <button class="button profile-form__button" type="submit" style="display: none;">Сохранить изменения</button>
+              <button class="button profile-form__button profile-form__button-sucsessfull" type="submit">
+                <svg class="profile-form__button-sucsessfull_icon" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <g clip-path="url(#clip0)">
+                  <path d="M17.9393 2.59559L17.9393 2.59561L6.31222 14.2228L2.06064 9.97121C2.06063 9.9712 2.06063 9.9712 2.06062 9.97119C1.4748 9.38533 0.525123 9.38548 -0.0606689 9.97116L-0.0606867 9.97117C-0.646529 10.557 -0.646504 11.5067 -0.0607042 12.0925L-0.0607016 12.0925L5.25151 17.4046C5.25153 17.4046 5.25155 17.4046 5.25156 17.4047C5.83735 17.9906 6.78753 17.99 7.37289 17.4047L20.0606 4.71695C20.6465 4.13114 20.6464 3.1814 20.0606 2.59562C19.4748 2.00977 18.5251 2.00982 17.9393 2.59559Z" fill="white" stroke="white"/>
+                  </g>
+                  <defs>
+                  <clipPath>
+                  <rect width="20" height="20" fill="white"/>
+                  </clipPath>
+                  </defs>
+                  </svg>                  
+                Изменения сохранены</button>
              </form>
            </div>
            <div class="my-orders main-block tabs" id="my-orders">

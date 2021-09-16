@@ -5,9 +5,13 @@
   margin: 0;
   box-sizing: border-box;
 }
+html {
+  height: 100%;
+}
 body {
   min-width: 291px;
   // min-height: 100vh;
+  height: 100%;
   font-family: 'Montserrat', sans-serif;
   font-weight: 400;
   font-style: normal;
@@ -79,6 +83,12 @@ fieldset {
   margin: 0 auto;
   &_cabinet {
     display: flex;
+    // align-content: stretch;
+    // min-height: 100vh; 
+    position: relative;
+    // align-items: stretch !important;
+    // font-size: 0;
+    min-height: 1052px;
   }
 }
 .main-block {
@@ -212,6 +222,23 @@ fieldset {
   line-height: 19.5px;
 }
 
+.collapsed .cabinet-sidebar {
+  left:-280px;
+}
+
+.collapsed .cabinet-main {
+  left:0;
+}
+
+
+
+
+
+
+
+
+
+
 .content-column {
   display: flex;
 }
@@ -241,3 +268,4 @@ fieldset {
     padding: 8px 16px 0px 16px;
    }
 }
+

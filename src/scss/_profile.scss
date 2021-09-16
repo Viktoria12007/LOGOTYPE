@@ -37,7 +37,13 @@
         top: 94.5%;
         right: 5.5%;
         // left: 64.5%;
-        padding: 24px 76px; 
+        padding: 24px 76px;
+        &-sucsessfull {
+            padding: 24px 57px 24px 49px;
+            &_icon {
+                margin-left: 19px;
+            }
+        } 
     }
 }
 .profile-label {
