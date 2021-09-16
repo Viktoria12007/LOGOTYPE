@@ -274,6 +274,10 @@
     border-radius: 100%;
     background-color: $main-content-background-color;
     box-shadow: -10px -10px 10px 0px rgba(175, 146, 146, 0.15), 10px 10px 20px 0px rgba(177, 164, 212, .35);
+    background-image: url(../img/left.svg);
+    background-repeat: no-repeat;
+    background-size: auto auto;
+    background-position: center center;
     margin-right: 200px;
     margin-bottom: 10px;
 }
@@ -287,5 +291,9 @@
     border-radius: 100%;
     background-color: $main-content-background-color;
    box-shadow: -10px -10px 10px 0px rgba(175, 146, 146, 0.15), 10px 10px 20px 0px rgba(177, 164, 212, .35);
+   background-image: url(../img/right.svg);
+   background-repeat: no-repeat;
+   background-size: auto auto;
+   background-position: center center;
    margin-bottom: 10px; 
 }
