@@ -32,6 +32,9 @@
 &__item {
     &:not(:last-child) {
     margin-bottom: 52px;
+    @include _1500 {
+        margin-bottom: 42px;
+    }
     }
 }
 
@@ -189,17 +192,20 @@
 .order-body {
     padding: 70px 0px;
     display: flex;
-    // justify-content: space-between;
+    justify-content: space-between;
     align-items: flex-start;
+    // align-items: center;
     flex-wrap: wrap;
-    // &:nth-child(1) {
-    //     margin-right: 20px;
-    // }
+    @include _1500 {
+        padding: 60px 0px;
+    }
+    
     // &__wrapper {
     //   display: flex;
     //   justify-content: space-between;
     //   align-items: flex-start;
     // }
+   
     &__img-key-wrapper {
         display: flex;
         align-items: flex-start;
@@ -231,6 +237,10 @@
         padding: 34px 40px 47px 41.5px;
         &-key {
             margin-top: 4px;
+            @include _1500 {
+                font-size: 20px;
+                line-height: 24px;
+            }
             &_delivery {
               margin-bottom: 10.5px;
             }
@@ -241,6 +251,9 @@
                 font-weight: 600;
             }
         }
+        // &-value {
+            
+        // }
         &-value_price {
             font-size: 30px;
             font-weight: 700;
@@ -248,6 +261,10 @@
             letter-spacing: 0.05em;
             text-align: right;
             color: $title-color;
+            @include _1500 {
+                font-size: 24px;
+                line-height: 30px;
+            }
             &:not(:last-child) {
                 margin-bottom: 11px;
             }
@@ -257,20 +274,30 @@
         }
     }
     &__block-wrapper {
-        flex: 1 1 auto;
+        // flex: 1 1 auto;
         // width: 50%;
         width: 613px;
         // margin-right: 30px;
         margin-bottom: 70px;
+        @include _1024 {
+            flex: 1 1 auto;
+            margin-bottom: 60px;
+        }
     }
     &__main-info {
-        margin-right: 94px;
+        // margin-right: 94px;
+        // align-self: center;
+        justify-self: center;
+        margin-right: 20px;
+            @include _1024 {
+                margin-right: 0;
+            }
     }
     &__delivery {
         display: flex;
         flex-direction: column;
         align-items: center;
-        padding: 57px 32px 32px 32px;
+        padding: 57px 32px 57px 32px;
         background: linear-gradient(128.73deg, #fff7fc 0%, #ffdeee 49.71%, #e1bef6 100%);
         &-title {
             font-size: 30px;
@@ -279,6 +306,10 @@
             text-align: center;
             color: $title-color;
             margin-bottom: 26px;
+            @include _1500 {
+                font-size: 24px;
+                line-height: 30px;
+            }
         }
         &-date {
             // width: 445px;
@@ -287,6 +318,10 @@
             border-radius: 55px;
             background-color: $main-content-background-color;
             margin-bottom: 54px;
+            @include _1500 {
+              font-size: 20px;
+              line-height: 30px;
+            }
         }
         &-time {
             display: flex;
@@ -297,6 +332,10 @@
             line-height: 78px;
             margin-left: 16px;
             margin-bottom: 3px;
+            @include _1500 {
+                font-size: 54px;
+                line-height: 68px;
+            }
             &_breake {
                 margin-left: 30px;
                 margin-right: 30px;
@@ -310,6 +349,10 @@
             line-height: 29px;
             margin-left: 10px;
             margin-bottom: 28.5px;
+            @include _1500 {
+                font-size: 20px;
+                line-height: 24px;
+            }
         }
         &-from {
             margin-right: 219px;
@@ -332,6 +375,9 @@
         // align-self: center;
         margin: 0 auto;
         padding: 83px 115px 70px 113px;
+        @include _1500 {
+            padding: 73px 95px 60px 95px;
+        }
        &-title {
         text-align: center;
         margin-bottom: 17px;
@@ -347,6 +393,9 @@
         display: flex;
         flex-direction: column;
         align-items: center;
+        @include _1500 {
+            margin-bottom: 20px;
+        }
         &:not(:last-child) {
             // margin-right: 5.2vw;
             margin-right: 85px;
@@ -416,6 +465,10 @@
            line-height: 29px;
            text-align: center;
         //    margin-left: 5px;
+        @include _1500 {
+            font-size: 20px;
+            line-height: 24px;
+        }
            &_delivered {
             font-weight: 700;
             line-height: 38px;
