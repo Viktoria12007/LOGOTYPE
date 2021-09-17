@@ -56,13 +56,13 @@ fieldset {
   cursor: pointer;
   background-color: $active-color;
   box-shadow: 10px 10px 20px 0px rgba(177, 164, 212, .35);
-  transition: background-color .4s ease-in-out;
-  // &:hover {
-  //   background-color: #2e4055;
-  // }
-  // &:active {
-  //   background-color: #3b536d;
-  // }
+  transition: box-shadow .4s ease-in-out;
+  &:hover {
+    box-shadow: none;
+  }
+  &:active {
+    box-shadow: none;
+  }
 }
 .input {
   font-family: inherit;
@@ -79,6 +79,9 @@ fieldset {
     display: flex;
     position: relative;
     min-height: 1052px;
+    @include _1500 {
+      min-height: auto;
+    }
   }
 }
 .main-block {
@@ -162,7 +165,7 @@ fieldset {
 .collapsed .cabinet-sidebar {
   left:-280px;
   @include _1500 {
-        width: 200px;
+        left: -240px;
        }
 }
 .collapsed .cabinet-main {

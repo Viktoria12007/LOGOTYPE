@@ -7,6 +7,9 @@
     right:0;
     -webkit-transition: left 1s; /* Safari */
     transition: left 1s;
+    @include _1500 {
+        left: 240px;
+    }
     &__header {
         display: flex;
         align-items: center;
@@ -14,6 +17,9 @@
         padding: 20px 38px 20px 38px;
         background-color: $header-background-color;
         box-shadow: 30px 0px 40px 0px rgba(222, 227, 236, 1);
+        @include _1500 {
+            padding: 20px 28px 20px 28px;
+        }
     }
 }
 .owner-data {
@@ -26,6 +32,9 @@
         overflow: hidden;
         border-radius: 100%;
         margin-right: 20px;
+        @include _1500 {
+            margin-right: 10px;
+        }
      }
     &__text-wrapper {
         font-weight: 600;
@@ -33,6 +42,10 @@
         line-height: 22px;
         color: $title-color;
         margin-top: 7px;
+        @include _1500 {
+            font-size: 16px;
+            line-height: 20px;
+        }
     }
     &__name {
         margin-bottom: 6px;
@@ -42,12 +55,20 @@
     display: flex;
     align-items: center;
     margin-right: 89px;
+    @include _1500 {
+        margin-right: 35px;
+    }
     &__tel {
         display: inline-block;
         font-size: 21px;
         line-height: 25.6px;
         color: $black-color;
         margin-right: 92px;
+        @include _1500 {
+            font-size: 18px;
+            line-height: 21px;
+            margin-right: 30px;
+        }
     }
     &__list {
         display: flex;
@@ -57,6 +78,9 @@
         position: relative;
         &:not(:last-child) {
         margin-right: 34px;
+        @include _1500 {
+            margin-right: 10px;
+        }
         }
     }
     &__link {

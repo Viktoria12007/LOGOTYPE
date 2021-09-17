@@ -4,6 +4,9 @@
     // flex-direction: column;
     // justify-content: center;
     padding: 64px 76px 70px 76px;
+    @include _1500 {
+        padding: 54px 56px 60px 56px;
+    }
 &__title {
     text-align: center;
     margin-bottom: 33px;
@@ -19,6 +22,9 @@
     align-items: center;
     // justify-content: center;
     padding: 41px 30px 54px 30px;
+    @include _1500 {
+        padding: 31px 20px 44px 20px;
+    }
 }
 &__add-order {
     padding: 24px 115px;
@@ -37,6 +43,9 @@
     flex-wrap: wrap;
     cursor: pointer;
     padding: 48px 58px 51px 39.6px;
+    @include _1500 {
+        padding: 38px 38px 41px 19.6px;
+    }
     &[aria-selected="true"] * .order-head__action-icon > svg {
       transform: rotate(180deg);
     }
@@ -62,6 +71,11 @@
         // border: 2px solid $active-color;
         // box-shadow: 0 0 0 2px $active-color,
         margin-right: 34px;
+        @include _1500 {
+            min-width: 73px;
+            height: 73px;
+            margin-right: 20px;
+        }
      }
      &__img {
         position: absolute;
@@ -83,6 +97,10 @@
         line-height: 37px;
         color: $title-color;
         margin-bottom: 7.8px;
+        @include _1500 {
+            font-size: 20px;
+            line-height: 24px;
+        }
      }
      &__price {
         white-space: nowrap;
@@ -93,11 +111,19 @@
         color: $title-color;
         text-align: right;
         margin-bottom: 7.8px;
+        @include _1500 {
+            font-size: 20px;
+            line-height: 24px;
+        }
      }
      &__amount-title {
         font-size: 24px;
         font-weight: 400;
         line-height: 38px;
+        @include _1500 {
+            font-size: 20px;
+            line-height: 24px;
+        }
      }
      &__amount {
         font-size: 24px;
@@ -105,13 +131,24 @@
         line-height: 38px;
         letter-spacing: 0.05em;
         text-align: right;
+        @include _1500 {
+            font-size: 20px;
+            line-height: 24px;
+        }
      }
      &__key {
          margin-right: 140px;
+         @include _1500 {
+             margin-right: 20px;
+         }
      }
      &__action {
          display: flex;
          align-items: center;
+         @include _1500 {
+             flex-direction: column;
+             align-items: flex-end;
+         }
      }
      &__action-more {
         font-size: 24px;
@@ -119,6 +156,11 @@
         line-height: 38px;
         color: $active-color;
         margin-right: 27px;
+        @include _1500 {
+            font-size: 16px;
+            line-height: 20px;
+            margin-right: 0;
+        }
         &_roll {
             display: none;
         }
@@ -134,6 +176,10 @@
         border: 1px solid;
         border-image-source: linear-gradient(119deg, #FFFFFF 32.05%, rgba(212, 215, 219, 0.16) 67.71%);
         box-shadow: -10px -10px 10px 0px rgba(255, 255, 255, .15), 10px 10px 20px 0px rgba(177, 164, 212, .35);
+        @include _1500 {
+            width: 58px;
+            height: 58px;
+        }
         & > svg {
             margin-top: 4px;
         }

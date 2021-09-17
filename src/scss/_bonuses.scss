@@ -4,6 +4,9 @@
     // flex-direction: column;
     // justify-content: center;
     // align-items: center;
+    @include _1500 {
+        padding: 54px 62px 91px 50px;
+    }
     &__title {
         text-align: center;
         margin-bottom: 33px;
@@ -11,20 +14,54 @@
     &__item {
         position: relative;
         padding: 57px 300px 87px 71px;
+        @include _1500 {
+            padding: 47px 150px 77px 51px;
+        }
         &:not(:last-child) {
             margin-bottom: 84px;
+            @include _1500 {
+              margin-bottom: 134px;
+            }
         }
-        &:nth-child(1) {
+        // &:nth-child(1) {
+        //     background-image: url(../img/gift.png);
+        //     background-repeat: no-repeat;
+        //     background-size: auto auto;
+        //     // background-position: 95% 50%;
+        //     background-position: 100% -40%;
+        // }
+        // &:nth-child(2) {
+        //     background-image: url(../img/watch.png);
+        //     background-repeat: no-repeat;
+        //     background-size: auto auto;
+        //     background-position: 96.5% 50%;
+        // }
+    }
+    &__icon {
+        position: absolute;
+        background-repeat: no-repeat;
+        background-size: auto auto;
+        &_1 {
+            width: 150px;
+            height: 150px;
+            top: 22%;
+            left: 84%;
             background-image: url(../img/gift.png);
-            background-repeat: no-repeat;
-            background-size: auto auto;
-            background-position: 95% 50%;
+            @include _1500 {
+                top: -25%;
+                left: 80%;
+            }
         }
-        &:nth-child(2) {
+        &_2 {
+            width: 188px;
+            height: 188px;
+            top: 15%;
+            left: 83%;
             background-image: url(../img/watch.png);
-            background-repeat: no-repeat;
-            background-size: auto auto;
-            background-position: 96.5% 50%;
+            @include _1500 {
+                top: -25%;
+                left: 80%;
+            }
         }
     }
     &__subtitle {
@@ -46,7 +83,8 @@
         position: absolute;
         // top: 10%;
         // right: 10%;
-        bottom: -12%;
+        // bottom: -12%;
+        bottom: -32px;
         padding: 23px 84px;
         background-color: $title-color;
     }

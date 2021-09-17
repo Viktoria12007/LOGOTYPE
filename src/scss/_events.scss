@@ -1,5 +1,8 @@
 .my-events {
     padding: 64px 82px 98px 70px;
+    @include _1500 {
+        padding: 54px 62px 88px 50px;
+    }
     &__title {
         font-size: 42px;
         font-weight: 500;
@@ -13,12 +16,18 @@
         flex-direction: column;
         align-items: center;
         padding: 41px 47px 54px 47px;
+        @include _1500 {
+            padding: 31px 27px 44px 27px;
+        }
         &_card {
             // display: flex;
             // flex-direction: column;
             // align-items: center;
             position: relative;
             padding: 45px 47px 54px 47px;
+            @include _1500 {
+                padding: 31px 27px 44px 27px;
+            }
         }
     }
     &__text {
@@ -43,11 +52,11 @@
         }
     }
     &__card {
-        // align-items: stretch!important;
         display: flex;
         align-items: center;
         justify-content: space-between;
         flex-wrap: wrap;
+        
         // font-family: Montserrat;
         // font-size: 16px;
         // font-style: normal;
@@ -60,10 +69,34 @@
         border-radius: 40px;
         background-color: #fdfcff;
         box-shadow: -10px -10px 10px 0px rgba(255, 255, 255, .15), 10px 0px 20px 0px rgba(177, 164, 212, .15) inset;
+        @include _1500 {
+            display: flex;
+            flex-direction: column;
+            align-items: stretch;
+            justify-content: center;
+            // justify-content: space-between;
+            flex-wrap: wrap;
+            box-shadow: none;
+            // flex: 1;
+        }
         &-wrapper {
             position: relative;
+            @include _1500 {
+                // 
+                // justify-content: stretch;
+                // flex: 1 1 auto;
+                // max-width: 300px;
+                text-align: center;
+                padding: 20px 40px;
+                border-radius: 40px;
+                box-shadow: -10px -10px 10px 0px rgba(255, 255, 255, .15), 10px 0px 20px 0px rgba(177, 164, 212, .15) inset;
+            }
             &:not(:last-child) {
                margin-right: 140px;
+               @include _1500 {
+                   margin-bottom: 50px;
+                   margin-right: 0px;
+               }
             }
         }
         &-description {
@@ -71,6 +104,15 @@
             align-items: center;
             // justify-content: space-between;
             // width: 672px;
+            flex-wrap: nowrap;
+            @include _1500 {
+                display: flex;
+                flex-direction: column;
+                align-items: stretch;
+                justify-content: center;
+                // justify-content: space-between;
+                flex-wrap: wrap;
+            }
 
         }
         &-key {
@@ -80,10 +122,20 @@
             line-height: 20px;
             color: $form-grey-color;
             white-space: nowrap;
+            @include _1500 {
+                width: 126px;
+                top: -35px;
+               left: 42%;
+               text-align: center;
+              }
         } 
         &-value {
             line-height: 29px;
             // white-space: nowrap;
+            // @include _1500 {
+            //   font-size: 16px;
+            //   line-height: 20px;
+            // }
         }  
         &-button {
             border: none;
@@ -93,6 +145,11 @@
         &-action {
             display: flex;
             align-items: center;
+            align-self: center;
+            @include _1500 {
+                align-self: center;
+                margin-top: 20px;
+            }
             &_edit {
               margin-right: 20px;
             }
@@ -105,6 +162,9 @@
 .modal-guts__events {
     padding: 65px 40px 62px 70px;
     overflow: visible;
+    @include _1500 {
+        padding: 55px 20px 52px 50px;
+    }
 }
 .modal-window__events {
     width: 1320px;
@@ -147,6 +207,9 @@
    &__group-right {
     position: relative;
     padding-right: 210px;
+    @include _1500 {
+        padding-right: 130px;
+    }
 }
    &__flowers {
     position: absolute;
@@ -158,6 +221,9 @@
     background-repeat: no-repeat;
     background-size: auto auto;
     // background-position: 95% 50%;
+    @include _1500 {
+        left: 40%;
+    }
 }
   &__button {
     padding: 28px 108px;

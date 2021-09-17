@@ -5,6 +5,9 @@
         margin-left: 41px;
         margin-bottom: 25px;
     }
+    @include _1500 {
+        padding: 45px 64px 71px 52px;
+    }
 }
 .profile-form {
     display: flex;
@@ -26,6 +29,11 @@
         display: flex;
         flex-direction: column;
         flex-wrap: wrap;
+        & > .profile-label {
+        @include _1500 {
+          margin-bottom: 21px;
+        }
+    }
     }
     &__right-column {
         display: flex;
@@ -40,9 +48,14 @@
         white-space: nowrap;
         // top: 94.5%;
         right: 5.8%;
-        bottom: -6%;
+        // bottom: -6%;
+        bottom: -30px;
         // left: 64.5%;
         padding: 24px 76px;
+        // @include _1500 {
+        //     // right: 5%;
+        //     bottom: -3%;
+        // }
         &-sucsessfull {
             padding: 24px 57px 24px 49px;
             &_icon {
@@ -90,6 +103,9 @@
        flex-direction: column;
        align-items: center;
        position: relative;
+       @include _1500 {
+           margin-bottom: 21px;
+       }
     }
     &__row {
         font-size: 16px;

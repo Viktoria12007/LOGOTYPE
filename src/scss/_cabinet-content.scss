@@ -3,4 +3,7 @@
     // min-height: 1052px;
     padding: 89px 84px;
     background-image: $main-content-gradient;
+    @include _1500 {
+        padding: 69px 64px;
+    }
 }
