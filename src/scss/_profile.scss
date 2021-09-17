@@ -4,9 +4,19 @@
     &__title {
         margin-left: 41px;
         margin-bottom: 25px;
+        @include _1024 {
+            text-align: center;
+            margin-left: 0px;
+        }
     }
     @include _1500 {
         padding: 45px 64px 71px 52px;
+    }
+    @include _1024 {
+        display: flex;
+        flex-direction: column;
+        // align-items: center;
+        padding: 35px 54px 61px 42px;
     }
 }
 .profile-form {
@@ -14,9 +24,29 @@
     justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
+    // align-items: stretch;
+    @include _1024 {
+        // width: 1000px;
+        flex-direction: column;
+        align-items: normal;
+        // justify-content: stretch;
+        // align-items: stretch;
+    }
     &__group {
+        // flex: 1;
+        // align-items: stretch;
+        @include _1024 {
+            // flex: 1;
+            // width: 100%;
+            // align-self: stretch;
+            // flex: 0 0 auto;
+            justify-content: stretch;
+        }
         &:not(:nth-child(3)) {
             margin-right: 20px;
+            @include _1024 {
+                margin-right: 0;
+            }
         }
     }
    
@@ -33,6 +63,9 @@
         @include _1500 {
           margin-bottom: 21px;
         }
+        @include _1024 {
+            margin-bottom: 21px;
+          }
     }
     }
     &__right-column {
@@ -106,6 +139,9 @@
        @include _1500 {
            margin-bottom: 21px;
        }
+       @include _1024 {
+        margin-bottom: 21px;
+    }
     }
     &__row {
         font-size: 16px;
@@ -125,6 +161,9 @@
         font-size: 20px;
         line-height: 24.4px;
         border: 1px solid transparent;
+        @include _1024 {
+            width: 100%;
+        }
        &::placeholder {
            font-size: 20px;
            line-height: 24.4px;

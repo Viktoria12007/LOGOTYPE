@@ -3,6 +3,9 @@
     @include _1500 {
         padding: 54px 62px 88px 50px;
     }
+    @include _1024 {
+        padding: 54px 62px 88px 50px;
+    }
     &__title {
         font-size: 42px;
         font-weight: 500;
@@ -19,6 +22,9 @@
         @include _1500 {
             padding: 31px 27px 44px 27px;
         }
+        @include _1024 {
+            padding: 31px 27px 44px 27px;
+        }
         &_card {
             // display: flex;
             // flex-direction: column;
@@ -26,6 +32,9 @@
             position: relative;
             padding: 45px 47px 54px 47px;
             @include _1500 {
+                padding: 31px 27px 44px 27px;
+            }
+            @include _1024 {
                 padding: 31px 27px 44px 27px;
             }
         }
@@ -49,6 +58,9 @@
             bottom: -28px;
             left: 33.2%;
             // padding: 24px 100px;
+            @include _1024 {
+                left: 23.2%;
+            }
         }
     }
     &__card {
@@ -79,9 +91,29 @@
             box-shadow: none;
             // flex: 1;
         }
+        @include _1024 {
+            display: flex;
+            flex-direction: column;
+            align-items: stretch;
+            justify-content: center;
+            // justify-content: space-between;
+            flex-wrap: wrap;
+            box-shadow: none;
+            // flex: 1;
+        }
         &-wrapper {
             position: relative;
             @include _1500 {
+                // 
+                // justify-content: stretch;
+                // flex: 1 1 auto;
+                // max-width: 300px;
+                text-align: center;
+                padding: 20px 40px;
+                border-radius: 40px;
+                box-shadow: -10px -10px 10px 0px rgba(255, 255, 255, .15), 10px 0px 20px 0px rgba(177, 164, 212, .15) inset;
+            }
+            @include _1024 {
                 // 
                 // justify-content: stretch;
                 // flex: 1 1 auto;
@@ -97,6 +129,10 @@
                    margin-bottom: 50px;
                    margin-right: 0px;
                }
+               @include _1024 {
+                margin-bottom: 50px;
+                margin-right: 0px;
+            }
             }
         }
         &-description {
@@ -106,6 +142,14 @@
             // width: 672px;
             flex-wrap: nowrap;
             @include _1500 {
+                display: flex;
+                flex-direction: column;
+                align-items: stretch;
+                justify-content: center;
+                // justify-content: space-between;
+                flex-wrap: wrap;
+            }
+            @include _1024 {
                 display: flex;
                 flex-direction: column;
                 align-items: stretch;
@@ -128,6 +172,12 @@
                left: 42%;
                text-align: center;
               }
+            @include _1024 {
+                width: 126px;
+                top: -35px;
+               left: 40%;
+               text-align: center;
+              }
         } 
         &-value {
             line-height: 29px;
@@ -145,8 +195,12 @@
         &-action {
             display: flex;
             align-items: center;
-            align-self: center;
+            // align-self: center;
             @include _1500 {
+                align-self: center;
+                margin-top: 20px;
+            }
+            @include _1024 {
                 align-self: center;
                 margin-top: 20px;
             }
@@ -165,12 +219,20 @@
     @include _1500 {
         padding: 55px 20px 52px 50px;
     }
+    @include _1024 {
+        padding: 55px 50px 52px 50px;
+        overflow: hidden;
+    }
 }
 .modal-window__events {
     width: 1320px;
     max-width: 100%;
     height: 603px;
     max-height: 100%;
+    @include _1024 {
+        height: 680px;
+        max-height: 100%;
+    }
     
     &-title {
         text-align: center;
@@ -186,6 +248,10 @@
         align-items: flex-end;
         justify-content: space-between;
         // flex-wrap: wrap;
+        @include _1024 {
+            flex-direction: column;
+            align-items: stretch;
+        }
     }
     }
 .modal-close__events {
@@ -204,11 +270,19 @@
     //         margin-bottom: 0 !important;
     //     }
     // }
+    &__group-left {
+        margin-bottom: 20px;
+    }
    &__group-right {
     position: relative;
     padding-right: 210px;
     @include _1500 {
         padding-right: 130px;
+    }
+    @include _1024 {
+        position: static;
+        align-self: center;
+        padding-right: 0;
     }
 }
    &__flowers {
@@ -223,6 +297,9 @@
     // background-position: 95% 50%;
     @include _1500 {
         left: 40%;
+    }
+    @include _1024 {
+        display: none;
     }
 }
   &__button {
@@ -308,6 +385,9 @@
       font-weight: 400;
       line-height: 24px;
       border: 1px solid transparent;
+      @include _1024 {
+          max-width: 100%;
+      }
     &::placeholder {
       font-size: 20px;
     //   font-weight: 400;

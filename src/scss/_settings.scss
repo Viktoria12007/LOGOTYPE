@@ -82,6 +82,10 @@ fieldset {
     @include _1500 {
       min-height: auto;
     }
+    @include _1024 {
+      min-height: auto;
+      flex-direction: column-reverse;
+    }
   }
 }
 .main-block {
