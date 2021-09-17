@@ -6,6 +6,9 @@
     @include _1024 {
         padding: 54px 62px 88px 50px;
     }
+    @include _768 {
+        padding: 44px 30px 78px 30px;
+    }
     &__title {
         font-size: 42px;
         font-weight: 500;
@@ -25,6 +28,9 @@
         @include _1024 {
             padding: 31px 27px 44px 27px;
         }
+        @include _768 {
+            padding: 21px 17px 34px 17px;
+        }
         &_card {
             // display: flex;
             // flex-direction: column;
@@ -36,6 +42,9 @@
             }
             @include _1024 {
                 padding: 31px 27px 44px 27px;
+            }
+            @include _1024 {
+                padding: 21px 17px 34px 17px;
             }
         }
     }
@@ -59,6 +68,9 @@
             left: 33.2%;
             // padding: 24px 100px;
             @include _1024 {
+                left: 23.2%;
+            }
+            @include _768 {
                 left: 23.2%;
             }
         }

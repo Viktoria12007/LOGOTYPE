@@ -1,14 +1,6 @@
 .profile {
     position: relative;
     padding: 55px 84px 81px 72px;
-    &__title {
-        margin-left: 41px;
-        margin-bottom: 25px;
-        @include _1024 {
-            text-align: center;
-            margin-left: 0px;
-        }
-    }
     @include _1500 {
         padding: 45px 64px 71px 52px;
     }
@@ -18,6 +10,24 @@
         // align-items: center;
         padding: 35px 54px 61px 42px;
     }
+    @include _768 {
+        display: flex;
+        flex-direction: column;
+        // align-items: center;
+        padding: 25px 22px 51px 22px;
+    }
+    &__title {
+        margin-left: 41px;
+        margin-bottom: 25px;
+        @include _1024 {
+            text-align: center;
+            margin-left: 0px;
+        }
+        @include _768 {
+            text-align: center;
+            margin-left: 0px;
+        }
+    }
 }
 .profile-form {
     display: flex;
@@ -26,6 +36,13 @@
     flex-wrap: wrap;
     // align-items: stretch;
     @include _1024 {
+        // width: 1000px;
+        flex-direction: column;
+        align-items: normal;
+        // justify-content: stretch;
+        // align-items: stretch;
+    }
+    @include _768 {
         // width: 1000px;
         flex-direction: column;
         align-items: normal;
@@ -42,9 +59,19 @@
             // flex: 0 0 auto;
             justify-content: stretch;
         }
+        @include _768 {
+            // flex: 1;
+            // width: 100%;
+            // align-self: stretch;
+            // flex: 0 0 auto;
+            justify-content: stretch;
+        }
         &:not(:nth-child(3)) {
             margin-right: 20px;
             @include _1024 {
+                margin-right: 0;
+            }
+            @include _768 {
                 margin-right: 0;
             }
         }
@@ -64,6 +91,9 @@
           margin-bottom: 21px;
         }
         @include _1024 {
+            margin-bottom: 21px;
+          }
+          @include _768 {
             margin-bottom: 21px;
           }
     }
@@ -89,6 +119,10 @@
         //     // right: 5%;
         //     bottom: -3%;
         // }
+        @include _768 {
+            padding: 18px 46px;
+            right: 0%;
+        }
         &-sucsessfull {
             padding: 24px 57px 24px 49px;
             &_icon {
@@ -116,6 +150,12 @@
         // border: 2px solid $active-color;
         box-shadow: 0 0 0 2px $active-color;
         margin-top: 5px;
+        @include _768 {
+            width: 240px;
+            height: 240px;
+            margin-top: 0;
+            margin-bottom: 47px;
+        }
      }
      &__img {
         position: absolute;
@@ -142,6 +182,9 @@
        @include _1024 {
         margin-bottom: 21px;
     }
+    @include _768 {
+        margin-bottom: 21px;
+    }
     }
     &__row {
         font-size: 16px;
@@ -149,10 +192,19 @@
         margin-left: 33px;
         margin-bottom: 9px;
         color: $form-grey-color;
+        @include _768 {
+            font-size: 14px;
+            line-height: 18px;
+            margin-bottom: 5px;
+        }
         &_file {
         font-size: 20px;
         // font-weight: 400;
         line-height: 24px;
+        @include _768 {
+            font-size: 16px;
+            line-height: 20px;
+        }
         }
     }
     &__input {
@@ -164,10 +216,21 @@
         @include _1024 {
             width: 100%;
         }
+        @include _768 {
+            width: 100%;
+            font-size: 16px;
+            line-height: 20px;
+            // padding: 12px 32px;
+        }
        &::placeholder {
            font-size: 20px;
            line-height: 24.4px;
            color: $form-grey-color;
+           @include _768 {
+            width: 100%;
+            font-size: 16px;
+            line-height: 20px;
+        }
        }
         &_file {
             position: absolute;

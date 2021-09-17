@@ -15,6 +15,11 @@
         // left: 0;
         // right: auto;
     }
+    @include _768 {
+        position: static;
+        // left: 0;
+        // right: auto;
+    }
     &__header {
         display: flex;
         align-items: center;
@@ -30,6 +35,11 @@
             // z-index: 5;
             padding: 20px 40px 20px 28px;
         }
+        @include _768 {
+            // position: absolute;
+            // z-index: 5;
+            padding: 20px 30px 20px 18px;
+        }
     }
 }
 .owner-data {
@@ -43,6 +53,11 @@
         border-radius: 100%;
         margin-right: 20px;
         @include _1500 {
+            margin-right: 10px;
+        }
+        @include _768 {
+            width: 65px;
+            height: 65px;
             margin-right: 10px;
         }
      }
@@ -60,6 +75,11 @@
             font-size: 14px;
             line-height: 18px;
         }
+        @include _768 {
+            // font-size: 14px;
+            // line-height: 18px;
+            display: none;
+        }
     }
     &__name {
         margin-bottom: 6px;
@@ -73,6 +93,9 @@
         margin-right: 35px;
     }
     @include _1024 {
+        margin-right: 0;
+    }
+    @include _768 {
         margin-right: 0;
     }
     &__tel {
@@ -90,6 +113,12 @@
             font-size: 16px;
             line-height: 19px;
             margin-right: 20px;
+        }
+        @include _768 {
+            // font-size: 16px;
+            // line-height: 19px;
+            // margin-right: 20px;
+            display: none;
         }
     }
     &__list {
@@ -113,6 +142,10 @@
           width: 32px;
           height: 32px;
         }
+        @include _768 {
+            width: 32px;
+            height: 32px;
+          }
     }
     }
     &__number-notification {
@@ -136,6 +169,12 @@
             font-size: 9px;
             line-height: 9px;
         }
+        @include _768 {
+            width: 17px;
+            height: 17px;
+            font-size: 9px;
+            line-height: 9px;
+        }
         &_mail {
             top: 12px;
             left: -11px;
@@ -148,6 +187,9 @@
             top: -5px;
             left: 30px;
             @include _1024 {
+                left: 20px;
+            }
+            @include _768 {
                 left: 20px;
             }
         }
@@ -168,6 +210,9 @@
     border: none;
     background-color: transparent;
     @include _1024 {
+        display: none;
+    }
+    @include _768 {
         display: none;
     }
 }
