@@ -4,7 +4,7 @@
     // flex-direction: column;
     // justify-content: center;
     // align-items: center;
-    @include _1500 {
+    @include _1620 {
         padding: 54px 62px 91px 50px;
     }
     @include _1024 {
@@ -23,8 +23,8 @@
     &__item {
         position: relative;
         padding: 57px 300px 87px 71px;
-        @include _1500 {
-            padding: 47px 150px 77px 51px;
+        @include _1620 {
+            padding: 47px 160px 77px 51px;
         }
         @include _1024 {
             padding: 47px 180px 77px 51px;
@@ -34,7 +34,7 @@
         }
         &:not(:last-child) {
             margin-bottom: 84px;
-            @include _1500 {
+            @include _1620 {
               margin-bottom: 134px;
             }
             @include _1024 {
@@ -72,9 +72,9 @@
             top: 22%;
             left: 84%;
             background-image: url(../img/gift.png);
-            @include _1500 {
-                top: -25%;
-                left: 80%;
+            @include _1620 {
+                top: -30%;
+                left: 85%;
             }
             @include _1024 {
                 top: -25%;
@@ -93,9 +93,13 @@
             top: 15%;
             left: 83%;
             background-image: url(../img/watch.png);
-            @include _1500 {
-                top: -25%;
-                left: 80%;
+            @include _1620 {
+                width: 165px;
+                height: 165px;
+                top: -22%;
+                left: 85%;
+                background-size: 100% 100%;
+                background-position: center center;
             }
             @include _1024 {
                 top: -25%;

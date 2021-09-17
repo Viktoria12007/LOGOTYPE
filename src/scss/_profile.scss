@@ -1,7 +1,7 @@
 .profile {
     position: relative;
     padding: 55px 84px 81px 72px;
-    @include _1500 {
+    @include _1620 {
         padding: 45px 64px 71px 52px;
     }
     @include _1024 {
@@ -87,7 +87,7 @@
         flex-direction: column;
         flex-wrap: wrap;
         & > .profile-label {
-        @include _1500 {
+        @include _1620 {
           margin-bottom: 21px;
         }
         @include _1024 {
@@ -176,7 +176,7 @@
        flex-direction: column;
        align-items: center;
        position: relative;
-       @include _1500 {
+       @include _1620 {
            margin-bottom: 21px;
        }
        @include _1024 {

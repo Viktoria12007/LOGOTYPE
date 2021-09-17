@@ -1,19 +1,19 @@
 .my-events {
     padding: 64px 82px 98px 70px;
-    @include _1500 {
+    @include _1620 {
         padding: 54px 62px 88px 50px;
     }
     @include _1024 {
         padding: 54px 62px 88px 50px;
     }
     @include _768 {
-        padding: 44px 30px 78px 30px;
+        padding: 44px 20px 78px 20px;
     }
     &__title {
-        font-size: 42px;
-        font-weight: 500;
-        line-height: 51px;
-        letter-spacing: 0em;
+        // font-size: 42px;
+        // font-weight: 500;
+        // line-height: 51px;
+        // letter-spacing: 0em;
         text-align: center;
         margin-bottom: 33px;
     }
@@ -22,7 +22,7 @@
         flex-direction: column;
         align-items: center;
         padding: 41px 47px 54px 47px;
-        @include _1500 {
+        @include _1620 {
             padding: 31px 27px 44px 27px;
         }
         @include _1024 {
@@ -37,13 +37,13 @@
             // align-items: center;
             position: relative;
             padding: 45px 47px 54px 47px;
-            @include _1500 {
+            @include _1620 {
                 padding: 31px 27px 44px 27px;
             }
             @include _1024 {
                 padding: 31px 27px 44px 27px;
             }
-            @include _1024 {
+            @include _768 {
                 padding: 21px 17px 34px 17px;
             }
         }
@@ -53,15 +53,27 @@
         text-align: center;
         // margin: 0 auto;
         margin-bottom: 40px;
+        @include _768 {
+            font-size: 20px;
+            line-height: 30px;
+        }
         &_card {
             align-self: center;
             // max-width: 1100px;
             text-align: center;
             margin-bottom: 63px;
+            @include _768 {
+                font-size: 20px;
+                line-height: 30px;
+                margin-bottom: 43px;
+            }
         }
     }
     &__add-button {
         padding: 24px 100px;
+        @include _768 {
+            padding: 24px 35px;
+        }
         &_card {
             position: absolute;
             bottom: -28px;
@@ -71,7 +83,8 @@
                 left: 23.2%;
             }
             @include _768 {
-                left: 23.2%;
+                left: 31.5%;
+                padding: 24px 25px;
             }
         }
     }
@@ -93,7 +106,7 @@
         border-radius: 40px;
         background-color: #fdfcff;
         box-shadow: -10px -10px 10px 0px rgba(255, 255, 255, .15), 10px 0px 20px 0px rgba(177, 164, 212, .15) inset;
-        @include _1500 {
+        @include _1620 {
             display: flex;
             flex-direction: column;
             align-items: stretch;
@@ -113,9 +126,21 @@
             box-shadow: none;
             // flex: 1;
         }
+        @include _768 {
+            display: flex;
+            flex-direction: column;
+            align-items: stretch;
+            justify-content: center;
+            // justify-content: space-between;
+            flex-wrap: wrap;
+            box-shadow: none;
+            // flex: 1;
+            padding: 22px 0px 22px 0px;
+            margin-bottom: 23px;
+        }
         &-wrapper {
             position: relative;
-            @include _1500 {
+            @include _1620 {
                 // 
                 // justify-content: stretch;
                 // flex: 1 1 auto;
@@ -135,13 +160,27 @@
                 border-radius: 40px;
                 box-shadow: -10px -10px 10px 0px rgba(255, 255, 255, .15), 10px 0px 20px 0px rgba(177, 164, 212, .15) inset;
             }
+            @include _768 {
+                // 
+                // justify-content: stretch;
+                // flex: 1 1 auto;
+                // max-width: 300px;
+                text-align: center;
+                padding: 15px 20px;
+                border-radius: 40px;
+                box-shadow: -10px -10px 10px 0px rgba(255, 255, 255, .15), 10px 0px 20px 0px rgba(177, 164, 212, .15) inset;
+            }
             &:not(:last-child) {
                margin-right: 140px;
-               @include _1500 {
+               @include _1620 {
                    margin-bottom: 50px;
                    margin-right: 0px;
                }
                @include _1024 {
+                margin-bottom: 50px;
+                margin-right: 0px;
+            }
+               @include _768 {
                 margin-bottom: 50px;
                 margin-right: 0px;
             }
@@ -153,7 +192,7 @@
             // justify-content: space-between;
             // width: 672px;
             flex-wrap: nowrap;
-            @include _1500 {
+            @include _1620 {
                 display: flex;
                 flex-direction: column;
                 align-items: stretch;
@@ -162,6 +201,14 @@
                 flex-wrap: wrap;
             }
             @include _1024 {
+                display: flex;
+                flex-direction: column;
+                align-items: stretch;
+                justify-content: center;
+                // justify-content: space-between;
+                flex-wrap: wrap;
+            }
+            @include _768 {
                 display: flex;
                 flex-direction: column;
                 align-items: stretch;
@@ -178,7 +225,7 @@
             line-height: 20px;
             color: $form-grey-color;
             white-space: nowrap;
-            @include _1500 {
+            @include _1620 {
                 width: 126px;
                 top: -35px;
                left: 42%;
@@ -190,6 +237,14 @@
                left: 40%;
                text-align: center;
               }
+              @include _768 {
+                width: 126px;
+                top: -25px;
+               left: 40%;
+               text-align: center;
+               font-size: 14px;
+               line-height: 16px;
+              }
         } 
         &-value {
             line-height: 29px;
@@ -198,6 +253,10 @@
             //   font-size: 16px;
             //   line-height: 20px;
             // }
+            @include _768 {
+                font-size: 20px;
+                line-height: 24px;
+            }
         }  
         &-button {
             border: none;
@@ -208,11 +267,15 @@
             display: flex;
             align-items: center;
             // align-self: center;
-            @include _1500 {
+            @include _1620 {
                 align-self: center;
                 margin-top: 20px;
             }
             @include _1024 {
+                align-self: center;
+                margin-top: 20px;
+            }
+            @include _768 {
                 align-self: center;
                 margin-top: 20px;
             }
@@ -228,12 +291,16 @@
 .modal-guts__events {
     padding: 65px 40px 62px 70px;
     overflow: visible;
-    @include _1500 {
+    @include _1620 {
         padding: 55px 20px 52px 50px;
     }
     @include _1024 {
         padding: 55px 50px 52px 50px;
-        overflow: hidden;
+        overflow: auto;
+    }
+    @include _768 {
+        padding: 45px 20px 42px 20px;
+        overflow: auto;
     }
 }
 .modal-window__events {
@@ -243,6 +310,10 @@
     max-height: 100%;
     @include _1024 {
         height: 680px;
+        max-height: 100%;
+    }
+    @include _768 {
+        height: 550px;
         max-height: 100%;
     }
     
@@ -264,6 +335,10 @@
             flex-direction: column;
             align-items: stretch;
         }
+        @include _768 {
+            flex-direction: column;
+            align-items: stretch;
+        }
     }
     }
 .modal-close__events {
@@ -274,6 +349,10 @@
         cursor: pointer;
         border: none;
         background-color: transparent;
+        @include _768 {
+            top: 27px;
+            right: 20px;
+        }
     }
 // .events-form
 .events-form {
@@ -288,10 +367,15 @@
    &__group-right {
     position: relative;
     padding-right: 210px;
-    @include _1500 {
+    @include _1620 {
         padding-right: 130px;
     }
     @include _1024 {
+        position: static;
+        align-self: center;
+        padding-right: 0;
+    }
+    @include _768 {
         position: static;
         align-self: center;
         padding-right: 0;
@@ -307,15 +391,21 @@
     background-repeat: no-repeat;
     background-size: auto auto;
     // background-position: 95% 50%;
-    @include _1500 {
+    @include _1620 {
         left: 40%;
     }
     @include _1024 {
         display: none;
     }
+    @include _768 {
+        display: none;
+    }
 }
   &__button {
     padding: 28px 108px;
+    @include _768 {
+        padding: 20px 108px;
+    }
   }
 }
 .events-label {
@@ -326,12 +416,21 @@
     // align-items: center;
     &:nth-child(1) {
         margin-bottom: 22px;
+        @include _768 {
+            margin-bottom: 17px;
+        }
     }
     &:nth-child(2) {
         margin-bottom: 20px;
+        @include _768 {
+            margin-bottom: 17px;
+        }
     }
     &:nth-child(3) {
         margin-bottom: 30px;
+        @include _768 {
+            margin-bottom: 35px;
+        }
     }
     &:last-child {
         margin-bottom: 0;
@@ -342,6 +441,10 @@
       position: relative;
       margin-bottom: 36px;
     //   cursor: pointer;
+    @include _768 {
+        // text-align: center;
+        margin-bottom: 25px;
+    }
     &-row {
         display: inline-block;
         padding-left: 78px;
@@ -349,6 +452,11 @@
         text-align: center;
         // color: $bluesh-gray-color;
         transition: all .4s ease-in-out;
+        @include _768 {
+            font-size: 20px;
+            line-height: 24px;
+            padding-left: 45px;
+        }
         &::before {
            content: "";
            position: absolute;
@@ -363,6 +471,11 @@
         //    opacity: 0;
            box-shadow: -10px -10px 10px 0px rgba(255, 255, 255, .15), 10px 10px 20px 0px rgba(177, 164, 212, .35);
            transition: all .4s ease-in-out;
+           @include _768 {
+               top: 60%;
+               width: 35px;
+               height: 35px;
+           }
        }
         &::after {
             content: '';
@@ -376,6 +489,12 @@
             transform: rotate(45deg);
             opacity: 0;
             transition: opacity .4s ease-in-out, border-color .4s ease-in-out;
+            @include _768 {
+                left: 8px;
+                top: 5px;
+                min-width: 8.6px;
+                height: 20px;
+            }
         }
     }
     & input:checked+.events-label__choose-row::after {
@@ -389,6 +508,11 @@
     color: $form-grey-color;
     margin-left: 30px;
     margin-bottom: 8px;
+    @include _768 {
+        font-size: 16px;
+        font-weight: 400;
+        margin-bottom: 3px;
+    }
   }
   &__input {
       max-width: 445px;
@@ -400,11 +524,23 @@
       @include _1024 {
           max-width: 100%;
       }
+      @include _768 {
+        max-width: 100%;
+        padding: 10px 24px;
+        font-size: 16px;
+        line-height: 20px;
+    }
     &::placeholder {
       font-size: 20px;
     //   font-weight: 400;
       line-height: 24px;
       color: $form-grey-color;
+      @include _768 {
+        // max-width: 100%;
+        // padding: 10px 24px;
+        font-size: 16px;
+        line-height: 20px;
+    }
     }
   }
 }

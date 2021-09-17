@@ -15,7 +15,7 @@
     background-image: $side-bar-gradient;
     -webkit-transition: left 1s; /* Safari */
     transition: left 1s;
-      @include _1500 {
+      @include _1620 {
         width: 240px;
         padding: 40px 0px 40px 10px;
        }
@@ -60,9 +60,10 @@
         }
     }
     &__list {
-        display: flex;
-        align-items: center;
+        
         @include _1024 {
+            display: flex;
+            align-items: center;
             justify-content: space-between;
             // width: 100%;
             // display: flex;
@@ -71,6 +72,8 @@
             // flex: 0 0 34px;
         }
         @include _768 {
+            display: flex;
+            align-items: center;
             justify-content: space-between;
             // width: 100%;
             // display: flex;
@@ -118,12 +121,14 @@
         align-items: center;
         color: $black-color;
         &-text {
+        @include _1024 {
             display: none;
+        }  
         }
     }
     &__icon {
         margin-right: 16px;
-        @include _1500 {
+        @include _1620 {
             margin-right: 8px
         }
         @include _1024 {
@@ -180,7 +185,7 @@
     width: 195px;
     height: 30px;
     margin-left: 14px;
-    @include _1500 {
+    @include _1620 {
         // width: 65px;
         // height: 36px;
         margin-left: 12px;

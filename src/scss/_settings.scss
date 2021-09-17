@@ -1,5 +1,3 @@
-// @import "./mixins/breakpoint";
-
 * {
   padding: 0;
   margin: 0;
@@ -87,7 +85,7 @@ fieldset {
     display: flex;
     position: relative;
     min-height: 1052px;
-    @include _1500 {
+    @include _1620 {
       min-height: auto;
     }
     @include _1024 {
@@ -185,7 +183,7 @@ fieldset {
 }
 .collapsed .cabinet-sidebar {
   left:-280px;
-  @include _1500 {
+  @include _1620 {
         left: -240px;
        }
 }
