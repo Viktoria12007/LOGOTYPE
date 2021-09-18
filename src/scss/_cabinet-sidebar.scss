@@ -23,9 +23,12 @@
           width: 100%;
           min-height: auto;
           top: auto;
-          flex-direction: row; 
           position: fixed;
+          right: 0;
           z-index: 10;
+          flex-direction: row; 
+         
+         
         //   z-index: 10;
         //   justify-content: stretch;       
           padding: 45px 35px 45px 35px;
@@ -34,21 +37,27 @@
         width: 100%;
         min-height: auto;
         top: auto;
+        position: fixed;
+        right: 0;
+        z-index: 10;
         flex-direction: row; 
-        position: static;
+        // position: static;
       //   z-index: 10;
       //   justify-content: stretch;       
-        padding: 35px 25px 35px 25px;
+        padding: 25px 25px 25px 25px;
      }
      @include _375 {
         width: 100%;
         min-height: auto;
         top: auto;
+        position: fixed;
+        right: 0;
+        z-index: 10;
         flex-direction: row; 
-        position: static;
+        // position: static;
       //   z-index: 10;
       //   justify-content: stretch;       
-        padding: 35px 25px 35px 25px;
+        padding: 17px 25px 17px 25px;
      }
 
     &__logo-link {
@@ -99,9 +108,10 @@
             // flex: 0 0 34px;
         }
         @include _375 {
+            position: relative;
             display: flex;
             align-items: center;
-            justify-content: space-between;
+            // justify-content: space-between;
             // width: 100%;
             // display: flex;
             // align-items: stretch;
@@ -129,6 +139,43 @@
             padding: 0;
             // margin: 0 auto;
         }
+        &:first-child {
+            @include _375 {
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              width: 79px;
+              height: 79px;
+              position: absolute;
+              bottom: 15px;
+              left: 37%;
+              border-radius: 100%;
+              border: 10px solid $white-color;
+              background-color: $profile-link-background-color!important;
+            }
+        }
+        &:nth-child(2) {
+            @include _375 {
+                // justify-self: left;
+                // margin-right: 30px;
+                margin-right: 30px;
+            }
+           
+        }
+        &:nth-child(3) {
+            @include _375 {
+                // justify-self: left;
+                // margin-right: 30px;
+                margin-right: auto;
+            }
+           
+        }
+        &:nth-child(4) {
+            @include _375 {
+                margin-right: 30px;
+            }
+            
+        }
         &[aria-selected="true"] {
             
             background-color: $white-color;
@@ -146,6 +193,11 @@
              & svg * {
                 fill: $active-color;
                 stroke: $active-color;
+                transition: fill .4s ease, stroke .4s ease;
+                @include _375 {
+                    fill: $white-color;
+                    stroke: $white-color;
+                }
             }
         }
     }
@@ -182,8 +234,8 @@
             margin-right: 0;
         }
         @include _375 {
-            width: 34px;
-            height: 34px;
+            width: 35px;
+            height: 35px;
             margin-right: 0;
         }
     }

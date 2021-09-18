@@ -46,8 +46,8 @@ fieldset {
     line-height: 41px;
   }
   @include _375 {
-    font-size: 35px;
-    line-height: 41px;
+    font-size: 27px;
+    line-height: 33px;
   }
 }
 .button {
@@ -68,8 +68,8 @@ fieldset {
     font-size: 20px;
   }
   @include _375 {
-    line-height: 24px;
-    font-size: 20px;
+    font-size: 16px;
+    line-height: 20px;
   }
   &:hover {
     box-shadow: none;
@@ -114,6 +114,9 @@ fieldset {
   border-radius: 25px;
   background-color: $main-content-background-color;
   box-shadow: -10px -10px 10px 0px rgba(175, 146, 146, 0.15), 10px 10px 20px 0px rgba(177, 164, 212, .35);
+  @include _375 {
+    box-shadow: -6.583333492279053px -6.583333492279053px 6.583333492279053px 0px rgba(255, 255, 255, .15), 6.583333492279053px 6.583333492279053px 13.166666984558105px 0px rgba(177, 164, 212, .35);
+  }
 }
 .overlay {
   position: fixed;

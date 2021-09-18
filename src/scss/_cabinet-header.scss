@@ -39,18 +39,32 @@
             // position: absolute;
             // z-index: 5;
             position: fixed;
+            right: 0;
+            top: 0;
+            left: 0;
             z-index: 10;
             padding: 20px 40px 20px 28px;
         }
         @include _768 {
             // position: absolute;
             // z-index: 5;
+            position: fixed;
+            right: 0;
+            top: 0;
+            left: 0;
+            z-index: 10;
             padding: 20px 30px 20px 18px;
         }
         @include _375 {
             // position: absolute;
             // z-index: 5;
-            padding: 20px 30px 20px 18px;
+            position: fixed;
+            right: 0;
+            top: 0;
+            left: 0;
+            z-index: 10;
+            padding: 15px 18px 13px 18px;
+            box-shadow: 19.749998092651367px 0px 26.33333396911621px 0px rgba(222, 227, 236, 1);
         }
     }
 }
@@ -58,6 +72,9 @@
     display: flex;
     align-items: center;
     margin-right: auto;
+    @include _375 {
+        margin-right: 62px;
+    }
     &__img-wrapper {
         width: 80px;
         height: 80px;
@@ -73,9 +90,9 @@
             margin-right: 10px;
         }
         @include _375 {
-            width: 65px;
-            height: 65px;
-            margin-right: 10px;
+            width: 53px;
+            height: 53px;
+            margin-right: 0px;
         }
      }
     &__text-wrapper {
@@ -163,6 +180,9 @@
         @include _1620 {
             margin-right: 10px;
         }
+        @include _375 {
+            margin-right: 23px;
+        }
         }
     }
     &__link {
@@ -178,8 +198,8 @@
             height: 32px;
           }
           @include _375 {
-            width: 32px;
-            height: 32px;
+            width: 28px;
+            height: 28px;
           }
     }
     }
@@ -211,18 +231,26 @@
             line-height: 9px;
         }
         @include _375 {
-            width: 17px;
-            height: 17px;
-            font-size: 9px;
-            line-height: 9px;
+            width: 13px;
+            height: 13px;
+            font-size: 7px;
+            line-height: 7px;
+            border: 2px solid $white-color;
         }
         &_mail {
             top: 12px;
             left: -11px;
+            @include _375 {
+                top: 14px;
+                left: -8px;
+            }
         }
         &_like {
             top: 15px;
             left: -4px;
+            @include _375 {
+                left: -1px;
+            }
         }
         &_cart {
             top: -5px;

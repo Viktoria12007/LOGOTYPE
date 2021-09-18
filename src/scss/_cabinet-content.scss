@@ -7,12 +7,15 @@
         padding: 69px 64px;
     }
     @include _1024 {
-       padding: 180px 54px;
+      //  padding: 180px 54px;
+       padding: 140px 54px 190px 54px;
     }
     @include _768 {
-        padding: 59px 14px 69px 14px;
+        padding: 120px 14px 170px 14px;
      }
      @include _375 {
-        padding: 59px 14px 69px 14px;
+        background-image: none;
+        background-color: $white-color;
+        padding: 65px 16px 152px 16px;
      }
 }
