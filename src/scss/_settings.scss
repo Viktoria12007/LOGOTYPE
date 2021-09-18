@@ -196,9 +196,9 @@ fieldset {
     left: 30px;
   }
   @include _375 {
-    font-size: 14px;
-    line-height: 18px;
-    left: 30px;
+    font-size: 10px;
+    line-height: 16px;
+    left: 30%;
   }
 }
 .collapsed .cabinet-sidebar {
