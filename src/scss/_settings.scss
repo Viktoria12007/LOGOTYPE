@@ -45,6 +45,10 @@ fieldset {
     font-size: 35px;
     line-height: 41px;
   }
+  @include _375 {
+    font-size: 35px;
+    line-height: 41px;
+  }
 }
 .button {
   font-family: inherit;
@@ -60,6 +64,10 @@ fieldset {
   box-shadow: 10px 10px 20px 0px rgba(177, 164, 212, .35);
   transition: box-shadow .4s ease-in-out;
   @include _768 {
+    line-height: 24px;
+    font-size: 20px;
+  }
+  @include _375 {
     line-height: 24px;
     font-size: 20px;
   }
@@ -93,6 +101,10 @@ fieldset {
       flex-direction: column-reverse;
     }
     @include _768 {
+      min-height: auto;
+      flex-direction: column-reverse;
+    }
+    @include _375 {
       min-height: auto;
       flex-direction: column-reverse;
     }
@@ -176,6 +188,11 @@ fieldset {
   font-size: 16px;
   line-height: 19.5px;
   @include _768 {
+    font-size: 14px;
+    line-height: 18px;
+    left: 30px;
+  }
+  @include _375 {
     font-size: 14px;
     line-height: 18px;
     left: 30px;

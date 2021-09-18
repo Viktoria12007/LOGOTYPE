@@ -13,6 +13,9 @@
     @include _768 {
         padding: 44px 16px 50px 16px;
     }
+    @include _375 {
+        padding: 44px 16px 50px 16px;
+    }
 &__title {
     text-align: center;
     margin-bottom: 33px;
@@ -22,6 +25,10 @@
     text-align: center;
     margin-bottom: 40px;
     @include _768 {
+        font-size: 20px;
+        line-height: 24px;
+    }
+    @include _375 {
         font-size: 20px;
         line-height: 24px;
     }
@@ -42,10 +49,19 @@
         position: relative;
         padding: 31px 15px 44px 15px;
     }
+    @include _375 {
+        position: relative;
+        padding: 31px 15px 44px 15px;
+    }
 }
 &__add-order {
     padding: 24px 115px;
     @include _768 {
+        position: absolute;
+        bottom: -20px;
+        padding: 24px 50px;
+    }
+    @include _375 {
         position: absolute;
         bottom: -20px;
         padding: 24px 50px;
@@ -61,6 +77,9 @@
         margin-bottom: 42px;
     }
     @include _768 {
+        margin-bottom: 42px;
+    }
+    @include _375 {
         margin-bottom: 42px;
     }
     }
@@ -84,6 +103,10 @@
         position: relative;
         padding: 28px 18px 31px 18px;
     }
+    @include _375 {
+        position: relative;
+        padding: 28px 18px 31px 18px;
+    }
     &[aria-selected="true"] * .order-head__action-icon > svg {
       transform: rotate(180deg);
     }
@@ -96,6 +119,9 @@
             display: none;
         }
         @include _768 {
+            display: none;
+        }
+        @include _375 {
             display: none;
         }
       }
@@ -133,6 +159,11 @@
             height: 53px;
             margin-right: 10px;
         }
+        @include _375 {
+            min-width: 53px;
+            height: 53px;
+            margin-right: 10px;
+        }
      }
      &__img {
         position: absolute;
@@ -166,6 +197,10 @@
             font-size: 16px;
             line-height: 20px;
         }
+        @include _375 {
+            font-size: 16px;
+            line-height: 20px;
+        }
      }
      &__price {
         white-space: nowrap;
@@ -188,6 +223,10 @@
             font-size: 16px;
             line-height: 20px;
         }
+        @include _375 {
+            font-size: 16px;
+            line-height: 20px;
+        }
      }
      &__amount-title {
         font-size: 24px;
@@ -202,6 +241,10 @@
             line-height: 24px;
         }
         @include _768 {
+            font-size: 16px;
+            line-height: 20px;
+        }
+        @include _375 {
             font-size: 16px;
             line-height: 20px;
         }
@@ -224,6 +267,10 @@
             font-size: 16px;
             line-height: 20px;
         }
+        @include _375 {
+            font-size: 16px;
+            line-height: 20px;
+        }
      }
      &__key {
          margin-right: 140px;
@@ -234,6 +281,9 @@
             margin-right: 20px;
         }
         @include _768 {
+            margin-right: 10px;
+        }
+        @include _375 {
             margin-right: 10px;
         }
      }
@@ -249,6 +299,13 @@
             align-items: flex-end;
         }
         @include _768 {
+            position: absolute;
+            top: 80%;
+            left: 48.5%;
+            flex-direction: column;
+            align-items: flex-end;
+        }
+        @include _375 {
             position: absolute;
             top: 80%;
             left: 48.5%;
@@ -274,6 +331,12 @@
             display: none;
         }
         @include _768 {
+            // font-size: 16px;
+            // line-height: 20px;
+            // margin-right: 0;
+            display: none;
+        }
+        @include _375 {
             // font-size: 16px;
             // line-height: 20px;
             // margin-right: 0;
@@ -306,11 +369,18 @@
             width: 48px;
             height: 48px;
         }
+        @include _375 {
+            width: 48px;
+            height: 48px;
+        }
         & > svg {
             margin-top: 4px;
             @include _768 {
                margin-top: 0;
             }
+            @include _375 {
+                margin-top: 0;
+             }
         }
      }
 
@@ -331,6 +401,9 @@
     @include _768 {
         padding: 60px 0px;
     }
+    @include _375 {
+        padding: 60px 0px;
+    }
     // &__wrapper {
     //   display: flex;
     //   justify-content: space-between;
@@ -345,6 +418,9 @@
         padding: 47.6px 40px;
         box-shadow: -10px -10px 10px 0px rgba(255, 255, 255, .15), 0px 10px 20px 0px rgba(177, 164, 212, .15);
         @include _768 {
+            padding: 30px 15px;
+        }
+        @include _375 {
             padding: 30px 15px;
         }
     }
@@ -372,6 +448,9 @@
         @include _768 {
         padding: 24px 15px 30px 15px;
         }
+        @include _375 {
+            padding: 24px 15px 30px 15px;
+            }
         &-key {
             margin-top: 4px;
             @include _1620 {
@@ -385,7 +464,10 @@
             @include _768 {
                 font-size: 16px;
                 line-height: 20px;
-               
+            }
+            @include _375 {
+                font-size: 16px;
+                line-height: 20px;
             }
             &_delivery {
               margin-bottom: 10.5px;
@@ -419,6 +501,10 @@
                 font-size: 20px;
                 line-height: 24px;
             }
+            @include _375 {
+                font-size: 20px;
+                line-height: 24px;
+            }
             &:not(:last-child) {
                 margin-bottom: 11px;
             }
@@ -445,6 +531,14 @@
             flex: 1 1 auto;
             margin-bottom: 60px;
         }
+        @include _375 {
+            // width: auto;
+            // max-width: 613px;
+            // max-width: 100%;
+            width: 100%;
+            flex: 1 1 auto;
+            margin-bottom: 60px;
+        }
     }
     &__main-info {
         // margin-right: 94px;
@@ -457,6 +551,9 @@
             @include _768 {
                 margin-right: 0;
             }
+            @include _375 {
+                margin-right: 0;
+            }
     }
     &__delivery {
         display: flex;
@@ -465,6 +562,10 @@
         padding: 57px 32px 57px 32px;
         background: linear-gradient(128.73deg, #fff7fc 0%, #ffdeee 49.71%, #e1bef6 100%);
         @include _768 {
+            align-items: stretch;
+            padding: 47px 12px 47px 12px;
+        }
+        @include _375 {
             align-items: stretch;
             padding: 47px 12px 47px 12px;
         }
@@ -487,6 +588,10 @@
                 font-size: 20px;
                 line-height: 24px;
             }
+            @include _375 {
+                font-size: 20px;
+                line-height: 24px;
+            }
         }
         &-date {
             // width: 445px;
@@ -504,6 +609,12 @@
                 line-height: 30px;
               }
               @include _768 {
+                text-align: center;
+                padding: 11px 30px;
+                font-size: 18px;
+                line-height: 24px;
+              }
+              @include _375 {
                 text-align: center;
                 padding: 11px 30px;
                 font-size: 18px;
@@ -531,10 +642,18 @@
                 font-size: 44px;
                 line-height: 58px;
             }
+            @include _375 {
+                font-size: 44px;
+                line-height: 58px;
+            }
             &_breake {
                 margin-left: 30px;
                 margin-right: 30px;
                 @include _768 {
+                    margin-left: 15px;
+                    margin-right: 15px;
+                }
+                @include _375 {
                     margin-left: 15px;
                     margin-right: 15px;
                 }
@@ -561,10 +680,18 @@
                 font-size: 16px;
                 line-height: 20px;
             }
+            @include _375 {
+                align-self: center;
+                font-size: 16px;
+                line-height: 20px;
+            }
         }
         &-from {
             margin-right: 219px;
             @include _768 {
+                margin-right: 100px;
+            }
+            @include _375 {
                 margin-right: 100px;
             }
         }
@@ -576,6 +703,9 @@
             background-size: auto auto;
             // background-position: 95% 50%;
             @include _768 {
+                align-self: center;
+            }
+            @include _375 {
                 align-self: center;
             }
         }
@@ -596,6 +726,9 @@
             padding: 73px 70px 60px 70px;
         }
         @include _768 {
+            padding: 53px 35px 40px 35px;
+        }
+        @include _375 {
             padding: 53px 35px 40px 35px;
         }
        &-title {
@@ -622,6 +755,9 @@
         @include _768 {
             margin-bottom: 20px;
         }
+        @include _375 {
+            margin-bottom: 20px;
+        }
         &:not(:last-child) {
             // margin-right: 5.2vw;
             margin-right: 85px;
@@ -629,6 +765,9 @@
                margin-right: 45px;
             }
             @include _768 {
+                margin-right: 45px;
+             }
+             @include _375 {
                 margin-right: 45px;
              }
         }
@@ -656,6 +795,11 @@
             height: 100px;
             background-size: 50% 50%;
           }
+          @include _375 {
+            width: 100px;
+            height: 100px;
+            background-size: 50% 50%;
+          }
            &::after {
             content: "";
             position: absolute;
@@ -675,6 +819,9 @@
             @include _768 {
                 width: 45px;
             }
+            @include _375 {
+                width: 45px;
+            }
         }
            &_1 {
             background-position: 55% 50%;
@@ -687,6 +834,9 @@
                 background-size: 40% 50%;
             }  
             @include _768 {
+                background-size: 35% 50%;
+            }
+            @include _375 {
                 background-size: 35% 50%;
             }
            }
@@ -716,6 +866,10 @@
                     width: 45px;
                     left: -57%;
                 }
+                @include _375 {
+                    width: 45px;
+                    left: -57%;
+                }
             }
             &::after {
                 display: none;
@@ -736,6 +890,10 @@
             line-height: 20px;
         }
         @include _768 {
+            font-size: 16px;
+            line-height: 20px;
+        }
+        @include _375 {
             font-size: 16px;
             line-height: 20px;
         }

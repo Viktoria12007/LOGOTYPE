@@ -20,6 +20,11 @@
         // left: 0;
         // right: auto;
     }
+    @include _375 {
+        position: static;
+        // left: 0;
+        // right: auto;
+    }
     &__header {
         display: flex;
         align-items: center;
@@ -33,9 +38,16 @@
         @include _1024 {
             // position: absolute;
             // z-index: 5;
+            position: fixed;
+            z-index: 10;
             padding: 20px 40px 20px 28px;
         }
         @include _768 {
+            // position: absolute;
+            // z-index: 5;
+            padding: 20px 30px 20px 18px;
+        }
+        @include _375 {
             // position: absolute;
             // z-index: 5;
             padding: 20px 30px 20px 18px;
@@ -60,6 +72,11 @@
             height: 65px;
             margin-right: 10px;
         }
+        @include _375 {
+            width: 65px;
+            height: 65px;
+            margin-right: 10px;
+        }
      }
     &__text-wrapper {
         font-weight: 600;
@@ -76,6 +93,11 @@
             line-height: 18px;
         }
         @include _768 {
+            // font-size: 14px;
+            // line-height: 18px;
+            display: none;
+        }
+        @include _375 {
             // font-size: 14px;
             // line-height: 18px;
             display: none;
@@ -98,6 +120,9 @@
     @include _768 {
         margin-right: 0;
     }
+    @include _375 {
+        margin-right: 0;
+    }
     &__tel {
         display: inline-block;
         font-size: 21px;
@@ -115,6 +140,12 @@
             margin-right: 20px;
         }
         @include _768 {
+            // font-size: 16px;
+            // line-height: 19px;
+            // margin-right: 20px;
+            display: none;
+        }
+        @include _375 {
             // font-size: 16px;
             // line-height: 19px;
             // margin-right: 20px;
@@ -143,6 +174,10 @@
           height: 32px;
         }
         @include _768 {
+            width: 32px;
+            height: 32px;
+          }
+          @include _375 {
             width: 32px;
             height: 32px;
           }
@@ -175,6 +210,12 @@
             font-size: 9px;
             line-height: 9px;
         }
+        @include _375 {
+            width: 17px;
+            height: 17px;
+            font-size: 9px;
+            line-height: 9px;
+        }
         &_mail {
             top: 12px;
             left: -11px;
@@ -190,6 +231,9 @@
                 left: 20px;
             }
             @include _768 {
+                left: 20px;
+            }
+            @include _375 {
                 left: 20px;
             }
         }
@@ -213,6 +257,9 @@
         display: none;
     }
     @include _768 {
+        display: none;
+    }
+    @include _375 {
         display: none;
     }
 }

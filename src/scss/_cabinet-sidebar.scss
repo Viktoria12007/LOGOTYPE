@@ -24,12 +24,23 @@
           min-height: auto;
           top: auto;
           flex-direction: row; 
-          position: static;
+          position: fixed;
+          z-index: 10;
         //   z-index: 10;
         //   justify-content: stretch;       
           padding: 45px 35px 45px 35px;
        }
        @include _768 {
+        width: 100%;
+        min-height: auto;
+        top: auto;
+        flex-direction: row; 
+        position: static;
+      //   z-index: 10;
+      //   justify-content: stretch;       
+        padding: 35px 25px 35px 25px;
+     }
+     @include _375 {
         width: 100%;
         min-height: auto;
         top: auto;
@@ -49,6 +60,9 @@
          @include _768 {
             display: none;
          }
+         @include _375 {
+            display: none;
+         }
     }
     &__nav {
         margin-bottom: auto;
@@ -56,6 +70,9 @@
             width: 100%;
         }
         @include _768 {
+            width: 100%;
+        }
+        @include _375 {
             width: 100%;
         }
     }
@@ -72,6 +89,16 @@
             // flex: 0 0 34px;
         }
         @include _768 {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            // width: 100%;
+            // display: flex;
+            // align-items: stretch;
+            // justify-content: stretch;
+            // flex: 0 0 34px;
+        }
+        @include _375 {
             display: flex;
             align-items: center;
             justify-content: space-between;
@@ -98,6 +125,10 @@
             padding: 0;
             // margin: 0 auto;
         }
+        @include _375 {
+            padding: 0;
+            // margin: 0 auto;
+        }
         &[aria-selected="true"] {
             
             background-color: $white-color;
@@ -105,6 +136,9 @@
                 background-color: transparent;
             }
             @include _768 {
+                background-color: transparent;
+            }
+            @include _375 {
                 background-color: transparent;
             }
             & * {
@@ -122,6 +156,12 @@
         color: $black-color;
         &-text {
         @include _1024 {
+            display: none;
+        }
+        @include _768 {
+            display: none;
+        }  
+        @include _375 {
             display: none;
         }  
         }
@@ -141,6 +181,11 @@
             height: 34px;
             margin-right: 0;
         }
+        @include _375 {
+            width: 34px;
+            height: 34px;
+            margin-right: 0;
+        }
     }
     &__socials-list {
         display: flex;
@@ -153,6 +198,9 @@
             display: none;
         }
         @include _768 {
+            display: none;
+        }
+        @include _375 {
             display: none;
         }
     }
