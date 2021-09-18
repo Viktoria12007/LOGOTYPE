@@ -57,7 +57,7 @@
         // position: static;
       //   z-index: 10;
       //   justify-content: stretch;       
-        padding: 17px 25px 17px 25px;
+        padding: 17px 22px 20px 25px;
      }
 
     &__logo-link {
@@ -173,6 +173,14 @@
         &:nth-child(4) {
             @include _375 {
                 margin-right: 30px;
+            }
+        }
+        &:nth-child(5) {
+            & * svg {
+                @include _375 {
+                   width: 30px;
+                   height: 30px;
+                }
             }
             
         }

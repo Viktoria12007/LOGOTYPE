@@ -411,7 +411,7 @@
         overflow: auto;
     }
     @include _768 {
-        padding: 45px 20px 42px 20px;
+        padding: 35px 15px 32px 15px;
         overflow: auto;
     }
     @include _375 {
@@ -433,8 +433,9 @@
         max-height: 100%;
     }
     @include _375 {
-        height: 550px;
+        height: 480px;
         max-height: 100%;
+        border-radius: 16px;
     }
     &-title {
         text-align: center;
@@ -479,6 +480,12 @@
         @include _375 {
             top: 27px;
             right: 20px;
+        }
+        & > svg {
+            @include _375 {
+            width: 20px;
+            height: 20px;
+            }
         }
     }
 // .events-form
@@ -542,7 +549,7 @@
         padding: 20px 108px;
     }
     @include _375 {
-        padding: 20px 108px;
+        padding: 15px 108px;
     }
   }
 }
@@ -552,12 +559,18 @@
     cursor: pointer;
     position: relative;
     // align-items: center;
+    // @include _375 {
+    //     align-self: center;
+        // align-items: center;
+        // margin-bottom: 17px;
+    // }
     &:nth-child(1) {
         margin-bottom: 22px;
         @include _768 {
             margin-bottom: 17px;
         }
         @include _375 {
+            // align-items: center;
             margin-bottom: 17px;
         }
     }
@@ -609,9 +622,10 @@
             padding-left: 45px;
         }
         @include _375 {
-            font-size: 20px;
-            line-height: 24px;
+            font-size: 16px;
+            line-height: 20px;
             padding-left: 45px;
+            margin-top: 0;
         }
         &::before {
            content: "";
@@ -633,9 +647,9 @@
                height: 35px;
            }
            @include _375 {
-            top: 60%;
-            width: 35px;
-            height: 35px;
+            top: 40%;
+            width: 30px;
+            height: 30px;
         }
        }
         &::after {
@@ -657,10 +671,10 @@
                 height: 20px;
             }
             @include _375 {
-                left: 8px;
-                top: 5px;
-                min-width: 8.6px;
-                height: 20px;
+                left: 10px;
+                top: -2px;
+                min-width: 7px;
+                height: 15px;
             }
         }
     }
@@ -677,12 +691,14 @@
     margin-bottom: 8px;
     @include _768 {
         font-size: 16px;
-        font-weight: 400;
+        // font-weight: 400;
         margin-bottom: 3px;
     }
     @include _375 {
-        font-size: 16px;
-        font-weight: 400;
+        font-size: 14px;
+        line-height: 16px;
+        align-self: center;
+        margin-left: 0;
         margin-bottom: 3px;
     }
   }
@@ -705,8 +721,8 @@
     @include _375 {
         max-width: 100%;
         padding: 10px 24px;
-        font-size: 16px;
-        line-height: 20px;
+        font-size: 14px;
+        line-height: 16px;
     }
     &::placeholder {
       font-size: 20px;
@@ -722,8 +738,9 @@
     @include _375 {
         // max-width: 100%;
         // padding: 10px 24px;
-        font-size: 16px;
-        line-height: 20px;
+        text-align: center;
+        font-size: 14px;
+        line-height: 16px;
     }
     }
   }
