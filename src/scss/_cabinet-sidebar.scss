@@ -27,10 +27,6 @@
           right: 0;
           z-index: 10;
           flex-direction: row; 
-         
-         
-        //   z-index: 10;
-        //   justify-content: stretch;       
           padding: 45px 35px 45px 35px;
        }
        @include _768 {
@@ -41,9 +37,6 @@
         right: 0;
         z-index: 10;
         flex-direction: row; 
-        // position: static;
-      //   z-index: 10;
-      //   justify-content: stretch;       
         padding: 25px 25px 25px 25px;
      }
      @include _375 {
@@ -53,10 +46,7 @@
         position: fixed;
         right: 0;
         z-index: 10;
-        flex-direction: row; 
-        // position: static;
-      //   z-index: 10;
-      //   justify-content: stretch;       
+        flex-direction: row;    
         padding: 17px 22px 20px 25px;
      }
 
@@ -91,32 +81,16 @@
             display: flex;
             align-items: center;
             justify-content: space-between;
-            // width: 100%;
-            // display: flex;
-            // align-items: stretch;
-            // justify-content: stretch;
-            // flex: 0 0 34px;
         }
         @include _768 {
             display: flex;
             align-items: center;
             justify-content: space-between;
-            // width: 100%;
-            // display: flex;
-            // align-items: stretch;
-            // justify-content: stretch;
-            // flex: 0 0 34px;
         }
         @include _375 {
             position: relative;
             display: flex;
             align-items: center;
-            // justify-content: space-between;
-            // width: 100%;
-            // display: flex;
-            // align-items: stretch;
-            // justify-content: stretch;
-            // flex: 0 0 34px;
         }
     }
     &__item {
@@ -124,20 +98,14 @@
         line-height: 26.8px;
         padding: 26px 0px 23px 23px;
         border-radius: 15px 0 0 15px;
-        // &:not(:last-child) {
-        //     margin-bottom: 48px;
-        // }
         @include _1024 {
             padding: 0;
-            // margin: 0 auto;
         }
         @include _768 {
             padding: 0;
-            // margin: 0 auto;
         }
         @include _375 {
             padding: 0;
-            // margin: 0 auto;
         }
         &:first-child {
             @include _375 {
@@ -156,16 +124,12 @@
         }
         &:nth-child(2) {
             @include _375 {
-                // justify-self: left;
-                // margin-right: 30px;
                 margin-right: 30px;
             }
            
         }
         &:nth-child(3) {
             @include _375 {
-                // justify-self: left;
-                // margin-right: 30px;
                 margin-right: auto;
             }
            
@@ -249,11 +213,8 @@
     }
     &__socials-list {
         display: flex;
-        // align-self: center;
         align-items: center;
         margin-left: 17px;
-        // align-self: flex-end;
-        // margin-top: auto;
         @include _1024 {
             display: none;
         }
@@ -285,7 +246,6 @@
         width: 100%;
         height: 100%;
         background-repeat: no-repeat;
-        // background-size: 100%;
         background-position: 100%;
     }
 }
@@ -294,16 +254,6 @@
     height: 30px;
     margin-left: 14px;
     @include _1620 {
-        // width: 65px;
-        // height: 36px;
         margin-left: 12px;
        }
 }
-// .is-increase {
-//     flex: 0 0 280px;
-//     width: 280px;
-//   }
-//   .is-decrease {
-//     flex: 0 0 0px;
-//     width: 0px;
-//   }

@@ -1,13 +1,11 @@
 .cabinet-main__content {
     min-height: 100vh;
-    // min-height: 1052px;
     padding: 89px 84px;
     background-image: $main-content-gradient;
     @include _1620 {
         padding: 69px 64px;
     }
     @include _1024 {
-      //  padding: 180px 54px;
        padding: 140px 54px 190px 54px;
     }
     @include _768 {

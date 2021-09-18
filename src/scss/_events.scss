@@ -14,10 +14,6 @@
         padding: 100px 21px 20px 21px;
     }
     &__title {
-        // font-size: 42px;
-        // font-weight: 500;
-        // line-height: 51px;
-        // letter-spacing: 0em;
         text-align: center;
         margin-bottom: 33px;
     }
@@ -40,9 +36,6 @@
             padding: 21px 15px 34px 15px;
         }
         &_card {
-            // display: flex;
-            // flex-direction: column;
-            // align-items: center;
             position: relative;
             padding: 45px 47px 54px 47px;
             @include _1620 {
@@ -57,7 +50,6 @@
             @include _375 {
                 display: flex;
                 flex-direction: column;
-                // align-items: center;
                 border-radius: 11px;
                 padding: 23px 1px 29px 1px;
             }
@@ -66,7 +58,6 @@
     &__text {
         max-width: 887px;
         text-align: center;
-        // margin: 0 auto;
         margin-bottom: 40px;
         @include _768 {
             font-size: 20px;
@@ -78,7 +69,6 @@
         }
         &_card {
             align-self: center;
-            // max-width: 1100px;
             text-align: center;
             margin-bottom: 63px;
             @include _768 {
@@ -106,7 +96,6 @@
             position: absolute;
             bottom: -28px;
             left: 33.2%;
-            // padding: 24px 100px;
             @include _1024 {
                 left: 23.2%;
             }
@@ -115,7 +104,6 @@
                 padding: 24px 25px;
             }
             @include _375 {
-                // left: 31.5%;
                 position: static;
                 padding: 15px 60px;
             }
@@ -126,14 +114,6 @@
         align-items: center;
         justify-content: space-between;
         flex-wrap: wrap;
-        
-        // font-family: Montserrat;
-        // font-size: 16px;
-        // font-style: normal;
-        // font-weight: 400;
-        // line-height: 20px;
-        // letter-spacing: 0em;
-        // text-align: left;
         padding: 22px 48px 22px 62px;
         margin-bottom: 43px;
         border-radius: 40px;
@@ -144,30 +124,24 @@
             flex-direction: column;
             align-items: stretch;
             justify-content: center;
-            // justify-content: space-between;
             flex-wrap: wrap;
             box-shadow: none;
-            // flex: 1;
         }
         @include _1024 {
             display: flex;
             flex-direction: column;
             align-items: stretch;
             justify-content: center;
-            // justify-content: space-between;
             flex-wrap: wrap;
             box-shadow: none;
-            // flex: 1;
         }
         @include _768 {
             display: flex;
             flex-direction: column;
             align-items: stretch;
             justify-content: center;
-            // justify-content: space-between;
             flex-wrap: wrap;
             box-shadow: none;
-            // flex: 1;
             padding: 22px 0px 22px 0px;
             margin-bottom: 23px;
         }
@@ -176,53 +150,33 @@
             display: flex;
             flex-direction: column-reverse;
             align-items: stretch;
-            // align-items: center;
             justify-content: center;
-            // justify-content: space-between;
             flex-wrap: wrap;
             box-shadow: none;
-            // flex: 1;
             padding: 0px 0px 0px 0px;
             margin-bottom: 23px;
         }
         &-wrapper {
             position: relative;
             @include _1620 {
-                // 
-                // justify-content: stretch;
-                // flex: 1 1 auto;
-                // max-width: 300px;
                 text-align: center;
                 padding: 20px 40px;
                 border-radius: 40px;
                 box-shadow: -10px -10px 10px 0px rgba(255, 255, 255, .15), 10px 0px 20px 0px rgba(177, 164, 212, .15) inset;
             }
             @include _1024 {
-                // 
-                // justify-content: stretch;
-                // flex: 1 1 auto;
-                // max-width: 300px;
                 text-align: center;
                 padding: 20px 40px;
                 border-radius: 40px;
                 box-shadow: -10px -10px 10px 0px rgba(255, 255, 255, .15), 10px 0px 20px 0px rgba(177, 164, 212, .15) inset;
             }
             @include _768 {
-                // 
-                // justify-content: stretch;
-                // flex: 1 1 auto;
-                // max-width: 300px;
                 text-align: center;
                 padding: 15px 20px;
                 border-radius: 40px;
                 box-shadow: -10px -10px 10px 0px rgba(255, 255, 255, .15), 10px 0px 20px 0px rgba(177, 164, 212, .15) inset;
             }
             @include _375 {
-                // 
-                // justify-content: stretch;
-                // flex: 1 1 auto;
-                // max-width: 300px;
-                // max-width: 260px;
                 text-align: center;
                 padding: 9px 20px;
                 border-radius: 40px;
@@ -251,15 +205,12 @@
         &-description {
             display: flex;
             align-items: center;
-            // justify-content: space-between;
-            // width: 672px;
             flex-wrap: nowrap;
             @include _1620 {
                 display: flex;
                 flex-direction: column;
                 align-items: stretch;
                 justify-content: center;
-                // justify-content: space-between;
                 flex-wrap: wrap;
             }
             @include _1024 {
@@ -267,7 +218,6 @@
                 flex-direction: column;
                 align-items: stretch;
                 justify-content: center;
-                // justify-content: space-between;
                 flex-wrap: wrap;
             }
             @include _768 {
@@ -275,20 +225,16 @@
                 flex-direction: column;
                 align-items: stretch;
                 justify-content: center;
-                // justify-content: space-between;
                 flex-wrap: wrap;
             }
             @include _375 {
-                // flex: 1 1 0;
                 display: flex;
                 flex-direction: column;
                 align-items: stretch;
                 justify-content: center;
-                // justify-content: space-between;
                 flex-wrap: wrap;
                 padding: 0px 12px;
             }
-
         }
         &-key {
             position: absolute;
@@ -328,11 +274,6 @@
         } 
         &-value {
             line-height: 29px;
-            // white-space: nowrap;
-            // @include _1500 {
-            //   font-size: 16px;
-            //   line-height: 20px;
-            // }
             @include _768 {
                 font-size: 20px;
                 line-height: 24px;
@@ -358,8 +299,6 @@
                 border: 0,66px solid;
                 border-image-source: linear-gradient(119deg, #FFFFFF 32.05%, rgba(212, 215, 219, 0.16) 67.71%);
                 box-shadow: -6.583333492279053px -6.583333492279053px 6.583333492279053px 0px rgba(255, 255, 255, .15), 6.583333492279053px 6.583333492279053px 13.166666984558105px 0px rgba(177, 164, 212, .35);
-
-
             }
             & > svg {
                 @include _375 {
@@ -371,7 +310,6 @@
         &-action {
             display: flex;
             align-items: center;
-            // align-self: center;
             @include _1620 {
                 align-self: center;
                 margin-top: 20px;
@@ -385,8 +323,6 @@
                 margin-top: 20px;
             }
             @include _375 {
-                // position: absolute;
-                // top: -150px;
                 align-self: center;
                 margin-top: 0px;
                 margin-bottom: 40px;
@@ -394,9 +330,6 @@
             &_edit {
               margin-right: 20px;
             }
-            // &_delete {
-
-            // }
         }      
     }
 }
@@ -447,10 +380,8 @@
     }
     &-form {
         display: flex;
-        // flex-direction: column;
         align-items: flex-end;
         justify-content: space-between;
-        // flex-wrap: wrap;
         @include _1024 {
             flex-direction: column;
             align-items: stretch;
@@ -488,13 +419,7 @@
             }
         }
     }
-// .events-form
 .events-form {
-    // &__events-label {
-    //     &:last-child {
-    //         margin-bottom: 0 !important;
-    //     }
-    // }
     &__group-left {
         margin-bottom: 20px;
     }
@@ -529,7 +454,6 @@
     background-image: url(../img/flowers.png);
     background-repeat: no-repeat;
     background-size: auto auto;
-    // background-position: 95% 50%;
     @include _1620 {
         left: 40%;
     }
@@ -558,19 +482,12 @@
     flex-direction: column;
     cursor: pointer;
     position: relative;
-    // align-items: center;
-    // @include _375 {
-    //     align-self: center;
-        // align-items: center;
-        // margin-bottom: 17px;
-    // }
     &:nth-child(1) {
         margin-bottom: 22px;
         @include _768 {
             margin-bottom: 17px;
         }
         @include _375 {
-            // align-items: center;
             margin-bottom: 17px;
         }
     }
@@ -600,13 +517,10 @@
       align-items: center;
       position: relative;
       margin-bottom: 36px;
-    //   cursor: pointer;
     @include _768 {
-        // text-align: center;
         margin-bottom: 25px;
     }
     @include _375 {
-        // text-align: center;
         margin-bottom: 25px;
     }
     &-row {
@@ -614,7 +528,6 @@
         padding-left: 78px;
         margin-top: 8px;
         text-align: center;
-        // color: $bluesh-gray-color;
         transition: all .4s ease-in-out;
         @include _768 {
             font-size: 20px;
@@ -638,7 +551,6 @@
            border: 1px solid;
            border-image-source: linear-gradient(119deg, #FFFFFF 32.05%, rgba(212, 215, 219, 0.16) 67.71%);
            border-radius: 100%;
-        //    opacity: 0;
            box-shadow: -10px -10px 10px 0px rgba(255, 255, 255, .15), 10px 10px 20px 0px rgba(177, 164, 212, .35);
            transition: all .4s ease-in-out;
            @include _768 {
@@ -691,7 +603,6 @@
     margin-bottom: 8px;
     @include _768 {
         font-size: 16px;
-        // font-weight: 400;
         margin-bottom: 3px;
     }
     @include _375 {
@@ -723,21 +634,17 @@
         padding: 10px 24px;
         font-size: 14px;
         line-height: 16px;
+        text-align: center;
     }
     &::placeholder {
       font-size: 20px;
-    //   font-weight: 400;
       line-height: 24px;
       color: $form-grey-color;
       @include _768 {
-        // max-width: 100%;
-        // padding: 10px 24px;
         font-size: 16px;
         line-height: 20px;
     }
     @include _375 {
-        // max-width: 100%;
-        // padding: 10px 24px;
         text-align: center;
         font-size: 14px;
         line-height: 16px;
@@ -746,25 +653,24 @@
   }
 }
 .ui-datepicker {
-    // padding: 20px;
     border-radius: 25px;
     background-color: $main-content-background-color;
     box-shadow: -10px -10px 10px 0px rgba(255, 255, 255, .15), 10px 10px 20px 0px rgba(177, 164, 212, .35);
+    @include _375 {
+        border-radius: 16px;
+    }
 }
 .ui-datepicker-header {
     padding: 20px 20px 10px 20px;
 }
 .ui-datepicker-calendar {
     width: 100%;
-    // margin: 0;
     padding: 20px 10px 20px 20px;
 }
 .ui-datepicker-prev {
     display: inline-block;
-    // display: flex;
     width: 40px;
     height: 40px;
-    // align-items: center;
     text-align: center;
     border-radius: 100%;
     background-color: $main-content-background-color;
@@ -775,20 +681,21 @@
     background-position: center center;
     margin-right: 200px;
     margin-bottom: 10px;
+    @include _375 {
+        margin-right: 155px;
+    }
 }
 .ui-datepicker-next {
     display: inline-block;
-    // display: flex;
     width: 40px;
     height: 40px;
-    // align-items: center;
     text-align: center;
     border-radius: 100%;
     background-color: $main-content-background-color;
-   box-shadow: -10px -10px 10px 0px rgba(175, 146, 146, 0.15), 10px 10px 20px 0px rgba(177, 164, 212, .35);
-   background-image: url(../img/right.svg);
-   background-repeat: no-repeat;
-   background-size: auto auto;
-   background-position: center center;
-   margin-bottom: 10px; 
+    box-shadow: -10px -10px 10px 0px rgba(175, 146, 146, 0.15), 10px 10px 20px 0px rgba(177, 164, 212, .35);
+    background-image: url(../img/right.svg);
+    background-repeat: no-repeat;
+    background-size: auto auto;
+    background-position: center center;
+    margin-bottom: 10px; 
 }

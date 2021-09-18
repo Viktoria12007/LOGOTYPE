@@ -1,9 +1,5 @@
 .my-bonuses {
     padding: 64px 82px 101px 70px;
-    // display: flex;
-    // flex-direction: column;
-    // justify-content: center;
-    // align-items: center;
     @include _1620 {
         padding: 54px 62px 91px 50px;
     }
@@ -58,13 +54,6 @@
                 margin-bottom: 102px;
               }
         }
-        // &:nth-child(1) {
-        //     background-image: url(../img/gift.png);
-        //     background-repeat: no-repeat;
-        //     background-size: auto auto;
-        //     // background-position: 95% 50%;
-        //     background-position: 100% -40%;
-        // }
         &:nth-child(2) {
             @include _375 {
             padding: 26px 17px 40px 17px;
@@ -74,10 +63,6 @@
                     padding-right: 76px;
                     }
             }
-            // background-image: url(../img/watch.png);
-            // background-repeat: no-repeat;
-            // background-size: auto auto;
-            // background-position: 96.5% 50%;
         }
     }
     &__icon {
@@ -191,9 +176,6 @@
     }
     &__button {
         position: absolute;
-        // top: 10%;
-        // right: 10%;
-        // bottom: -12%;
         bottom: -32px;
         padding: 23px 84px;
         background-color: $title-color;
@@ -204,12 +186,9 @@
         }
         @include _375 {
             left: 0;
-            // bottom: -28px;
             bottom: 0;
             bottom: -18.5%;
             padding: 15px 50px;
-            // font-size: 16px;
-            // line-height: 24px;
         }
     }
 }
@@ -227,7 +206,6 @@
     max-width: 100%;
     height: 340px;
     max-height: 100%;
-    // top: 45%;
     @include _768 {
        width: 413px;
        max-width: 100%;
@@ -258,8 +236,6 @@
         line-height: 24px;
     }
 }
-// &-list {
-// }
 &-item {
     display: flex;
     align-items: center;
@@ -290,7 +266,6 @@
    letter-spacing: 0em;
    color: $title-color;
    padding-left: 48.4px;
-//    text-align: left;
    background-image: url(../img/gift-small.png);
    background-repeat: no-repeat;
    background-size: auto auto;
@@ -305,14 +280,11 @@
 }
 }
 &-subtitle_right {
-    // font-family: Montserrat;
     font-size: 30px;
-    // font-style: normal;
     font-weight: 700;
     line-height: 37px;
     letter-spacing: 0.05em;
     color: $title-color;
-    // text-align: right;
     @include _768 {
         font-size: 24px;
         line-height: 30px;
@@ -323,13 +295,9 @@
     }
 }
 &-left {
-    // font-family: Montserrat;
     font-size: 24px;
-    // font-style: normal;
-    // font-weight: 400;
     line-height: 38px;
     letter-spacing: 0em;
-    // text-align: left;
     @include _768 {
         font-size: 20px;
         line-height: 24px;
@@ -340,13 +308,9 @@
     }
 }
 &-right {
-    // font-family: Montserrat;
     font-size: 24px;
-    // font-style: normal;
-    // font-weight: 400;
     line-height: 29px;
     letter-spacing: 0em;
-    // text-align: right;
     @include _768 {
         font-size: 20px;
         line-height: 24px;
