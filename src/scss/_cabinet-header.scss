@@ -1,5 +1,10 @@
 .cabinet-main {
+    // display: -webkit-box; 
+    // display: -moz-box;
+    // display: -ms-flexbox;
+    // display: -webkit-flex;
     display: flex;
+    // -webkit-flex-direction: column;
     flex-direction: column;
     position:absolute;
     left:280px;
@@ -19,6 +24,10 @@
         position: static;
     }
     &__header {
+        // display: -webkit-box; 
+        // display: -moz-box;
+        // display: -ms-flexbox;
+        // display: -webkit-flex;
         display: flex;
         align-items: center;
         padding: 20px 38px 20px 38px;
@@ -55,6 +64,10 @@
     }
 }
 .owner-data {
+    // display: -webkit-box; 
+    // display: -moz-box;
+    // display: -ms-flexbox;
+    // display: -webkit-flex;
     display: flex;
     align-items: center;
     margin-right: auto;
@@ -107,6 +120,10 @@
     }
 }
 .cabinet-shop-navigation {
+    // display: -webkit-box; 
+    // display: -moz-box;
+    // display: -ms-flexbox;
+    // display: -webkit-flex;
     display: flex;
     align-items: center;
     margin-right: 89px;
@@ -146,6 +163,10 @@
         }
     }
     &__list {
+        // display: -webkit-box; 
+        // display: -moz-box;
+        // display: -ms-flexbox;
+        // display: -webkit-flex;
         display: flex;
         align-items: center;
     }
@@ -162,6 +183,10 @@
         }
     }
     &__link {
+        // display: -webkit-box; 
+        // display: -moz-box;
+        // display: -ms-flexbox;
+        // display: -webkit-flex;
         display: flex;
         align-items: center;
         > svg {
@@ -183,6 +208,10 @@
         position: absolute;
         width: 22px;
         height: 22px;
+        // display: -webkit-box; 
+        // display: -moz-box;
+        // display: -ms-flexbox;
+        // display: -webkit-flex;
         display: flex;
         align-items: center;
         justify-content: center;
@@ -251,6 +280,10 @@
     background-color: #27FF23;
 }
 .burger-button {
+    // display: -webkit-box; 
+    // display: -moz-box;
+    // display: -ms-flexbox;
+    // display: -webkit-flex;
     display: flex;
     align-items: center;
     cursor: pointer;

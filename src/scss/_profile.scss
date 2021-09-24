@@ -5,17 +5,32 @@
         padding: 45px 64px 71px 52px;
     }
     @include _1024 {
+        display: -webkit-box; 
+        display: -moz-box;
+        display: -ms-flexbox;
+        display: -webkit-flex;
         display: flex;
+        -webkit-flex-direction: column;
         flex-direction: column;
         padding: 35px 54px 61px 42px;
     }
     @include _768 {
+        display: -webkit-box; 
+        display: -moz-box;
+        display: -ms-flexbox;
+        display: -webkit-flex;
         display: flex;
+        -webkit-flex-direction: column;
         flex-direction: column;
         padding: 25px 22px 51px 22px;
     }
     @include _375 {
+        display: -webkit-box; 
+        display: -moz-box;
+        display: -ms-flexbox;
+        display: -webkit-flex;
         display: flex;
+        -webkit-flex-direction: column;
         flex-direction: column;
         border-radius: 16px;
         padding: 57px 17px 50px 17px;
@@ -39,20 +54,31 @@
     }
 }
 .profile-form {
+    // display: -webkit-box; 
+    // display: -moz-box;
+    // display: -ms-flexbox;
+    // display: -webkit-flex;
     display: flex;
     justify-content: space-between;
+    // -webkit-align-items: center;
     align-items: center;
+    // -webkit-flex-wrap: wrap;
     flex-wrap: wrap;
     @include _1024 {
+        // -webkit-flex-direction: column;
         flex-direction: column;
+        // -webkit-align-items: normal;
         align-items: normal;
     }
     @include _768 {
+        // -webkit-flex-direction: column;
         flex-direction: column;
         align-items: normal;
     }
     @include _375 {
+        // -webkit-flex-direction: column;
         flex-direction: column;
+        // -webkit-align-items: normal;
         align-items: normal;
     }
     &__group {
@@ -80,7 +106,9 @@
     }
     &__central-column {
         display: flex;
+        // -webkit-flex-direction: column;
         flex-direction: column;
+        // -webkit-flex-wrap: wrap;
         flex-wrap: wrap;
         & > .profile-label {
         @include _1620 {
@@ -99,7 +127,9 @@
     }
     &__right-column {
         display: flex;
+        // -webkit-flex-direction: column;
         flex-direction: column;
+        // -webkit-flex-wrap: wrap;
         flex-wrap: wrap;
         & > .profile-label {
             &:last-child {
@@ -148,9 +178,11 @@
 .profile-label {
     position: relative;
     display: flex;
+    // -webkit-flex-direction: column;
     flex-direction: column;
     cursor: pointer;
     @include _375 {
+        // -webkit-align-items: center;
         align-items: center;
     }
     &:not(:last-child) {
@@ -199,7 +231,9 @@
      }
     &_file {
        display: flex;
+    //    -webkit-flex-direction: column;
        flex-direction: column;
+    //    -webkit-align-items: center;
        align-items: center;
        position: relative;
        @include _1620 {
@@ -293,7 +327,12 @@
     &__file-icon {
         width: 50px;
         height: 50px;
+        // display: -webkit-box; 
+        // display: -moz-box;
+        // display: -ms-flexbox;
+        // display: -webkit-flex;
         display: flex;
+        // -webkit-align-items: center;
         align-items: center;
         justify-content: center;
         position: absolute;
