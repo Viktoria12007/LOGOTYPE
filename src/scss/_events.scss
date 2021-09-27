@@ -316,36 +316,46 @@
         }
         &-key {
             position: absolute;
+            // width: 100%;
             top: -55px;
             font-size: 16px;
             line-height: 20px;
             color: $form-grey-color;
             white-space: nowrap;
+            text-align: center;
             @include _1620 {
-                width: 126px;
+                left: 0;
+                width: 100%;
+                // width: 126px;
                 top: -35px;
-               left: 42%;
-               text-align: center;
+            //    left: 44%;
+            //    text-align: center;
               }
             @include _1024 {
-                width: 126px;
+                left: 0;
+                width: 100%;
+                // width: 126px;
                 top: -35px;
-               left: 40%;
-               text-align: center;
+            //    left: 40%;
+            //    text-align: center;
               }
               @include _768 {
-                width: 126px;
+                left: 0;
+                width: 100%;
+                // width: 126px;
                 top: -25px;
-               left: 40%;
-               text-align: center;
+            //    left: 40%;
+            //    text-align: center;
                font-size: 14px;
                line-height: 16px;
               }
               @include _375 {
-                width: 126px;
+                left: 0;
+                width: 100%;
+                // width: 126px;
                 top: -20px;
-               left: 28%;
-               text-align: center;  
+            //    left: 28%;
+            //    text-align: center;  
                font-size: 11px;
                line-height: 13px;
               }

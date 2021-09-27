@@ -97,7 +97,7 @@ fieldset {
   box-shadow: -10px -10px 10px rgba(255, 255, 255, .15), inset 10px 0px 20px rgba(177, 164, 212, .15);
 }
 .container {
-  max-width: 1920px;
+  max-width: 1640px;
   margin: 0 auto;
   &_cabinet {
     // display: -webkit-box; 
@@ -106,7 +106,9 @@ fieldset {
     // display: -webkit-flex;
     display: flex;
     position: relative;
-    min-height: 1052px;
+    // min-height: ;
+    min-height: 100vh;
+    // min-height: 1052px;
     @include _1620 {
       min-height: auto;
     }
@@ -238,9 +240,12 @@ fieldset {
     left: 30px;
   }
   @include _375 {
+    width: 100%;
+    left: 0;
     font-size: 10px;
     line-height: 16px;
-    left: 30%;
+    text-align: center;
+    // left: 30%;
   }
 }
 .collapsed .cabinet-sidebar {

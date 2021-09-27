@@ -18,7 +18,7 @@
 <body>
   <main>
     <section class="cabinet">
-      <div id="cabinet-tabs" class="container container_cabinet">
+      <div id="cabinet-tabs" class="container_cabinet">
        <div class="cabinet-sidebar">
         <a class="cabinet-sidebar__logo-link" href="#"><img class="logo" src="./img/logo.png" alt="Logo"></a>
         <nav class="cabinet-sidebar__nav">
@@ -154,6 +154,7 @@
              </button>
          </header>
          <div class="cabinet-main__content">
+           <div class="container">
            <div class="profile main-block tabs" id="profile">
              <h2 class="title profile__title">Профиль</h2>
              <form class="profile-form" action="https://jsonplaceholder.typicode.com/posts" autocomplete="on" method="POST">
@@ -242,12 +243,14 @@
               <li class="my-orders__item ">
                <h3 class="order-head main-block">
                  <div class="order-head__info">
+                   <div class="order-head__wrapper">
                    <div class="order-head__img-wrapper">
                   <img class="order-head__img" src="./img/order-buket.png" alt="Ваш букет">
                 </div>
                 <div class="order-head__key">
                   <div class="order-head__number">Заказ №1</div>
                   <div class="order-head__amount-title">Количество: </div>
+                </div>
                 </div>
                 <div class="order-head__value">
                   <div class="order-head__price">8250 ₽</div>
@@ -268,30 +271,30 @@
                 <div class="order-body__block-wrapper order-body__main-info main-block">
                   <ul class="order-body__list">
                     <li class="order-body__item">
-                      <div class="order-head__info">
-                        <div class="order-body__img-key-wrapper">
+                      <div class="order-body__info">
+                  <div class="order-body__wrapper">
                    <div class="order-head__img-wrapper">
-                  <img class="order-head__img" src="./img/order-buket.png" alt="Ваш букет">
-                </div>
-                <div class="order-body__key">
-                  <div class="order-head__number">Название букета</div>
-                  <div class="order-head__amount-title">Количество: </div>
-                </div>
-                        </div>
+                     <img class="order-head__img" src="./img/order-buket.png" alt="Ваш букет">
+                   </div>
+                   <div class="order-body__key">
+                     <div class="order-head__number">Название букета букета букета букета</div>
+                     <div class="order-head__amount-title">Количество: </div>
+                   </div>
+                  </div>
                 <div class="order-body__value">
-                  <div class="order-head__price">2000 ₽</div>
+                  <div class="order-head__price">20000 ₽</div>
                   <div class="order-head__amount">1 шт</div>
                 </div>
                  </div>
                 </li>
                     <li class="order-body__item">
-                      <div class="order-head__info">
-                  <div class="order-body__img-key-wrapper">
+                      <div class="order-body__info">
+                  <div class="order-body__wrapper">
                    <div class="order-head__img-wrapper">
                   <img class="order-head__img" src="./img/order-buket.png" alt="Ваш букет">
                 </div>
                 <div class="order-body__key">
-                  <div class="order-head__number">Название букета</div>
+                  <div class="order-head__number">Название букета букета</div>
                   <div class="order-head__amount-title">Количество: </div>
                 </div>
                 </div>
@@ -351,12 +354,14 @@
               <li class="my-orders__item">
                 <h3 class="order-head main-block">
                   <div class="order-head__info">
+                    <div class="order-head__wrapper">
                     <div class="order-head__img-wrapper">
                   <img class="order-head__img" src="./img/order-buket.png" alt="Ваш букет">
                 </div>
                 <div class="order-head__key">
-                  <div class="order-head__number">Название букета</div>
+                  <div class="order-head__number">Заказ №12</div>
                   <div class="order-head__amount-title">Количество: </div>
+                </div>
                 </div>
                 <div class="order-head__value">
                   <div class="order-head__price">2000 ₽</div>
@@ -376,8 +381,8 @@
                   <div class="order-body__block-wrapper order-body__main-info main-block">
                     <ul class="order-body__list">
                       <li class="order-body__item">
-                        <div class="order-head__info">
-                          <div class="order-body__img-key-wrapper">
+                        <div class="order-body__info">
+                          <div class="order-body__wrapper">
                      <div class="order-head__img-wrapper">
                     <img class="order-head__img" src="./img/order-buket.png" alt="Ваш букет">
                   </div>
@@ -393,8 +398,8 @@
                    </div>
                   </li>
                       <li class="order-body__item">
-                        <div class="order-head__info">
-                    <div class="order-body__img-key-wrapper">
+                        <div class="order-body__info">
+                    <div class="order-body__wrapper">
                      <div class="order-head__img-wrapper">
                     <img class="order-head__img" src="./img/order-buket.png" alt="Ваш букет">
                   </div>
@@ -550,6 +555,7 @@
             </div>
             </div>
           </div>
+           </div>
          </div>
        </div>
       </div>
