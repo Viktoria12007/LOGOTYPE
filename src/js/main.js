@@ -174,11 +174,14 @@ eventEditButtons.forEach((item) => {
     overlay.classList.add('closed');
  })
 
-const cabinetBurgerButton = document.querySelector('.burger-button');
-const mainWrap = document.querySelector('.container_cabinet');
+const cabinetBurgerButton = document.querySelector('.header-menu__icon_cabinet');
+// const mainWrap = document.querySelector('.container_cabinet');
+const cabinetBurgerMenu = document.querySelector('.header-menu_cabinet');
 
   cabinetBurgerButton.addEventListener('click', () => {
-    mainWrap.classList.toggle('collapsed');
+    // mainWrap.classList.toggle('collapsed');
+    cabinetBurgerButton.classList.toggle('active');
+    cabinetBurgerMenu.classList.toggle('active');
   })
 
 })
