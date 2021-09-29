@@ -1,6 +1,6 @@
 .my-bonuses {
     padding: 64px 82px 101px 70px;
-    @include _1620 {
+    @include _1700 {
         padding: 54px 62px 91px 50px;
     }
     @include _1024 {
@@ -26,7 +26,7 @@
     &__item {
         position: relative;
         padding: 57px 300px 87px 71px;
-        @include _1620 {
+        @include _1700 {
             padding: 47px 160px 77px 51px;
         }
         @include _1024 {
@@ -41,7 +41,7 @@
         }
         &:not(:last-child) {
             margin-bottom: 84px;
-            @include _1620 {
+            @include _1700 {
               margin-bottom: 134px;
             }
             @include _1024 {
@@ -83,7 +83,7 @@
             top: 22%;
             left: 84%;
             background-image: url(../img/gift.png);
-            @include _1620 {
+            @include _1700 {
                 top: -30%;
                 left: 85%;
             }
@@ -110,7 +110,7 @@
             top: 15%;
             left: 83%;
             background-image: url(../img/watch.png);
-            @include _1620 {
+            @include _1700 {
                 width: 165px;
                 height: 165px;
                 top: -22%;

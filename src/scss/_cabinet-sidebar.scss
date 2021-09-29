@@ -18,9 +18,9 @@
     background-image: -moz-linear-gradient($side-bar-gradient);
     background-image: -o-linear-gradient( $side-bar-gradient);
     background-image: $side-bar-gradient;
-    -webkit-transition: left 1s; /* Safari */
+    -webkit-transition: left 1s;
     transition: left 1s;
-      @include _1620 {
+      @include _1700 {
         width: 240px;
         padding: 40px 0px 40px 10px;
        }
@@ -224,7 +224,7 @@
             height: 26px;
         }
         margin-right: 16px;
-        @include _1620 {
+        @include _1700 {
             margin-right: 8px
         }
         @include _1024 {
@@ -286,11 +286,11 @@
         background-position: 100%;
     }
 }
-.logo {
+.logo_cabinet {
     width: 195px;
     height: 30px;
     margin-left: 14px;
-    @include _1620 {
+    @include _1700 {
         margin-left: 12px;
        }
 }

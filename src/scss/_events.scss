@@ -1,6 +1,6 @@
 .my-events {
     padding: 64px 82px 98px 70px;
-    @include _1620 {
+    @include _1700 {
         padding: 54px 62px 88px 50px;
     }
     @include _1024 {
@@ -28,7 +28,7 @@
         // -webkit-align-items: center;
         align-items: center;
         padding: 41px 47px 54px 47px;
-        @include _1620 {
+        @include _1700 {
             padding: 31px 27px 44px 27px;
         }
         @include _1024 {
@@ -44,7 +44,7 @@
         &_card {
             position: relative;
             padding: 45px 47px 54px 47px;
-            @include _1620 {
+            @include _1700 {
                 padding: 31px 27px 44px 27px;
             }
             @include _1024 {
@@ -135,8 +135,10 @@
         margin-bottom: 43px;
         border-radius: 40px;
         background-color: #fdfcff;
+        -webkit-box-shadow: -10px -10px 10px 0px rgba(255, 255, 255, .15), 10px 0px 20px 0px rgba(177, 164, 212, .15) inset; 
+        -moz-box-shadow: -10px -10px 10px 0px rgba(255, 255, 255, .15), 10px 0px 20px 0px rgba(177, 164, 212, .15) inset;
         box-shadow: -10px -10px 10px 0px rgba(255, 255, 255, .15), 10px 0px 20px 0px rgba(177, 164, 212, .15) inset;
-        @include _1620 {
+        @include _1700 {
             // display: -webkit-box; 
             // display: -moz-box;
             // display: -ms-flexbox;
@@ -149,6 +151,8 @@
             justify-content: center;
             // -webkit-flex-wrap: wrap;
             flex-wrap: wrap;
+            -webkit-box-shadow: none; 
+            -moz-box-shadow: none;
             box-shadow: none;
         }
         @include _1024 {
@@ -164,6 +168,8 @@
             justify-content: center;
             // -webkit-flex-wrap: wrap;
             flex-wrap: wrap;
+            -webkit-box-shadow: none; 
+            -moz-box-shadow: none;
             box-shadow: none;
         }
         @include _768 {
@@ -179,6 +185,8 @@
             justify-content: center;
             // -webkit-flex-wrap: wrap;
             flex-wrap: wrap;
+            -webkit-box-shadow: none; 
+            -moz-box-shadow: none;
             box-shadow: none;
             padding: 22px 0px 22px 0px;
             margin-bottom: 23px;
@@ -197,39 +205,49 @@
             justify-content: center;
             // -webkit-flex-wrap: wrap;
             flex-wrap: wrap;
+            -webkit-box-shadow: none; 
+            -moz-box-shadow: none;
             box-shadow: none;
             padding: 0px 0px 0px 0px;
             margin-bottom: 23px;
         }
         &-wrapper {
             position: relative;
-            @include _1620 {
+            @include _1700 {
                 text-align: center;
                 padding: 20px 40px;
                 border-radius: 40px;
+                -webkit-box-shadow: -10px -10px 10px 0px rgba(255, 255, 255, .15), 10px 0px 20px 0px rgba(177, 164, 212, .15) inset; 
+                -moz-box-shadow: -10px -10px 10px 0px rgba(255, 255, 255, .15), 10px 0px 20px 0px rgba(177, 164, 212, .15) inset;
                 box-shadow: -10px -10px 10px 0px rgba(255, 255, 255, .15), 10px 0px 20px 0px rgba(177, 164, 212, .15) inset;
             }
             @include _1024 {
                 text-align: center;
                 padding: 20px 40px;
                 border-radius: 40px;
+                -webkit-box-shadow: -10px -10px 10px 0px rgba(255, 255, 255, .15), 10px 0px 20px 0px rgba(177, 164, 212, .15) inset; 
+                -moz-box-shadow: -10px -10px 10px 0px rgba(255, 255, 255, .15), 10px 0px 20px 0px rgba(177, 164, 212, .15) inset;
                 box-shadow: -10px -10px 10px 0px rgba(255, 255, 255, .15), 10px 0px 20px 0px rgba(177, 164, 212, .15) inset;
             }
             @include _768 {
                 text-align: center;
                 padding: 15px 20px;
                 border-radius: 40px;
+                -webkit-box-shadow: -10px -10px 10px 0px rgba(255, 255, 255, .15), 10px 0px 20px 0px rgba(177, 164, 212, .15) inset; 
+                -moz-box-shadow: -10px -10px 10px 0px rgba(255, 255, 255, .15), 10px 0px 20px 0px rgba(177, 164, 212, .15) inset;
                 box-shadow: -10px -10px 10px 0px rgba(255, 255, 255, .15), 10px 0px 20px 0px rgba(177, 164, 212, .15) inset;
             }
             @include _375 {
                 text-align: center;
                 padding: 9px 20px;
                 border-radius: 40px;
+                -webkit-box-shadow: -10px -10px 10px 0px rgba(255, 255, 255, .15), 10px 0px 20px 0px rgba(177, 164, 212, .15) inset; 
+                -moz-box-shadow: -10px -10px 10px 0px rgba(255, 255, 255, .15), 10px 0px 20px 0px rgba(177, 164, 212, .15) inset;
                 box-shadow: -10px -10px 10px 0px rgba(255, 255, 255, .15), 10px 0px 20px 0px rgba(177, 164, 212, .15) inset;
             }
             &:not(:last-child) {
                margin-right: 140px;
-               @include _1620 {
+               @include _1700 {
                    margin-bottom: 50px;
                    margin-right: 0px;
                }
@@ -257,7 +275,7 @@
             align-items: center;
             // -webkit-flex-wrap: nowrap;
             flex-wrap: nowrap;
-            @include _1620 {
+            @include _1700 {
                 // display: -webkit-box; 
                 // display: -moz-box;
                 // display: -ms-flexbox;
@@ -316,46 +334,33 @@
         }
         &-key {
             position: absolute;
-            // width: 100%;
             top: -55px;
             font-size: 16px;
             line-height: 20px;
             color: $form-grey-color;
             white-space: nowrap;
             text-align: center;
-            @include _1620 {
+            @include _1700 {
                 left: 0;
                 width: 100%;
-                // width: 126px;
                 top: -35px;
-            //    left: 44%;
-            //    text-align: center;
               }
             @include _1024 {
                 left: 0;
                 width: 100%;
-                // width: 126px;
                 top: -35px;
-            //    left: 40%;
-            //    text-align: center;
               }
               @include _768 {
                 left: 0;
                 width: 100%;
-                // width: 126px;
                 top: -25px;
-            //    left: 40%;
-            //    text-align: center;
                font-size: 14px;
                line-height: 16px;
               }
               @include _375 {
                 left: 0;
                 width: 100%;
-                // width: 126px;
                 top: -20px;
-            //    left: 28%;
-            //    text-align: center;  
                font-size: 11px;
                line-height: 13px;
               }
@@ -390,7 +395,12 @@
                 height: 50px;
                 border-radius: 100%;
                 border: 0,66px solid;
+                border-image-source: -webkit-linear-gradient(119deg, #FFFFFF 32.05%, rgba(212, 215, 219, 0.16) 67.71%);
+                border-image-source: -moz-linear-gradient(119deg, #FFFFFF 32.05%, rgba(212, 215, 219, 0.16) 67.71%);
+                border-image-source: -o-linear-gradient(119deg, #FFFFFF 32.05%, rgba(212, 215, 219, 0.16) 67.71%);
                 border-image-source: linear-gradient(119deg, #FFFFFF 32.05%, rgba(212, 215, 219, 0.16) 67.71%);
+                -webkit-box-shadow: -6.583333492279053px -6.583333492279053px 6.583333492279053px 0px rgba(255, 255, 255, .15), 6.583333492279053px 6.583333492279053px 13.166666984558105px 0px rgba(177, 164, 212, .35); 
+                -moz-box-shadow: -6.583333492279053px -6.583333492279053px 6.583333492279053px 0px rgba(255, 255, 255, .15), 6.583333492279053px 6.583333492279053px 13.166666984558105px 0px rgba(177, 164, 212, .35);
                 box-shadow: -6.583333492279053px -6.583333492279053px 6.583333492279053px 0px rgba(255, 255, 255, .15), 6.583333492279053px 6.583333492279053px 13.166666984558105px 0px rgba(177, 164, 212, .35);
             }
             & > svg {
@@ -408,7 +418,7 @@
             display: flex;
             // -webkit-align-items: center;
             align-items: center;
-            @include _1620 {
+            @include _1700 {
                 align-self: center;
                 margin-top: 20px;
             }
@@ -434,7 +444,7 @@
 .modal-guts__events {
     padding: 65px 40px 62px 70px;
     overflow: visible;
-    @include _1620 {
+    @include _1700 {
         padding: 55px 20px 52px 50px;
     }
     @include _1024 {
@@ -455,12 +465,6 @@
     max-width: 100%;
     height: 603px;
     max-height: 100%;
-    // @include _1620 {
-    //     width: 1100px;
-    //     max-width: 100%;
-    //     height: 680px;
-    //     max-height: 100%;
-    // }
     @include _1024 {
         height: 680px;
         max-height: 100%;
@@ -541,7 +545,7 @@
    &__group-right {
     position: relative;
     padding-right: 210px;
-    @include _1620 {
+    @include _1700 {
         padding-right: 130px;
     }
     @include _1024 {
@@ -569,7 +573,7 @@
     background-image: url(../img/flowers.png);
     background-repeat: no-repeat;
     background-size: auto auto;
-    @include _1620 {
+    @include _1700 {
         left: 40%;
     }
     @include _1024 {
@@ -671,8 +675,13 @@
            width: 50px;
            height: 49px;
            border: 1px solid;
-           border-image-source: linear-gradient(119deg, #FFFFFF 32.05%, rgba(212, 215, 219, 0.16) 67.71%);
+           border-image-source: -webkit-linear-gradient(119deg, #ffffff 32.05%, rgba(212, 215, 219, 0.16) 67.71%);
+           border-image-source: -moz-linear-gradient(119deg, #ffffff 32.05%, rgba(212, 215, 219, 0.16) 67.71%);
+           border-image-source: -o-linear-gradient(119deg, #ffffff 32.05%, rgba(212, 215, 219, 0.16) 67.71%);
+           border-image-source: linear-gradient(119deg, #ffffff 32.05%, rgba(212, 215, 219, 0.16) 67.71%);
            border-radius: 100%;
+           -webkit-box-shadow: -10px -10px 10px 0px rgba(255, 255, 255, .15), 10px 10px 20px 0px rgba(177, 164, 212, .35); 
+           -moz-box-shadow: -10px -10px 10px 0px rgba(255, 255, 255, .15), 10px 10px 20px 0px rgba(177, 164, 212, .35);
            box-shadow: -10px -10px 10px 0px rgba(255, 255, 255, .15), 10px 10px 20px 0px rgba(177, 164, 212, .35);
            transition: all .4s ease-in-out;
            @include _768 {
@@ -777,7 +786,9 @@
 .ui-datepicker {
     border-radius: 25px;
     background-color: $main-content-background-color;
-    box-shadow: -10px -10px 10px 0px rgba(255, 255, 255, .15), 10px 10px 20px 0px rgba(177, 164, 212, .35);
+    -webkit-box-shadow: 10px 10px 20px rgba(177, 164, 212, .35); 
+    -moz-box-shadow: 10px 10px 20px rgba(177, 164, 212, .35);
+    box-shadow: 10px 10px 20px rgba(177, 164, 212, .35);
     @include _375 {
         border-radius: 16px;
     }
@@ -796,7 +807,9 @@
     text-align: center;
     border-radius: 100%;
     background-color: $main-content-background-color;
-    box-shadow: -10px -10px 10px 0px rgba(175, 146, 146, 0.15), 10px 10px 20px 0px rgba(177, 164, 212, .35);
+    -webkit-box-shadow: 10px 10px 20px rgba(177, 164, 212, .35); 
+    -moz-box-shadow: 10px 10px 20px rgba(177, 164, 212, .35);
+    box-shadow: 10px 10px 20px rgba(177, 164, 212, .35);
     background-image: url(../img/left.svg);
     background-repeat: no-repeat;
     background-size: auto auto;
@@ -814,7 +827,9 @@
     text-align: center;
     border-radius: 100%;
     background-color: $main-content-background-color;
-    box-shadow: -10px -10px 10px 0px rgba(175, 146, 146, 0.15), 10px 10px 20px 0px rgba(177, 164, 212, .35);
+    -webkit-box-shadow: 10px 10px 20px rgba(177, 164, 212, .35); 
+    -moz-box-shadow: 10px 10px 20px rgba(177, 164, 212, .35);
+    box-shadow: 10px 10px 20px rgba(177, 164, 212, .35);
     background-image: url(../img/right.svg);
     background-repeat: no-repeat;
     background-size: auto auto;

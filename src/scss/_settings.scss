@@ -68,6 +68,8 @@ fieldset {
   border-radius: 150px;
   cursor: pointer;
   background-color: $active-color;
+  -webkit-box-shadow: 10px 10px 20px rgba(177, 164, 212, .35); 
+  -moz-box-shadow: 10px 10px 20px rgba(177, 164, 212, .35);
   box-shadow: 10px 10px 20px rgba(177, 164, 212, .35);
   transition: box-shadow .4s ease-in-out;
   @include _768 {
@@ -79,16 +81,19 @@ fieldset {
     line-height: 20px;
   }
   &:hover {
+    -webkit-box-shadow: none; 
+    -moz-box-shadow: none;
     box-shadow: none;
   }
   &:active {
+    -webkit-box-shadow: none; 
+    -moz-box-shadow: none;
     box-shadow: none;
   }
 }
 .input {
   display: block;
   font-family: inherit;
-  // border: none;
   border-radius: 55px;
   background-color: $main-content-background-color;
   -webkit-appearance: none;
@@ -106,10 +111,9 @@ fieldset {
     // display: -webkit-flex;
     display: flex;
     position: relative;
-    // min-height: ;
     min-height: 100vh;
     // min-height: 1052px;
-    @include _1620 {
+    @include _1700 {
       min-height: auto;
     }
     @include _1024 {
@@ -132,9 +136,13 @@ fieldset {
 .main-block {
   border-radius: 25px;
   background-color: $main-content-background-color;
+  -webkit-box-shadow: 10px 10px 20px rgba(177, 164, 212, .35); 
+  -moz-box-shadow: 10px 10px 20px rgba(177, 164, 212, .35);
   // box-shadow: -10px -10px 10px 0px rgba(175, 146, 146, 0.15), 10px 10px 20px 0px rgba(177, 164, 212, .35);
   box-shadow: 10px 10px 20px rgba(177, 164, 212, .35);
   @include _375 {
+    -webkit-box-shadow: 6.583333492279053px 6.583333492279053px 13.166666984558105px rgba(177, 164, 212, .35); 
+    -moz-box-shadow: 6.583333492279053px 6.583333492279053px 13.166666984558105px rgba(177, 164, 212, .35);
     // box-shadow: -6.583333492279053px -6.583333492279053px 6.583333492279053px 0px rgba(255, 255, 255, .15), 6.583333492279053px 6.583333492279053px 13.166666984558105px 0px rgba(177, 164, 212, .35);
     box-shadow: 6.583333492279053px 6.583333492279053px 13.166666984558105px rgba(177, 164, 212, .35);
   }
@@ -149,6 +157,8 @@ fieldset {
   overflow: auto;
   -webkit-overflow-scrolling: touch;
   background-color: rgba(225, 190, 246, .5);
+  -webkit-box-shadow: 10px 10px 20px rgba(177, 164, 212, .35); 
+  -moz-box-shadow: 10px 10px 20px rgba(177, 164, 212, .35);
   // box-shadow: -10px -10px 10px 0px rgba(255, 255, 255, .15),  10px 10px 20px 0px rgba(177, 164, 212, .35);
   box-shadow: 10px 10px 20px rgba(177, 164, 212, .35);
 }
@@ -168,7 +178,7 @@ fieldset {
     top: 48%;
     left: 57%;
     // transform: translate(-60%, -50%);
-    @include _1620 {
+    @include _1700 {
       top: 50%;
       left: 50%;
       // transform: translate(-57%, -48%);
@@ -245,15 +255,26 @@ fieldset {
     font-size: 10px;
     line-height: 16px;
     text-align: center;
-    // left: 30%;
   }
 }
 .collapsed .cabinet-sidebar {
   left:-280px;
-  @include _1620 {
+  @include _1700 {
         left: -240px;
-       }
+  }
+  @include _1024 {
+   left: 0px;
+  }
+  @include _768 {
+   left: 0px;
+  }
+  @include _375 {
+   left: 0px;
+  }
 }
 .collapsed .cabinet-main {
+  left:0;
+}
+.collapsed .cabinet-main .cabinet-main__header {
   left:0;
 }
