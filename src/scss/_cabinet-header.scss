@@ -3,6 +3,9 @@
     // display: -moz-box;
     // display: -ms-flexbox;
     // display: -webkit-flex;
+    // height: 100%;
+    min-height: 100vh;
+    // min-height: 100%;
     display: flex;
     // -webkit-flex-direction: column;
     flex-direction: column;
@@ -15,6 +18,7 @@
         left: 240px;
     }
     @include _1024 {
+        // left: 0;
         position: static;
     }
     @include _768 {
@@ -384,7 +388,7 @@
         background: #333637;
         @include _768 {
             width: 100%;
-            top: 58px;
+            top: 105px;
         }
         @include _375 {
             width: 100%;
@@ -413,6 +417,9 @@
     &__item {
         margin-bottom: 40px;
         &_cabinet {
+            @include _375 {
+                margin-bottom: 20px;
+            }
             &_tel {
                 display: none;
                 @include _768 {
@@ -446,6 +453,10 @@
                         display: flex;
                         margin-left: 0px;
                     }
+                    & * svg * {
+                        fill: #f49d9c;;
+                        stroke: #f49d9c;;
+                    }
                 }
                 
             }
@@ -453,5 +464,10 @@
     }
     &__link {
         color: $white-color;
+        &_cabinet {
+            @include _375 {
+                font-size: 20px;
+            }
+        }
     }
 }

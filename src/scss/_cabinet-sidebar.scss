@@ -263,27 +263,29 @@
         }
     }
     &__socials-item {
-        width: 40px;
-        height: 34px;
+        // width: 100%;
+        // height: 100%;
+        // width: 40px;
+        // height: 34px;
         &:not(:last-child) {
             margin-right: 35px;
         }
-        &:nth-child(1) > .cabinet-sidebar__socials-link {
-            background-image: url('../img/Telegram.svg');
-        }
-        &:nth-child(2) > .cabinet-sidebar__socials-link {
-            background-image: url('../img/Whatsup.svg');
-        }
-        &:nth-child(3) > .cabinet-sidebar__socials-link {
-            background-image: url('../img/Instagram.svg');
-        }
+        // &:nth-child(1) > .cabinet-sidebar__socials-link {
+        //     background-image: url('../img/Telegram.svg');
+        // }
+        // &:nth-child(2) > .cabinet-sidebar__socials-link {
+        //     background-image: url('../img/Whatsup.svg');
+        // }
+        // &:nth-child(3) > .cabinet-sidebar__socials-link {
+        //     background-image: url('../img/Instagram.svg');
+        // }
     }
     &__socials-link {
         display: block;
-        width: 100%;
-        height: 100%;
-        background-repeat: no-repeat;
-        background-position: 100%;
+        // width: 100%;
+        // height: 100%;
+        // background-repeat: no-repeat;
+        // background-position: 100%;
     }
 }
 .logo_cabinet {

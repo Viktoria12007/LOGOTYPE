@@ -157,12 +157,25 @@
         right: 5.8%;
         bottom: -30px;
         padding: 24px 76px;
+        @include _1024 {
+            width: 443.5px;
+            left: 0; 
+            right: 0; 
+            margin-left: auto; 
+            margin-right: auto; 
+            // padding: 24px 76px;
+        }
         @include _768 {
+            width: 335px;
+            left: 0; 
+            right: 0; 
+            margin-left: auto; 
+            margin-right: auto; 
             padding: 18px 46px;
-            right: 0%;
         }
         @include _375 {
             position: static;
+            width: 100%;
             padding: 15px 20px;
             right: 0%;
             bottom: 0px;

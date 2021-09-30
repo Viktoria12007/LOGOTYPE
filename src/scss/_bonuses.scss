@@ -185,10 +185,14 @@
             line-height: 24px;
         }
         @include _375 {
+            width: 100%;
+            // display: inline;
+            text-align: center;
+            white-space: nowrap;
             left: 0;
-            bottom: 0;
+            // right: 0;
             bottom: -18.5%;
-            padding: 15px 50px;
+            padding: 15px 20px;
         }
     }
 }

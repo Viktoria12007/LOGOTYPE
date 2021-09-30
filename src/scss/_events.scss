@@ -11,7 +11,7 @@
     }
     @include _375 {
         border-radius: 16px;
-        padding: 100px 21px 20px 21px;
+        padding: 59px 21px 20px 21px;
     }
     &__title {
         text-align: center;
@@ -105,18 +105,33 @@
         }
         &_card {
             position: absolute;
+            width: 444px;
+            left: 0; 
+            right: 0; 
+            margin-left: auto; 
+            margin-right: auto; 
             bottom: -28px;
-            left: 33.2%;
-            @include _1024 {
-                left: 23.2%;
-            }
+            // left: 33.2%;
+            white-space: nowrap;
+            // @include _1024 {
+                // left: 0; 
+                // right: 0; 
+                // margin-left: auto; 
+                // margin-right: auto; 
+                // width: 444px; 
+            // }
             @include _768 {
-                left: 31.5%;
+                // left: 0; 
+                // right: 0; 
+                // margin-left: auto; 
+                // margin-right: auto;
+                width: 253px; 
                 padding: 24px 25px;
             }
             @include _375 {
                 position: static;
-                padding: 15px 60px;
+                width: 100%;
+                padding: 15px 0px;
             }
         }
     }
@@ -394,7 +409,7 @@
                 width: 50px;
                 height: 50px;
                 border-radius: 100%;
-                border: 0,66px solid;
+                border: 0.66px solid;
                 border-image-source: -webkit-linear-gradient(119deg, #FFFFFF 32.05%, rgba(212, 215, 219, 0.16) 67.71%);
                 border-image-source: -moz-linear-gradient(119deg, #FFFFFF 32.05%, rgba(212, 215, 219, 0.16) 67.71%);
                 border-image-source: -o-linear-gradient(119deg, #FFFFFF 32.05%, rgba(212, 215, 219, 0.16) 67.71%);
