@@ -14,10 +14,10 @@
     justify-content: space-between;
     min-height: 100vh;
     padding: 45px 0px 40px 26px;
-    background-image: -webkit-linear-gradient($side-bar-gradient);
-    background-image: -moz-linear-gradient($side-bar-gradient);
-    background-image: -o-linear-gradient( $side-bar-gradient);
-    background-image: $side-bar-gradient;
+    background: -webkit-linear-gradient($side-bar-gradient);
+    background: -moz-linear-gradient($side-bar-gradient);
+    background: -o-linear-gradient( $side-bar-gradient);
+    background: $side-bar-gradient;
     -webkit-transition: left 1s;
     transition: left 1s;
       @include _1700 {

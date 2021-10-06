@@ -13,10 +13,10 @@
    // right: 0;
    // bottom: 0;
     padding: 209px 84px 89px 84px;
-    background-image: -webkit-linear-gradient($main-content-gradient);
-    background-image: -moz-linear-gradient($main-content-gradient);
-    background-image: -o-linear-gradient( $main-content-gradient);
-    background-image: $main-content-gradient;
+    background: -webkit-linear-gradient($main-content-gradient);
+    background: -moz-linear-gradient($main-content-gradient);
+    background: -o-linear-gradient( $main-content-gradient);
+    background: $main-content-gradient;
     @include _1700 {
         padding: 189px 64px 69px 64px;
     }
@@ -32,7 +32,7 @@
      }
      @include _375 {
         min-height: auto;
-        background-image: none;
+        background: none;
         background-color: $white-color;
         padding: 65px 16px 152px 16px;
      }

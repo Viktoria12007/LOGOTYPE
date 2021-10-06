@@ -393,6 +393,7 @@
         @include _375 {
             width: 100%;
             top: 58px;
+            padding: 50px 15px;
         }
     }
     &.active {
@@ -418,7 +419,7 @@
         margin-bottom: 40px;
         &_cabinet {
             @include _375 {
-                margin-bottom: 20px;
+                margin-bottom: 10px;
             }
             &_tel {
                 display: none;
